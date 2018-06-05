@@ -1,0 +1,220 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-05 10:03:21.870733 UTC
+
+interface main@main:View 7103
+  interface hash: 6aeebb8d76074ffcfd66a143238713f7
+  ABI hash: 90f8e4a08bb7f893f5cfdf06e086c957
+  export-list hash: dc9d1b341db2bbcfe55e6526c2959cf1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b2ffec803ec45f24c8a6958e325c8754
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  View.viewModel
+module dependencies: Model
+package dependencies: vault-0.3.0.6@3aMjlHrKCJhIxveeXtcsc8
+                      time-locale-compat-0.1.1.3@4ww81SmMgsh5XzEiHjqYFj
+                      string-conversions-0.4.0.1@6IPX0T6LgwmAQrumGhNmFD
+                      blaze-builder-0.4.0.2@7IG4YvzEuZ07ymzKaTmpGZ
+                      double-conversion-2.0.2.0@8CGA0UjqT0U5WI5aCB2OGA
+                      utf8-string-1.0.1.1@8oOAZ6IwtjTCVi66vOztid
+                      http-api-data-0.2.4@9WyOtwKyJU13YHNetDNTM1
+                      parsec-3.1.11@C8IpmeP0Ud7KoD9bWQ4uRX
+                      servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl
+                      miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z
+                      http-types-0.9.1@I7NvCg9MtLYJyr8t4sWpHF
+                      http-media-0.6.4@IRYJDDSYrQe2KQ7RgfzW5U
+                      base-compat-0.9.1@KLqE4DmcSdeI96ryhDdoGE
+                      network-uri-2.6.1.0@LLIr0eP6ccoKFdUO8ej6BP
+                      bytestring-conversion-0.3.1@Ld4gu1gs70jHRgrKzulY0n
+                      aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd
+                      array-0.5.1.0@array_30xqJMcqwbkI6LBfgLltdH
+                      attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU base-4.8.2.0
+                      binary-0.7.5.0@binar_03WQkzzYAE08cZoz1r0IhX
+                      bytestring-0.10.6.0@bytes_96M8oqQTVIe6bIZr9qhhuC
+                      case-insensitive-1.2.0.7@casei_E4YHUGk4BDR8rpU3pmZYPg
+                      containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8
+                      deepseq-1.4.1.1@deeps_6zNFUGyDFQ59UU8BCTkqk0
+                      dlist-0.7.1.2@dlist_H1vOXFk9eUBGkwT4KVRG25
+                      fail-4.9.0.0@fail_9oXv4m1cFET3xpGVsHCxUq ghc-prim-0.4.0.0
+                      ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA
+                      ghcjs-prim-0.1.0.0@ghcjs_9jpamHTyFf8CL10DbS4jxv
+                      hashable-1.2.4.0@hasha_Bj7NmECL61JJPMp5YcPO6u integer-gmp-0.5.1.0
+                      mtl-2.2.1@mtl_JNINybzCkug09H8kU1kQe9
+                      primitive-0.6.1.0@primi_CRhbMv8kA5dFpZOCD0QPrI
+                      scientific-0.3.4.9@scien_7RWav52ZEb8LpSeINhjuJE
+                      semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu
+                      tagged-0.8.4@tagge_EpMmiBjiJPdFiokZ6hOmMm template-haskell-2.10.0.0
+                      text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ
+                      time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf
+                      transformers-0.4.2.0@trans_EziP6JoSSK398q9vuXpnAA
+                      unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP
+                      vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ
+orphans: miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Internal
+         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.String
+         aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd:Data.Aeson.Types.Generic
+         aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd:Data.Aeson.Types.Instances
+         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.Text.Internal
+         base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_03WQkzzYAE08cZoz1r0IhX:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_96M8oqQTVIe6bIZr9qhhuC:Data.ByteString.Builder
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:Data.JSString
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Internal.Types
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Marshal
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Marshal.Pure
+         hashable-1.2.4.0@hasha_Bj7NmECL61JJPMp5YcPO6u:Data.Hashable.Generic
+         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text
+         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Lazy
+         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Show
+         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.Format.Parse
+         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_EziP6JoSSK398q9vuXpnAA:Control.Monad.Trans.Error
+         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed
+family instance modules: servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl:Servant.API.ContentTypes
+                         servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl:Servant.API.Verbs
+                         servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl:Servant.Utils.Links
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Effect.XHR
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Event.Types
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Internal
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Router
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Subscription.WebSocket
+                         network-uri-2.6.1.0@LLIr0eP6ccoKFdUO8ej6BP:Network.URI
+                         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.Internal.Types
+                         base-4.8.2.0:Control.Applicative base-4.8.2.0:Data.Either
+                         base-4.8.2.0:Data.Functor.Identity base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:Data.Void
+                         base-4.8.2.0:GHC.Exts base-4.8.2.0:GHC.Generics
+                         base-4.8.2.0:GHC.TypeLits
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.IntMap.Base
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.IntSet.Base
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Map.Base
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Sequence
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Set.Base
+                         dlist-0.7.1.2@dlist_H1vOXFk9eUBGkwT4KVRG25:Data.DList
+                         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:Data.JSString
+                         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:JavaScript.Web.XMLHttpRequest
+                         primitive-0.6.1.0@primi_CRhbMv8kA5dFpZOCD0QPrI:Control.Monad.Primitive
+                         semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu:Data.List.NonEmpty
+                         semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu:Data.Semigroup
+                         tagged-0.8.4@tagge_EpMmiBjiJPdFiokZ6hOmMm:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text
+                         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Lazy
+                         unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP:Data.HashMap.Base
+                         unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP:Data.HashSet
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Primitive
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Storable
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed.Base
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso c142e447f77081452fae60810c4ba04f
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Event.Types a77a369562220ab16403e31d70518e18
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Element 32b01027407c57d22fdc3b1aa0366a09
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Event 21c2822a7a335b78cba83629ef3f926c
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Internal d749801229a310cdc0d5a484e9cec9ca
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Property d0e4675fb5cedee5f4cf671623abc320
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.String 7ac2d50578f40022cfb12b9400e313e9
+import  -/  base-4.8.2.0:Data.Bool ca042538fb71252dd8e7a494efe2ad9e
+import  -/  base-4.8.2.0:Data.Char b6b769efb0c5749c32c721d738e6b3b4
+import  -/  base-4.8.2.0:Data.Foldable e02ef8f402ecf74de677f4cf912139e1
+import  -/  base-4.8.2.0:Data.Function 6b13a8d3a5e3bd757a91434dce3fc7f3
+import  -/  base-4.8.2.0:Data.List b8b653f5927cedfddc115efcbc90af59
+import  -/  base-4.8.2.0:Data.OldList 877897032d4acf896fd3ceca4f23ddd5
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
+import  -/  base-4.8.2.0:GHC.List fbd910b126f36c7feead9fbba6aa48a0
+import  -/  base-4.8.2.0:GHC.Show ed2e62a4d3cc01e973aec92d52f5786d
+import  -/  base-4.8.2.0:GHC.Unicode cdf84fc3abbaf34ba6b6645291cef991
+import  -/  base-4.8.2.0:Prelude aeed44d4e8d251a340a1597dd2a0cbc5
+import  -/  containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Map bf350f44d7ea092c004daae24b3d7e60
+import  -/  containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Map.Base c78f877c94a9fb40f031786a36e21e62
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  Model 02a4ba4a567d2044214753248accc2c5
+  exports: 1bf7a4eaaee9a6c12c99933b1198a390
+  Action 23a276d3c13f1dfaa2fcf7de2aa197b4
+  AddSyn 1b1cbc904906500b8bfffd6256817489
+  AddTeam 6e387abae6f862edb51593c8d5145125
+  BackToMainMenu 3468f2d5ab3f69d29316f3b088422f20
+  GameOver 1a8953747cf6dfd9adde17a506e4e6d4
+  Gameplay a340ff5c044156ab788017caae8f63c4
+  GenerateSyntagmas 52f2a3b1e1428451e872ddf9852d7f9e
+  MainMenu 909186d0d166ca688c8c364106803969
+  Model 24224dba4c409b4a49e6fa78d903310e
+  Model 9225ec19181a85123aa2c200c834c727
+  NextWord 4eaad93396ef36b66678c867ed823602
+  NoOp db418fde8b6d546eaadf385a86c22953
+  RoundPrep eea4909134a19a9c6f4dab79996ffe9c
+  Rules 3c2b657f578406b930264974a30ff695
+  Settings ee3d0586e7df4249885097ff31099ea2
+  SkipWord 6a12d5a813751d46b45b9acba576bc13
+  SynInput b2e2e29267ec1bd74c86acdc79aad5ec
+  TeamInput 417c9dd964c5709022897e2430274c54
+  TimeOut 1b6004bf86b691721ceffad7bab7e215
+  ToGameplay 452b69a8f12cbd90768605e4d3986401
+  ToMainMenu e6d6766dca10d08b562a7d01ca4b160d
+  ToRoundPrep f06f26ce32265d5e4e6af3ac75969731
+  ToRules f5d590fed764b304f3261a4a05c5f69e
+  ToSettings 518e454763620bc741cf81b0f08a7f7e
+  ToSynInput e23d595d0d2c3fb0aa73c46074541894
+  ToTeamInput 3062f1c95406dfe1ff37ef9187203b58
+  UpdateNumberField e692ececcce223170a555f931255e784
+  UpdateSynField 6fa3c4389404879d9754c942c342f152
+  UpdateTeamField bcbe430ee38a96936c49fc52d1f2bcc3
+  buttonEnabled 58660c58253407a9aa4da4b5e6e8eb57
+  currentTeam 643c176e98ee7b2c339a7a20f6490896
+  guessed 28082e30baf4a07eadedee506c3f1eb7
+  inputField f97036ba75bc9508e437e4cf156ef9b4
+  invalidSyntagma ef64d8031874776a343473cb1b58ec45
+  invalidTeamName 902363ba1db51cfa61bef7bfddf522e6
+  numberField ad74d63ce6ed6e3349d58dc0afd19602
+  runda 4b79c9493027c0865e0fee0690f72c59
+  state fcb007dc23d016efaafd2b58bae0571f
+  syntagmas 201d34eb69b6fbf5520d55dbe2521c06
+  teams 504d2cce2af3967e3bb8165b04de9466
+  time fbb699a429f4d81a2f5a918f1b157d44
+de06f93d293a2b65b1ab5cb326530342
+  viewModel :: Model.Model -> Miso.Html.Internal.View Model.Action
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U,U,U,1*U,1*U,U,U,A,U,1*U(U),1*U(U),U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Model.Model ->
+                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ->
+                 (View.viewModel1 ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww9 ww10 ww11 ww12)
+                   `cast`
+                 (Trans
+                      (<Miso.Effect.Sink Model.Action>_R
+                       ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                      (Sym (Miso.Html.Internal.NTCo:View[0] <Model.Action>_R))) }) -}
+bdf5cb28a50337e384bb4f84d74e37a6
+  viewModel1 ::
+    Model.States
+    -> Miso.String.MisoString
+    -> Miso.String.MisoString
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> [GHC.Base.String]
+    -> [(GHC.Base.String, GHC.Types.Int)]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Miso.Effect.Sink Model.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 11,
+     Strictness: <L,1*U><L,U><L,U><L,1*U><L,1*U><L,U><L,U><L,U><L,1*U(U)><L,1*U(U)><L,U(U)> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

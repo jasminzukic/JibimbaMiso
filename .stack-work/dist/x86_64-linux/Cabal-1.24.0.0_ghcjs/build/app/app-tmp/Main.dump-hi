@@ -1,0 +1,3220 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-02 06:47:43.708996 UTC
+
+interface main@main:Main 7103
+  interface hash: 259e37b41315d9b440f7f8df2ca7a151
+  ABI hash: ba47b95539a2791789edbb584cec76ad
+  export-list hash: efb88f19737ac8b02d5e693dacd3604b
+  orphan hash: 226123e5fee9e8691506f73922bcf090
+  flag hash: 6e06b2a59d55e5bdae4f81d10939f5f8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.addAttributes
+  Main.displayRoundDescription
+  Main.getAttributes
+  Main.initialModel
+  Main.isValid
+  Main.main
+  Main.newAttribute
+  Main.onEnter
+  Main.sample
+  Main.sample1
+  Main.top5
+  Main.updateModel
+  Main.updateTeams
+  Main.viewGameOver
+  Main.viewGameplay
+  Main.viewMainMenu
+  Main.viewModel
+  Main.viewRoundPrep
+  Main.viewSynInput
+  Main.viewTeamInput
+  Main.viewTimeOut
+  Main.Action{Main.AddSyn Main.AddTeam Main.GenerateSyntagmas Main.NextWord Main.NoOp Main.SayHelloWorld Main.ShuffleSyns Main.ShuffleTeams Main.StartCounter Main.Tick Main.ToGameOver Main.ToGameplay Main.ToMainMenu Main.ToRoundPrep Main.ToSynInput Main.ToTeamInput Main.UpdateNumberField Main.UpdateSynField Main.UpdateTeamField}
+  Main.Model{Main.Model Main.currentTeam Main.guessed Main.inputField Main.invalidSyntagma Main.numberField Main.runda Main.seed Main.state Main.syntagmas Main.teams Main.time}
+  Main.States{Main.GameOver Main.Gameplay Main.MainMenu Main.RoundPrep Main.SynInput Main.TeamInput Main.TimeOut}
+module dependencies: CommonSyns FpnAttributes FsnAttributes
+                     MpnAttributes MsmpAttributes MsnAttributes Nouns NpnAttributes
+                     NsnAttributes
+package dependencies: vault-0.3.0.6@3aMjlHrKCJhIxveeXtcsc8
+                      time-locale-compat-0.1.1.3@4ww81SmMgsh5XzEiHjqYFj
+                      string-conversions-0.4.0.1@6IPX0T6LgwmAQrumGhNmFD
+                      blaze-builder-0.4.0.2@7IG4YvzEuZ07ymzKaTmpGZ
+                      double-conversion-2.0.2.0@8CGA0UjqT0U5WI5aCB2OGA
+                      utf8-string-1.0.1.1@8oOAZ6IwtjTCVi66vOztid
+                      http-api-data-0.2.4@9WyOtwKyJU13YHNetDNTM1
+                      random-1.1@BofHAI91DNcFFKfbBMPPtG
+                      parsec-3.1.11@C8IpmeP0Ud7KoD9bWQ4uRX
+                      servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl
+                      miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z
+                      http-types-0.9.1@I7NvCg9MtLYJyr8t4sWpHF
+                      random-shuffle-0.0.4@IOL5KW9YQiHGMQ1f5cNk4t
+                      http-media-0.6.4@IRYJDDSYrQe2KQ7RgfzW5U
+                      MonadRandom-0.4.2.3@IRgDpjrQSWr6m6yRGgh51b
+                      base-compat-0.9.1@KLqE4DmcSdeI96ryhDdoGE
+                      network-uri-2.6.1.0@LLIr0eP6ccoKFdUO8ej6BP
+                      bytestring-conversion-0.3.1@Ld4gu1gs70jHRgrKzulY0n
+                      aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd
+                      array-0.5.1.0@array_30xqJMcqwbkI6LBfgLltdH
+                      attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU base-4.8.2.0
+                      binary-0.7.5.0@binar_03WQkzzYAE08cZoz1r0IhX
+                      bytestring-0.10.6.0@bytes_96M8oqQTVIe6bIZr9qhhuC
+                      case-insensitive-1.2.0.7@casei_E4YHUGk4BDR8rpU3pmZYPg
+                      containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8
+                      deepseq-1.4.1.1@deeps_6zNFUGyDFQ59UU8BCTkqk0
+                      dlist-0.7.1.2@dlist_H1vOXFk9eUBGkwT4KVRG25
+                      fail-4.9.0.0@fail_9oXv4m1cFET3xpGVsHCxUq ghc-prim-0.4.0.0
+                      ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA
+                      ghcjs-prim-0.1.0.0@ghcjs_9jpamHTyFf8CL10DbS4jxv
+                      hashable-1.2.4.0@hasha_Bj7NmECL61JJPMp5YcPO6u integer-gmp-0.5.1.0
+                      mtl-2.2.1@mtl_JNINybzCkug09H8kU1kQe9
+                      primitive-0.6.1.0@primi_CRhbMv8kA5dFpZOCD0QPrI
+                      scientific-0.3.4.9@scien_7RWav52ZEb8LpSeINhjuJE
+                      semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu
+                      tagged-0.8.4@tagge_EpMmiBjiJPdFiokZ6hOmMm template-haskell-2.10.0.0
+                      text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ
+                      time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf
+                      transformers-0.4.2.0@trans_EziP6JoSSK398q9vuXpnAA
+                      unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP
+                      vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ
+orphans: miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Internal
+         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.String
+         MonadRandom-0.4.2.3@IRgDpjrQSWr6m6yRGgh51b:Control.Monad.Random
+         aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd:Data.Aeson.Types.Generic
+         aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd:Data.Aeson.Types.Instances
+         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.Text.Internal
+         base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_03WQkzzYAE08cZoz1r0IhX:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_96M8oqQTVIe6bIZr9qhhuC:Data.ByteString.Builder
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:Data.JSString
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Internal.Types
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Marshal
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Marshal.Pure
+         hashable-1.2.4.0@hasha_Bj7NmECL61JJPMp5YcPO6u:Data.Hashable.Generic
+         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text
+         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Lazy
+         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Show
+         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.Format.Parse
+         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_EziP6JoSSK398q9vuXpnAA:Control.Monad.Trans.Error
+         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed
+family instance modules: servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl:Servant.API.ContentTypes
+                         servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl:Servant.API.Verbs
+                         servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl:Servant.Utils.Links
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Effect.XHR
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Event.Types
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Internal
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Router
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Subscription.WebSocket
+                         network-uri-2.6.1.0@LLIr0eP6ccoKFdUO8ej6BP:Network.URI
+                         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.Internal.Types
+                         base-4.8.2.0:Control.Applicative base-4.8.2.0:Data.Either
+                         base-4.8.2.0:Data.Functor.Identity base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:Data.Void
+                         base-4.8.2.0:GHC.Exts base-4.8.2.0:GHC.Generics
+                         base-4.8.2.0:GHC.TypeLits
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.IntMap.Base
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.IntSet.Base
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Map.Base
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Sequence
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Set.Base
+                         dlist-0.7.1.2@dlist_H1vOXFk9eUBGkwT4KVRG25:Data.DList
+                         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:Data.JSString
+                         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:JavaScript.Web.XMLHttpRequest
+                         primitive-0.6.1.0@primi_CRhbMv8kA5dFpZOCD0QPrI:Control.Monad.Primitive
+                         semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu:Data.List.NonEmpty
+                         semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu:Data.Semigroup
+                         tagged-0.8.4@tagge_EpMmiBjiJPdFiokZ6hOmMm:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text
+                         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Lazy
+                         unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP:Data.HashMap.Base
+                         unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP:Data.HashSet
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Primitive
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Storable
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed.Base
+import  -/  random-1.1@BofHAI91DNcFFKfbBMPPtG:System.Random f7c70b339bc6d54a3ac32ce9fecab4ae
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso c142e447f77081452fae60810c4ba04f
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Effect ecaf91c9c61f851b8afff97feca8aaca
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Event.Types a77a369562220ab16403e31d70518e18
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Element 32b01027407c57d22fdc3b1aa0366a09
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Event 21c2822a7a335b78cba83629ef3f926c
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Internal d749801229a310cdc0d5a484e9cec9ca
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Property d0e4675fb5cedee5f4cf671623abc320
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.String 7ac2d50578f40022cfb12b9400e313e9
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Types a1a3679a439790272d6d6f1225d2e329
+import  -/  random-shuffle-0.0.4@IOL5KW9YQiHGMQ1f5cNk4t:System.Random.Shuffle 25f985014cda2af5b7130cc30570bb1e
+import  -/  MonadRandom-0.4.2.3@IRgDpjrQSWr6m6yRGgh51b:Control.Monad.Random.Class 3b31718d451373bc911016ae43936a62
+import  -/  base-4.8.2.0:Control.Concurrent 153317891d179fa670008e5330e6fff2
+import  -/  base-4.8.2.0:Control.Monad 70b8d00bb1204799892fc8bc04b92859
+import  -/  base-4.8.2.0:Data.Bool ca042538fb71252dd8e7a494efe2ad9e
+import  -/  base-4.8.2.0:Data.Char b6b769efb0c5749c32c721d738e6b3b4
+import  -/  base-4.8.2.0:Data.Foldable e02ef8f402ecf74de677f4cf912139e1
+import  -/  base-4.8.2.0:Data.Function 6b13a8d3a5e3bd757a91434dce3fc7f3
+import  -/  base-4.8.2.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.2.0:Data.List b8b653f5927cedfddc115efcbc90af59
+import  -/  base-4.8.2.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
+import  -/  base-4.8.2.0:Data.Monoid aedeb87581b509f07dc527bb766417c5
+import  -/  base-4.8.2.0:Data.OldList 877897032d4acf896fd3ceca4f23ddd5
+import  -/  base-4.8.2.0:Data.Traversable 1bfe16a980b18d4cd14245777ae0979c
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
+import  -/  base-4.8.2.0:GHC.Conc.IO 88469c13ccaea3e6dde3e14d2f0d3df9
+import  -/  base-4.8.2.0:GHC.List fbd910b126f36c7feead9fbba6aa48a0
+import  -/  base-4.8.2.0:GHC.Num f16387d7a90bf7ef0bf31e86d0ac9645
+import  -/  base-4.8.2.0:GHC.Real 19512fd0180d01f4277618956f9ad661
+import  -/  base-4.8.2.0:GHC.Show ed2e62a4d3cc01e973aec92d52f5786d
+import  -/  base-4.8.2.0:Prelude aeed44d4e8d251a340a1597dd2a0cbc5
+import  -/  base-4.8.2.0:System.IO 83da3c70b0eab531dd71c134016e070b
+import  -/  base-4.8.2.0:Text.Read aeeed1e6079a513a81f1e6da7d722d5d
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  CommonSyns 8a0a837ed107fd7a4634271970801666
+  exports: 819db55b30b293386779187e03c84525
+  commonSyns 2803f34ad15161dc06b2294bc42a5b66
+import  -/  FpnAttributes 7cba8ed416ba192210fd113829cc7896
+  exports: 35905d464c990369998cd69b588ce48c
+  fpnAttributes bb7929bb1e44e6b0fabfe5db29eb5c69
+import  -/  FsnAttributes ca670ae3f394ac1e30f4f6a5f6223e4c
+  exports: a12fab48a89822055155b87f10edf3fe
+  fsnAttributes 7caa9817945576f6de82ba3030aafb8b
+import  -/  MpnAttributes 533d0865ab14b2c81097ee7fab635db3
+  exports: b3ae423a155872b20f6585b2bba9514e
+  mpnAttributes c0b81133f9153ad771018adf0be4b1fa
+import  -/  MsmpAttributes e66aa083c9ccb19f5ffe54aa1eb71fa5
+  exports: cf7993ad54bf042f7dc7fdaf42a791f3
+  msmpAttributes 1c9fb7f94a07480efe2631241c310feb
+import  -/  MsnAttributes c4bee2151b99fd8a128604b6b958a6bd
+  exports: df4c6a1ff939b5fbeafd6ef26f5f27a1
+  msnAttributes abdc5a32d34d6068c24c67dabf5c625e
+import  -/  Nouns 0ad7f50ef759a289bb7c710e60945218
+  exports: 24e08ef07e19bab9ab4a4162c8e204af
+  nouns 751ff2b67327e484e4c38ac197f3e0bf
+import  -/  NpnAttributes f6dea1336b93c221a1ddd79935dbd510
+  exports: e1785c9394a1232dfd3cb37065f2210f
+  npnAttributes ecb2575ae87a20a8b217c0f818502e31
+import  -/  NsnAttributes 5e464a524fc1bbbdb5c1c947d8908b71
+  exports: bdb23aaa05bd5958b08c5e2d2f13aa54
+  nsnAttributes a942840168ae7cb9b87a56e18e418343
+be16698d1ac70af96e405311b1289c86
+  $fEqAction :: GHC.Classes.Eq Main.Action
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Action Main.$fEqAction_$c== Main.$fEqAction_$c/= -}
+efde2e766d5151c0aa22d85325175177
+  $fEqAction1 :: GHC.Classes.Eq GHC.Base.String
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Classes.$fEq[]_$s$fEq[]1 -}
+be16698d1ac70af96e405311b1289c86
+  $fEqAction_$c/= :: Main.Action -> Main.Action -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a23 :: Main.Action b :: Main.Action ->
+                 case Main.$fEqAction_$c== a23 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+be16698d1ac70af96e405311b1289c86
+  $fEqAction_$c== :: Main.Action -> Main.Action -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ ds :: Main.Action ds1 :: Main.Action ->
+                 case ds of wild {
+                   DEFAULT
+                   -> case ds1 of x1 { DEFAULT ->
+                      GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==#
+                           (GHC.Prim.dataToTag# @ Main.Action wild)
+                           (GHC.Prim.dataToTag# @ Main.Action x1)) }
+                   Main.UpdateTeamField a23
+                   -> case ds1 of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.dataToTag# @ Main.Action wild1 of wild2 {
+                             DEFAULT -> GHC.Types.False 7 -> GHC.Types.True }
+                        Main.UpdateTeamField b1 -> Data.JSString.js_eq a23 b1 }
+                   Main.UpdateSynField a23
+                   -> case ds1 of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.dataToTag# @ Main.Action wild1 of wild2 {
+                             DEFAULT -> GHC.Types.False 8 -> GHC.Types.True }
+                        Main.UpdateSynField b1 -> Data.JSString.js_eq a23 b1 }
+                   Main.UpdateNumberField a23
+                   -> case ds1 of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.dataToTag# @ Main.Action wild1 of wild2 {
+                             DEFAULT -> GHC.Types.False 9 -> GHC.Types.True }
+                        Main.UpdateNumberField b1 -> Data.JSString.js_eq a23 b1 }
+                   Main.ShuffleTeams a23
+                   -> case ds1 of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.dataToTag# @ Main.Action wild1 of wild2 {
+                             DEFAULT -> GHC.Types.False 13 -> GHC.Types.True }
+                        Main.ShuffleTeams b1
+                        -> GHC.Classes.$fEq[]_$c==
+                             @ (GHC.Base.String, GHC.Types.Int)
+                             Main.$fEqAction_$s$fEq(,)
+                             a23
+                             b1 }
+                   Main.ShuffleSyns a23
+                   -> case ds1 of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.dataToTag# @ Main.Action wild1 of wild2 {
+                             DEFAULT -> GHC.Types.False 14 -> GHC.Types.True }
+                        Main.ShuffleSyns b1 -> GHC.Classes.$fEq[]_$s$c==2 a23 b1 } }) -}
+2c7458f811b298770eb561e209bf7f07
+  $fEqAction_$s$fEq(,) ::
+    GHC.Classes.Eq ([GHC.Types.Char], GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ([GHC.Types.Char], GHC.Types.Int)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ [GHC.Types.Char]
+                     @ GHC.Types.Int
+                     Main.$fEqAction1
+                     GHC.Classes.$fEqInt)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ [GHC.Types.Char]
+                     @ GHC.Types.Int
+                     Main.$fEqAction1
+                     GHC.Classes.$fEqInt) -}
+084ec5fa94b0a39301cda3eeb5cf177c
+  $fEqModel :: GHC.Classes.Eq Main.Model
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Model Main.$fEqModel_$c== Main.$fEqModel_$c/= -}
+084ec5fa94b0a39301cda3eeb5cf177c
+  $fEqModel_$c/= :: Main.Model -> Main.Model -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))><S(SLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a23 :: Main.Model b :: Main.Model ->
+                 case Main.$fEqModel_$c== a23 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+084ec5fa94b0a39301cda3eeb5cf177c
+  $fEqModel_$c== :: Main.Model -> Main.Model -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))><S(SLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Main.Model w1 :: Main.Model ->
+                 case w of ww { Main.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                 case w1 of ww12 { Main.Model ww13 ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ww22 ww23 ->
+                 Main.$w$c==
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww13
+                   ww14
+                   ww15
+                   ww16
+                   ww17
+                   ww18
+                   ww19
+                   ww20
+                   ww21
+                   ww22
+                   ww23 } }) -}
+2513961f2d9daf1a69fbfda8f64d17f2
+  $fEqStates :: GHC.Classes.Eq Main.States
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.States Main.$fEqStates_$c== Main.$fEqStates_$c/= -}
+2513961f2d9daf1a69fbfda8f64d17f2
+  $fEqStates_$c/= :: Main.States -> Main.States -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ a23 :: Main.States b :: Main.States ->
+                 case a23 of wild {
+                   Main.MainMenu
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.MainMenu -> GHC.Types.False }
+                   Main.TeamInput
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.TeamInput -> GHC.Types.False }
+                   Main.SynInput
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.SynInput -> GHC.Types.False }
+                   Main.RoundPrep
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.RoundPrep -> GHC.Types.False }
+                   Main.Gameplay
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Gameplay -> GHC.Types.False }
+                   Main.TimeOut
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.TimeOut -> GHC.Types.False }
+                   Main.GameOver
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.GameOver -> GHC.Types.False } }) -}
+2513961f2d9daf1a69fbfda8f64d17f2
+  $fEqStates_$c== :: Main.States -> Main.States -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ ds :: Main.States ds1 :: Main.States ->
+                 case ds of wild {
+                   Main.MainMenu
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.MainMenu -> GHC.Types.True }
+                   Main.TeamInput
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.TeamInput -> GHC.Types.True }
+                   Main.SynInput
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.SynInput -> GHC.Types.True }
+                   Main.RoundPrep
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.RoundPrep -> GHC.Types.True }
+                   Main.Gameplay
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Gameplay -> GHC.Types.True }
+                   Main.TimeOut
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.TimeOut -> GHC.Types.True }
+                   Main.GameOver
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.GameOver -> GHC.Types.True } }) -}
+be16698d1ac70af96e405311b1289c86
+  $fShowAction :: GHC.Show.Show Main.Action
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Action
+                  Main.$fShowAction_$cshowsPrec
+                  Main.$fShowAction_$cshow
+                  Main.$fShowAction_$cshowList -}
+be16698d1ac70af96e405311b1289c86
+  $fShowAction1 :: Main.Action -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Main.$fShowAction_$cshowsPrec Main.$fShowAction2) -}
+d831d95b72e1c0d55cb428639a99a970
+  $fShowAction2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+be16698d1ac70af96e405311b1289c86
+  $fShowAction_$cshow :: Main.Action -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Main.Action ->
+                 Main.$fShowAction_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+be16698d1ac70af96e405311b1289c86
+  $fShowAction_$cshowList :: [Main.Action] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Main.Action
+                   Main.$fShowAction1) -}
+be16698d1ac70af96e405311b1289c86
+  $fShowAction_$cshowsPrec ::
+    GHC.Types.Int -> Main.Action -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+084ec5fa94b0a39301cda3eeb5cf177c
+  $fShowModel :: GHC.Show.Show Main.Model
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Model
+                  Main.$fShowModel_$cshowsPrec
+                  Main.$fShowModel_$cshow
+                  Main.$fShowModel_$cshowList -}
+084ec5fa94b0a39301cda3eeb5cf177c
+  $fShowModel1 :: Main.Model -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: Main.Model w1 :: GHC.Base.String ->
+                 case w of ww { Main.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                 Main.$w$cshowsPrec
+                   0
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   w1 }) -}
+084ec5fa94b0a39301cda3eeb5cf177c
+  $fShowModel_$cshow :: Main.Model -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U,1*U(U),U(U),U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Main.Model ->
+                 Main.$fShowModel_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+084ec5fa94b0a39301cda3eeb5cf177c
+  $fShowModel_$cshowList :: [Main.Model] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__ @ Main.Model Main.$fShowModel1) -}
+084ec5fa94b0a39301cda3eeb5cf177c
+  $fShowModel_$cshowsPrec ::
+    GHC.Types.Int -> Main.Model -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S,1*U(U)><S,1*U(1*U,1*U(U),U(U),U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int w1 :: Main.Model w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Main.Model ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ->
+                 Main.$w$cshowsPrec
+                   ww1
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12
+                   ww13
+                   w2 } }) -}
+2513961f2d9daf1a69fbfda8f64d17f2
+  $fShowStates :: GHC.Show.Show Main.States
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.States
+                  Main.$fShowStates_$cshowsPrec
+                  Main.$fShowStates_$cshow
+                  Main.$fShowStates_$cshowList -}
+269f2f1b0c703a777e8d1d4de5a0e635
+  $fShowStates1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "GameOver"#) -}
+23b851ef08584a90a25fefa3272d46e3
+  $fShowStates2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "TimeOut"#) -}
+e07d531b0caaec694375fe0f8d335e07
+  $fShowStates3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Gameplay"#) -}
+f283592e1bbb0f7ddc2c8dffe265082a
+  $fShowStates4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "RoundPrep"#) -}
+ae76b884b0235bfc8d685f722543462d
+  $fShowStates5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "SynInput"#) -}
+24c0621a41da231bfa34279ed267aec5
+  $fShowStates6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "TeamInput"#) -}
+9c19782f5566eaac7a5a0515f2220b11
+  $fShowStates7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "MainMenu"#) -}
+2513961f2d9daf1a69fbfda8f64d17f2
+  $fShowStates_$cshow :: Main.States -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Main.States ->
+                 Main.$fShowStates_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+2513961f2d9daf1a69fbfda8f64d17f2
+  $fShowStates_$cshowList :: [Main.States] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Main.States
+                   Main.$w$cshowsPrec1) -}
+2513961f2d9daf1a69fbfda8f64d17f2
+  $fShowStates_$cshowsPrec ::
+    GHC.Types.Int -> Main.States -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ w :: GHC.Types.Int w1 :: Main.States w2 :: GHC.Base.String ->
+                 Main.$w$cshowsPrec1 w1 w2) -}
+b75fc735256dac56cd95effb4b34fbe2
+  $w$c== ::
+    Main.States
+    -> GHC.Types.Int
+    -> Miso.String.MisoString
+    -> Miso.String.MisoString
+    -> GHC.Types.Bool
+    -> [GHC.Base.String]
+    -> [GHC.Base.String]
+    -> [(GHC.Base.String, GHC.Types.Int)]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Main.States
+    -> GHC.Types.Int
+    -> Miso.String.MisoString
+    -> Miso.String.MisoString
+    -> GHC.Types.Bool
+    -> [GHC.Base.String]
+    -> [GHC.Base.String]
+    -> [(GHC.Base.String, GHC.Types.Int)]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 22, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><S,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)>,
+     Inline: [0] -}
+05a5473648cfd37468cddf9f250b4004
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Main.States
+    -> GHC.Types.Int
+    -> Miso.String.MisoString
+    -> Miso.String.MisoString
+    -> GHC.Types.Bool
+    -> [GHC.Base.String]
+    -> [GHC.Base.String]
+    -> [(GHC.Base.String, GHC.Types.Int)]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 13,
+     Strictness: <L,U><L,1*U><L,1*U(U)><L,U(U)><L,U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,U>,
+     Inline: [0] -}
+2513961f2d9daf1a69fbfda8f64d17f2
+  $w$cshowsPrec1 :: Main.States -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ w :: Main.States w1 :: GHC.Base.String ->
+                 case w of wild {
+                   Main.MainMenu -> GHC.Base.++ @ GHC.Types.Char Main.$fShowStates7 w1
+                   Main.TeamInput
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowStates6 w1
+                   Main.SynInput -> GHC.Base.++ @ GHC.Types.Char Main.$fShowStates5 w1
+                   Main.RoundPrep
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowStates4 w1
+                   Main.Gameplay -> GHC.Base.++ @ GHC.Types.Char Main.$fShowStates3 w1
+                   Main.TimeOut -> GHC.Base.++ @ GHC.Types.Char Main.$fShowStates2 w1
+                   Main.GameOver
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowStates1 w1 }) -}
+3b1fdf38ec74d8a6b6e53c709b1549fe
+  $wa ::
+    GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   w :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case ww of ds {
+                   DEFAULT
+                   -> Miso.Html.Internal.$wa
+                        @ Main.Action
+                        Main.displayRoundDescription5
+                        w
+                   1
+                   -> Miso.Html.Internal.$wa
+                        @ Main.Action
+                        Main.displayRoundDescription4
+                        w
+                   2
+                   -> Miso.Html.Internal.$wa
+                        @ Main.Action
+                        Main.displayRoundDescription3
+                        w
+                   3
+                   -> Miso.Html.Internal.$wa
+                        @ Main.Action
+                        Main.displayRoundDescription2
+                        w }) -}
+fc5a9aa51abded4030aca9fd04e9faa8
+  $wa1 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.ByteArray#
+                   w :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case Miso.Html.Internal.prop1
+                        `cast`
+                      (Data.JSString.Internal.Type.NTCo:JSString[0]) of ds2 { GHCJS.Prim.JSVal ds3 ->
+                 case {__pkg_ccall_GC ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA $2[$1] GHC.Prim.ByteArray#
+                                                                                             -> GHC.Prim.ByteArray#
+                                                                                             -> GHC.Prim.State#
+                                                                                                  GHC.Prim.RealWorld
+                                                                                             -> (# GHC.Prim.State#
+                                                                                                     GHC.Prim.RealWorld,
+                                                                                                   GHC.Prim.ByteArray# #)}
+                        ds3
+                        ww
+                        w of wild { (#,#) ds6 ds7 ->
+                 case Miso.Html.Property.placeholder_1
+                        `cast`
+                      (Data.JSString.Internal.Type.NTCo:JSString[0]) of ds11 { GHCJS.Prim.JSVal ds12 ->
+                 case Main.main61
+                        `cast`
+                      (Data.JSString.Internal.Type.NTCo:JSString[0]) of ds13 { GHCJS.Prim.JSVal ds14 ->
+                 case {__pkg_ccall_GC ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA $3[$1] = $2 GHC.Prim.ByteArray#
+                                                                                                  -> GHC.Prim.ByteArray#
+                                                                                                  -> GHC.Prim.ByteArray#
+                                                                                                  -> GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld
+                                                                                                  -> (# GHC.Prim.State#
+                                                                                                          GHC.Prim.RealWorld #)}
+                        ds12
+                        ds14
+                        ds7
+                        ds6 of wild1 { (##) ds9 ->
+                 (# ds9, GHC.Tuple.() #) } } } } }) -}
+b4daa01c2a9b8be9c7bf3f95777837af
+  $wa2 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.ByteArray#
+                   w :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case Miso.Html.Internal.prop1
+                        `cast`
+                      (Data.JSString.Internal.Type.NTCo:JSString[0]) of ds2 { GHCJS.Prim.JSVal ds3 ->
+                 case {__pkg_ccall_GC ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA $2[$1] GHC.Prim.ByteArray#
+                                                                                             -> GHC.Prim.ByteArray#
+                                                                                             -> GHC.Prim.State#
+                                                                                                  GHC.Prim.RealWorld
+                                                                                             -> (# GHC.Prim.State#
+                                                                                                     GHC.Prim.RealWorld,
+                                                                                                   GHC.Prim.ByteArray# #)}
+                        ds3
+                        ww
+                        w of wild { (#,#) ds6 ds7 ->
+                 case Miso.Html.Property.name_1
+                        `cast`
+                      (Data.JSString.Internal.Type.NTCo:JSString[0]) of ds11 { GHCJS.Prim.JSVal ds12 ->
+                 case Main.main69
+                        `cast`
+                      (Data.JSString.Internal.Type.NTCo:JSString[0]) of ds13 { GHCJS.Prim.JSVal ds14 ->
+                 case {__pkg_ccall_GC ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA $3[$1] = $2 GHC.Prim.ByteArray#
+                                                                                                  -> GHC.Prim.ByteArray#
+                                                                                                  -> GHC.Prim.ByteArray#
+                                                                                                  -> GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld
+                                                                                                  -> (# GHC.Prim.State#
+                                                                                                          GHC.Prim.RealWorld #)}
+                        ds12
+                        ds14
+                        ds7
+                        ds6 of wild1 { (##) ds9 ->
+                 (# ds9, GHC.Tuple.() #) } } } } }) -}
+061cc15ebab7b3bb497d3243f79bf99f
+  $wa3 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.ByteArray#
+                   w :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case Miso.Html.Internal.prop1
+                        `cast`
+                      (Data.JSString.Internal.Type.NTCo:JSString[0]) of ds2 { GHCJS.Prim.JSVal ds3 ->
+                 case {__pkg_ccall_GC ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA $2[$1] GHC.Prim.ByteArray#
+                                                                                             -> GHC.Prim.ByteArray#
+                                                                                             -> GHC.Prim.State#
+                                                                                                  GHC.Prim.RealWorld
+                                                                                             -> (# GHC.Prim.State#
+                                                                                                     GHC.Prim.RealWorld,
+                                                                                                   GHC.Prim.ByteArray# #)}
+                        ds3
+                        ww
+                        w of wild { (#,#) ds6 ds7 ->
+                 case Miso.Html.Property.src_1
+                        `cast`
+                      (Data.JSString.Internal.Type.NTCo:JSString[0]) of ds11 { GHCJS.Prim.JSVal ds12 ->
+                 case Main.main90
+                        `cast`
+                      (Data.JSString.Internal.Type.NTCo:JSString[0]) of ds13 { GHCJS.Prim.JSVal ds14 ->
+                 case {__pkg_ccall_GC ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA $3[$1] = $2 GHC.Prim.ByteArray#
+                                                                                                  -> GHC.Prim.ByteArray#
+                                                                                                  -> GHC.Prim.ByteArray#
+                                                                                                  -> GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld
+                                                                                                  -> (# GHC.Prim.State#
+                                                                                                          GHC.Prim.RealWorld #)}
+                        ds12
+                        ds14
+                        ds7
+                        ds6 of wild1 { (##) ds9 ->
+                 (# ds9, GHC.Tuple.() #) } } } } }) -}
+053dbf15752b0bbf880aecc58090beb8
+  $wa4 ::
+    GHC.Classes.Eq a =>
+    GHC.Prim.Int#
+    -> [a]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [a] #)
+  {- Arity: 4, Strictness: <L,U(C(C1(U)),A)><S,1*U><L,U><L,U>,
+     Inline: [0] -}
+0c8113ed7c058bcfb485d94d10e8cf93
+  $wunsafeDrop :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+e23db0911bff25ef882e9667aef5b836
+  $wupdateModel ::
+    Main.Action
+    -> Main.Model -> (# Main.Model, [Miso.Effect.Sub Main.Action] #)
+  {- Arity: 2,
+     Strictness: <S,1*U><L,U(U,U(U),U(U),U(U),U,U,U,U,U(U),U(U),U(U))>,
+     Inline: [0] -}
+e881b2ec994c58e02c279b1076ffe724
+  $wupdateTeams ::
+    [(GHC.Base.String, GHC.Types.Int)]
+    -> GHC.Prim.Int# -> [(GHC.Base.String, GHC.Types.Int)]
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: [0],
+     Unfolding: (\ ww :: [(GHC.Base.String, GHC.Types.Int)]
+                   ww1 :: GHC.Prim.Int# ->
+                 let {
+                   currentT :: (GHC.Base.String, GHC.Types.Int)
+                   = GHC.List.$w!! @ (GHC.Base.String, GHC.Types.Int) ww ww1
+                 } in
+                 let {
+                   a23 :: GHC.Base.String = case currentT of wild { (,) x ds1 -> x }
+                 } in
+                 let {
+                   a24 :: GHC.Types.Int
+                   = case currentT of wild { (,) ds1 y ->
+                     case y of wild1 { GHC.Types.I# x ->
+                     GHC.Types.I# (GHC.Prim.+# x 1) } }
+                 } in
+                 let {
+                   a25 :: (GHC.Base.String, GHC.Types.Int) {- Strictness: m -}
+                   = (a23, a24)
+                 } in
+                 let {
+                   a26 :: [(GHC.Base.String, GHC.Types.Int)]
+                   = let {
+                       x :: GHC.Prim.Int# = GHC.Prim.+# ww1 1
+                     } in
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<=# x 0) of wild1 {
+                       GHC.Types.False
+                       -> Main.$wunsafeDrop @ (GHC.Base.String, GHC.Types.Int) x ww
+                       GHC.Types.True -> ww }
+                 } in
+                 let {
+                   n :: [(GHC.Base.String, GHC.Types.Int)]
+                   = GHC.Types.: @ (GHC.Base.String, GHC.Types.Int) a25 a26
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# 0 ww1) of wild {
+                   GHC.Types.False -> n
+                   GHC.Types.True
+                   -> letrec {
+                        $wgo :: [(GHC.Base.String, GHC.Types.Int)]
+                                -> GHC.Prim.Int# -> [(GHC.Base.String, GHC.Types.Int)]
+                          {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
+                        = \ w :: [(GHC.Base.String, GHC.Types.Int)] ww2 :: GHC.Prim.Int# ->
+                          case w of wild1 {
+                            [] -> n
+                            : y ys
+                            -> case ww2 of ds1 {
+                                 DEFAULT
+                                 -> GHC.Types.:
+                                      @ (GHC.Base.String, GHC.Types.Int)
+                                      y
+                                      ($wgo ys (GHC.Prim.-# ds1 1))
+                                 1 -> GHC.Types.: @ (GHC.Base.String, GHC.Types.Int) y n } }
+                      } in
+                      $wgo ww ww1 }) -}
+be16698d1ac70af96e405311b1289c86
+  data Action
+    = NextWord
+    | ToTeamInput
+    | ToSynInput
+    | ToRoundPrep
+    | ToGameplay
+    | ToGameOver
+    | ToMainMenu
+    | UpdateTeamField Miso.String.MisoString
+    | UpdateSynField Miso.String.MisoString
+    | UpdateNumberField Miso.String.MisoString
+    | AddTeam
+    | AddSyn
+    | GenerateSyntagmas
+    | ShuffleTeams [(GHC.Base.String, GHC.Types.Int)]
+    | ShuffleSyns [GHC.Base.String]
+    | StartCounter
+    | Tick
+    | NoOp
+    | SayHelloWorld
+084ec5fa94b0a39301cda3eeb5cf177c
+  data Model
+    = Model {state :: Main.States,
+             seed :: GHC.Types.Int,
+             inputField :: Miso.String.MisoString,
+             numberField :: Miso.String.MisoString,
+             invalidSyntagma :: GHC.Types.Bool,
+             syntagmas :: [GHC.Base.String],
+             guessed :: [GHC.Base.String],
+             teams :: [(GHC.Base.String, GHC.Types.Int)],
+             currentTeam :: GHC.Types.Int,
+             time :: GHC.Types.Int,
+             runda :: GHC.Types.Int}
+2513961f2d9daf1a69fbfda8f64d17f2
+  data States
+    = MainMenu
+    | TeamInput
+    | SynInput
+    | RoundPrep
+    | Gameplay
+    | TimeOut
+    | GameOver
+    Promotable
+196947fe8e2f624cc3bf48919cb187fe
+  addAttributes ::
+    [GHC.Base.String] -> GHC.Types.IO [GHC.Base.String]
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.addAttributes1
+                  `cast`
+                (<[GHC.Base.String]>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <[[GHC.Types.Char]]>_R)) -}
+541c09bee7cf314fc2c4d613f4156233
+  addAttributes1 ::
+    [GHC.Base.String]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [[GHC.Types.Char]] #)
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ nouns :: [GHC.Base.String]
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Main.addAttributes2 nouns eta) -}
+bb91d8358b29a34a41b8f9b40cdd7ead
+  addAttributes2 ::
+    [[GHC.Types.Char]]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [[GHC.Types.Char]] #)
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+cf2d1fff0786a9967b6ea5c4019bc11f
+  currentTeam :: Main.Model -> GHC.Types.Int
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLSLL),1*U(A,A,A,A,A,A,A,A,1*U(U),A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds9 }) -}
+01498ca749b1089a0fa306482cab10a8
+  displayRoundDescription ::
+    GHC.Types.Int -> Miso.Html.Internal.View Main.Action
+  {- Arity: 3, Strictness: <S(S),1*U(1*U)><L,A><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.displayRoundDescription1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Trans
+                          (<Miso.Effect.Sink Main.Action>_R
+                           ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                          (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))) -}
+73cae10fb02accb3dd2e7363f67bc685
+  displayRoundDescription1 ::
+    GHC.Types.Int
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 3, Strictness: <S(S),1*U(1*U)><L,A><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int
+                   w1 :: Miso.Effect.Sink Main.Action
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w of ww { GHC.Types.I# ww1 -> Main.$wa ww1 w2 }) -}
+808600e2c31dda71e9e78070759c0f24
+  displayRoundDescription2 :: Miso.String.MisoString
+  {- Unfolding: (Data.JSString.unpackCString#
+                   "JEDNA RIJE\\196\\140"#) -}
+6e883ef5efa48a7513034e206caebdad
+  displayRoundDescription3 :: Miso.String.MisoString
+  {- Unfolding: (Data.JSString.unpackCString# "PANTOMIMA"#) -}
+f0972e463fce61a8734bb4c53bceacb2
+  displayRoundDescription4 :: Miso.String.MisoString
+  {- Unfolding: (Data.JSString.unpackCString# "ALIAS"#) -}
+72758c920026d550b09cc1486d416d46
+  displayRoundDescription5 :: Miso.String.MisoString
+  {- Unfolding: (Data.JSString.unpackCString#
+                   "Jo\\197\\161 nismo smislili \\197\\161to \\196\\135emo za vi\\197\\161e runde"#) -}
+1bebc3d3ce98a42159ffda295efe71b1
+  getAttributes :: GHC.Base.String -> [GHC.Base.String]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ x :: GHC.Base.String ->
+                 case GHC.Base.eqString
+                        (GHC.List.$w!! @ GHC.Base.String (Data.OldList.words x) 1)
+                        Main.getAttributes8 of wild {
+                   GHC.Types.False
+                   -> case GHC.Base.eqString
+                             (GHC.List.$w!! @ GHC.Base.String (Data.OldList.words x) 1)
+                             Main.getAttributes7 of wild1 {
+                        GHC.Types.False
+                        -> case GHC.Base.eqString
+                                  (GHC.List.$w!! @ GHC.Base.String (Data.OldList.words x) 1)
+                                  Main.getAttributes6 of wild2 {
+                             GHC.Types.False
+                             -> case GHC.Base.eqString
+                                       (GHC.List.$w!! @ GHC.Base.String (Data.OldList.words x) 1)
+                                       Main.getAttributes5 of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.Base.eqString
+                                            (GHC.List.$w!!
+                                               @ GHC.Base.String
+                                               (Data.OldList.words x)
+                                               1)
+                                            Main.getAttributes4 of wild4 {
+                                       GHC.Types.False -> FpnAttributes.fpnAttributes
+                                       GHC.Types.True -> FsnAttributes.fsnAttributes }
+                                  GHC.Types.True -> NsnAttributes.nsnAttributes }
+                             GHC.Types.True -> Main.getAttributes3 }
+                        GHC.Types.True -> Main.getAttributes2 }
+                   GHC.Types.True -> Main.getAttributes1 }) -}
+65ef6f24c80a3a2e5ac23fe29d77e346
+  getAttributes1 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.++
+                   @ [GHC.Types.Char]
+                   NpnAttributes.npnAttributes
+                   FsnAttributes.fsnAttributes) -}
+bb5525a067a9d4af3734f46ca6afb295
+  getAttributes2 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.++
+                   @ [GHC.Types.Char]
+                   MsmpAttributes.msmpAttributes
+                   MsnAttributes.msnAttributes) -}
+43cab76b9bc929e6d4474eb0803e41a1
+  getAttributes3 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.++
+                   @ [GHC.Types.Char]
+                   MpnAttributes.mpnAttributes
+                   MsmpAttributes.msmpAttributes) -}
+7ee99f13bbac30f6846ffa5aa78b55ef
+  getAttributes4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fs"#) -}
+7f23d36b09637304a6e9734024130385
+  getAttributes5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ns"#) -}
+5ba60629de0487e710b5a9dfa07079b3
+  getAttributes6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "mp"#) -}
+c1e1e9bcdea3096b5c37af1d8c5af348
+  getAttributes7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ms"#) -}
+d27e8d15db33c8effc3d7e8623f75897
+  getAttributes8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "np"#) -}
+059659a0859d64cb89575fcb5d855c48
+  guessed :: Main.Model -> [GHC.Base.String]
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSLLLL),1*U(A,A,A,A,A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds7 }) -}
+63dcb6b70740a4326dc21722c5f85501
+  initialModel :: Main.Model
+  {- Unfolding: (Main.Model
+                   Main.MainMenu
+                   Main.initialModel15
+                   Data.JSString.Internal.Type.js_empty
+                   Main.initialModel14
+                   GHC.Types.False
+                   Main.initialModel10
+                   (GHC.Types.[] @ GHC.Base.String)
+                   Main.initialModel2
+                   Main.$fShowAction2
+                   Main.initialModel1
+                   Main.initialModel15) -}
+b6c58af52e82818a1a18ebeb389dc886
+  initialModel1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# (-1)) -}
+23d35ea03ced84ae452836b5410c9fbe
+  initialModel10 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.initialModel13
+                   Main.initialModel11) -}
+be83de2cae2ed07d67788c8cda64b7da
+  initialModel11 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.initialModel12
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+dc8bcda98c1e77b267d0da9642e2fae2
+  initialModel12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCStringUtf8#
+                   "do\\196\\141ekani \\196\\141arobnjaci"#) -}
+38546ff3e091abb2ed2113a31f365d92
+  initialModel13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "manjinske supstance"#) -}
+b13a6f2024f3c46f8f7c7893eb09bd66
+  initialModel14 :: Data.JSString.Internal.Type.JSString
+  {- Unfolding: (Data.JSString.unpackCString# "1"#) -}
+d34cd31c7cab922b9d3e87077bc90e24
+  initialModel15 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1) -}
+52787367e1848b867ecafc5a72ee6143
+  initialModel2 :: [(GHC.Base.String, GHC.Types.Int)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, GHC.Types.Int)
+                   Main.initialModel7
+                   Main.initialModel3) -}
+03efbbef782bfcd30535849e9d97cbb4
+  initialModel3 :: [(GHC.Base.String, GHC.Types.Int)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, GHC.Types.Int)
+                   Main.initialModel4
+                   (GHC.Types.[] @ (GHC.Base.String, GHC.Types.Int))) -}
+51037933ff6455f251f05df256de3f18
+  initialModel4 :: ([GHC.Types.Char], GHC.Types.Int)
+  {- Strictness: m,
+     Unfolding: ((Main.initialModel6, Main.initialModel5)) -}
+163c440f781059123fd205768dbce147
+  initialModel5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3) -}
+176acba1161975ccf33d14ccc3adc7a1
+  initialModel6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ningen"#) -}
+7677a5c287fb2e220aa6a5c7fa77993f
+  initialModel7 :: ([GHC.Types.Char], GHC.Types.Int)
+  {- Strictness: m,
+     Unfolding: ((Main.initialModel9, Main.initialModel8)) -}
+6accd22ec089f60f4dfc3a931eaee329
+  initialModel8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2) -}
+39b43e16a12c00c005ef80954af4e29d
+  initialModel9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "anata va"#) -}
+ddf9c21f4fb4c6875744e3ce56c424dc
+  inputField :: Main.Model -> Miso.String.MisoString
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLLLLL),1*U(A,A,1*U(U),A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds3 }) -}
+0954aa33444ce48038009df81a04a239
+  invalidSyntagma :: Main.Model -> GHC.Types.Bool
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLLLLL),1*U(A,A,A,A,1*U,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds5 }) -}
+0055c5dcd10d9729acfadfe3d57f3e8d
+  isValid :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ syn :: GHC.Base.String ->
+                 let {
+                   s :: [GHC.Base.String] = Data.OldList.words syn
+                 } in
+                 case GHC.List.$wlenAcc @ [GHC.Types.Char] s 0 of ww2 {
+                   DEFAULT -> GHC.Types.False
+                   2
+                   -> (Main.isValid_go1
+                         (GHC.Base.map
+                            @ [GHC.Types.Char]
+                            @ GHC.Types.Bool
+                            Main.isValid1
+                              `cast`
+                            (<[GHC.Types.Char]>_R ->_R Data.Monoid.NTCo:All[0])
+                            s))
+                        `cast`
+                      (Data.Monoid.NTCo:All[0]) }) -}
+57b3c1d27e65f800ff99843ae09ad7fe
+  isValid1 :: [GHC.Types.Char] -> Data.Monoid.All
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ eta :: [GHC.Types.Char] -> Main.isValid_go eta) -}
+97102c5ac062f3f8de39c16d5c0c63df
+  isValid_go :: [GHC.Types.Char] -> Data.Monoid.All
+  {- Arity: 1, Strictness: <S,1*U> -}
+89156efc3ef9952daa46051e161c1124
+  isValid_go1 :: [GHC.Types.Bool] -> Data.Monoid.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+6a713d0324312efe0e2f2147a2f73742
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+efe66bcf4ed9a9b3fb0b5fb6efc8ab66
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.Random.theStdGen
+                        `cast`
+                      (GHC.IORef.NTCo:IORef[0] <System.Random.StdGen>_N) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ System.Random.StdGen
+                        var#
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 Main.main2 ipv1 ipv } }) -}
+49bb4bbb3abb6ba90b2ff8b448e5d744
+  main10 :: [Miso.Html.Internal.View Main.Action]
+  {- Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main11
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+9a885bc328e6e5b8716e3b6e2c349754
+  main11 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2,
+     Unfolding: (Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.button_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   Main.main15
+                   Main.main12) -}
+dc657e9142d00adb73a34295fa529aab
+  main12 :: [Miso.Html.Internal.View Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main13
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+994c374a8659e4d01b9550e3a9298e38
+  main13 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,A><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ w1 :: Miso.Effect.Sink Main.Action
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.$wa @ Main.Action Main.main14 w2) -}
+cafe0729ab5735be1b44672ef3e060be
+  main14 :: Data.JSString.Internal.Type.JSString
+  {- Unfolding: (Data.JSString.unpackCString# "PO\\196\\140ETAK"#) -}
+4dcaf8f080962cc984ae1222fb2ce2bc
+  main15 :: [Miso.Html.Internal.Attribute Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.Attribute Main.Action)
+                   Main.main16
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))) -}
+5be323ea1f0ccd4a9cdb28d18179bce7
+  main16 :: Miso.Html.Internal.Attribute Main.Action
+  {- Unfolding: (Miso.Html.Internal.$wonWithOptions
+                   @ ()
+                   @ Main.Action
+                   Miso.Event.Types.defaultOptions
+                   Miso.Html.Event.onClick1
+                   Miso.Event.Decoder.emptyDecoder1
+                   Miso.Event.Decoder.emptyDecoder_decodeAt
+                   Main.main17) -}
+27576da15eef603702fc6907a7303701
+  main17 :: () -> Main.Action
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ ds :: () ->
+                 case ds of wild { () -> Main.ToMainMenu }) -}
+1a5c5e2675b5453b9ee0c5caa8dee246
+  main18 ::
+    (GHC.Base.String, GHC.Types.Int)
+    -> (GHC.Base.String, GHC.Types.Int) -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LS),1*U(A,1*U(U))><S(LS),1*U(A,1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ x :: (GHC.Base.String, GHC.Types.Int)
+                   y :: (GHC.Base.String, GHC.Types.Int) ->
+                 case y of wild { (,) ds1 y1 ->
+                 case y1 of wild1 { GHC.Types.I# x# ->
+                 case x of wild2 { (,) ds2 y2 ->
+                 case y2 of wild3 { GHC.Types.I# y# ->
+                 GHC.Classes.compareInt# x# y# } } } }) -}
+81f64d2b10e7e9bb00bae3f0df0a3fda
+  main19 ::
+    (GHC.Base.String, GHC.Types.Int)
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 1, Strictness: <L,1*U(1*U,1*U(U))>,
+     Unfolding: (\ t :: (GHC.Base.String, GHC.Types.Int) ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.liKeyed_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   (GHC.Types.:
+                      @ (Miso.Html.Internal.View Main.Action)
+                      (let {
+                         w :: Miso.String.MisoString
+                         = case t of wild { (,) x ds1 ->
+                           let {
+                             x1 :: GHC.Base.String
+                             = GHC.Base.++
+                                 @ GHC.Types.Char
+                                 x
+                                 (GHC.CString.unpackAppendCString#
+                                    ": "#
+                                    (case ds1 of ww2 { GHC.Types.I# ww3 ->
+                                     case GHC.Show.$wshowSignedInt
+                                            0
+                                            ww3
+                                            (GHC.Types.[]
+                                               @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                                     GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))
+                           } in
+                           case Control.DeepSeq.$fNFDataArray_$crnf1
+                                  @ GHC.Types.Char
+                                  Control.DeepSeq.$fNFDataChar_$crnf
+                                    `cast`
+                                  (Sym (Control.DeepSeq.NTCo:NFData[0] <GHC.Types.Char>_N))
+                                  x1 of wild1 { () ->
+                           case x1
+                                  `cast`
+                                (UnivCo mkUnsafeCo representational GHC.Base.String GHC.Prim.Any) of wild2 { DEFAULT ->
+                           case {__pkg_ccall ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA h$jsstringPack($1) GHC.Prim.Any
+                                                                                                                -> GHC.Prim.State#
+                                                                                                                     GHC.Prim.RealWorld
+                                                                                                                -> (# GHC.Prim.State#
+                                                                                                                        GHC.Prim.RealWorld,
+                                                                                                                      GHC.Prim.ByteArray# #)}
+                                  wild2
+                                  GHC.Prim.realWorld# of wild3 { (#,#) ds ds2 ->
+                           (GHCJS.Prim.JSVal ds2)
+                             `cast`
+                           (Sym (Data.JSString.Internal.Type.NTCo:JSString[0])) } } } }
+                       } in
+                       (\ w1 :: Miso.Effect.Sink Main.Action
+                          w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                        Miso.Html.Internal.$wa @ Main.Action w w2)
+                         `cast`
+                       (Trans
+                            (<Miso.Effect.Sink Main.Action>_R
+                             ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                            (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))))
+                      (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action)))) -}
+5f66c2f49ad60ea0ad1fa42de303d2d5
+  main2 ::
+    System.Random.StdGen
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ gen :: System.Random.StdGen
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.$wa
+                   @ Main.Model
+                   @ Main.Action
+                   @ ()
+                   Main.$fEqModel
+                   Main.updateModel
+                   Main.viewModel
+                   (GHC.Types.[] @ (Miso.Effect.Sub Main.Action))
+                   Miso.Event.Types.defaultEvents
+                   Main.StartCounter
+                   (GHC.Base.Nothing @ Miso.String.MisoString)
+                   (Main.Model
+                      Main.MainMenu
+                      (case System.Random.$wrandomIvalInteger
+                              @ System.Random.StdGen
+                              @ GHC.Types.Int
+                              System.Random.$fRandomGenStdGen
+                              GHC.Num.$fNumInt
+                              System.Random.$fRandomCFloat6
+                              System.Random.$fRandomCFloat5
+                              gen of ww { (#,#) ww1 ww2 ->
+                       ww1 })
+                      Data.JSString.Internal.Type.js_empty
+                      Main.initialModel14
+                      GHC.Types.False
+                      Main.initialModel10
+                      (GHC.Types.[] @ GHC.Base.String)
+                      Main.initialModel2
+                      Main.$fShowAction2
+                      Main.initialModel1
+                      Main.initialModel15)
+                   Main.main3
+                     `cast`
+                   (<Miso.Effect.Sink Main.Action>_R
+                    ->_R Sym (GHC.Types.NTCo:IO[0]
+                                  <GHC.IORef.IORef Miso.Html.Internal.VTree>_R))
+                   eta) -}
+4b9caf57b9848e088963b4cdc1fa2164
+  main20 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ eta :: Miso.Effect.Sink Main.Action
+                   eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.br_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))
+                   eta
+                   eta1) -}
+024ef2f654313cb09e132d30c07ff459
+  main21 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,A><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ w1 :: Miso.Effect.Sink Main.Action
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.$wa @ Main.Action Main.main22 w2) -}
+77d03b4ec615b06f6c58113252c7cec5
+  main22 :: Miso.String.MisoString
+  {- Unfolding: (Data.JSString.unpackCString# "Igra je gotova!"#) -}
+168ffcba7368de8c4f3d0425f17e535c
+  main23 ::
+    [(GHC.Base.String, GHC.Types.Int)]
+    -> GHC.Types.Int
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,U><L,1*U(U)>,
+     Unfolding: (\ ww :: [(GHC.Base.String, GHC.Types.Int)]
+                   ww1 :: GHC.Types.Int ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.div_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   (GHC.Types.:
+                      @ (Miso.Html.Internal.View Main.Action)
+                      Main.main35
+                        `cast`
+                      (Trans
+                           (<Miso.Effect.Sink Main.Action>_R
+                            ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                           (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                      (GHC.Types.:
+                         @ (Miso.Html.Internal.View Main.Action)
+                         Main.main20
+                           `cast`
+                         (Trans
+                              (<Miso.Effect.Sink Main.Action>_R
+                               ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                              (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                         (GHC.Types.:
+                            @ (Miso.Html.Internal.View Main.Action)
+                            Main.main20
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                            (GHC.Types.:
+                               @ (Miso.Html.Internal.View Main.Action)
+                               (Miso.Html.Internal.node1
+                                  @ Main.Action
+                                  Miso.Html.Internal.HTML
+                                  Miso.Html.Element.ul_2
+                                  (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                                  (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                                  (GHC.Base.map
+                                     @ (GHC.Base.String, GHC.Types.Int)
+                                     @ (Miso.Html.Internal.View Main.Action)
+                                     Main.main34
+                                       `cast`
+                                     (<(GHC.Base.String, GHC.Types.Int)>_R
+                                      ->_R Trans
+                                               (<Miso.Effect.Sink Main.Action>_R
+                                                ->_R Sym (GHC.Types.NTCo:IO[0]
+                                                              <Miso.Html.Internal.VTree>_R))
+                                               (Sym (Miso.Html.Internal.NTCo:View[0]
+                                                         <Main.Action>_R)))
+                                     (GHC.List.$wunsafeTake
+                                        @ (GHC.Base.String, GHC.Types.Int)
+                                        5
+                                        (Data.OldList.sortBy
+                                           @ (GHC.Base.String, GHC.Types.Int)
+                                           Main.main18
+                                           ww))))
+                                 `cast`
+                               (Trans
+                                    (<Miso.Effect.Sink Main.Action>_R
+                                     ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                    (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                               (GHC.Types.:
+                                  @ (Miso.Html.Internal.View Main.Action)
+                                  (let {
+                                     w :: Miso.String.MisoString
+                                     = let {
+                                         x :: GHC.Base.String
+                                         = GHC.CString.unpackAppendCString#
+                                             "Tim "#
+                                             (case ww1 of ww2 { GHC.Types.I# ww3 ->
+                                              case GHC.List.$w!!
+                                                     @ ([GHC.Types.Char], GHC.Types.Int)
+                                                     ww
+                                                     ww3 of wild { (,) x1 ds1 ->
+                                              GHC.Base.++ @ GHC.Types.Char x1 Main.main33 } })
+                                       } in
+                                       case Control.DeepSeq.$fNFDataArray_$crnf1
+                                              @ GHC.Types.Char
+                                              Control.DeepSeq.$fNFDataChar_$crnf
+                                                `cast`
+                                              (Sym (Control.DeepSeq.NTCo:NFData[0]
+                                                        <GHC.Types.Char>_N))
+                                              x of wild { () ->
+                                       case x `cast`
+                                            (UnivCo mkUnsafeCo representational GHC.Base.String GHC.Prim.Any) of wild1 { DEFAULT ->
+                                       case {__pkg_ccall ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA h$jsstringPack($1) GHC.Prim.Any
+                                                                                                                            -> GHC.Prim.State#
+                                                                                                                                 GHC.Prim.RealWorld
+                                                                                                                            -> (# GHC.Prim.State#
+                                                                                                                                    GHC.Prim.RealWorld,
+                                                                                                                                  GHC.Prim.ByteArray# #)}
+                                              wild1
+                                              GHC.Prim.realWorld# of wild2 { (#,#) ds ds1 ->
+                                       (GHCJS.Prim.JSVal ds1)
+                                         `cast`
+                                       (Sym (Data.JSString.Internal.Type.NTCo:JSString[0])) } } }
+                                   } in
+                                   (\ w1 :: Miso.Effect.Sink Main.Action
+                                      w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                                    Miso.Html.Internal.$wa @ Main.Action w w2)
+                                     `cast`
+                                   (Trans
+                                        (<Miso.Effect.Sink Main.Action>_R
+                                         ->_R Sym (GHC.Types.NTCo:IO[0]
+                                                       <Miso.Html.Internal.VTree>_R))
+                                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))))
+                                  Main.main24)))))) -}
+66d1f2972b9cde35d9d4d0be0bd6f05d
+  main24 :: [Miso.Html.Internal.View Main.Action]
+  {- Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main20
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   Main.main25) -}
+385a3045ac03c25a622e807b3f3dcce5
+  main25 :: [Miso.Html.Internal.View Main.Action]
+  {- Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main26
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+5c139d057b3566a776754fe8890a21b6
+  main26 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2,
+     Unfolding: (Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.button_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   Main.main30
+                   Main.main27) -}
+7ae9e784e11712b586a4afe7565d2760
+  main27 :: [Miso.Html.Internal.View Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main28
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+60cc9abd08cce38e456092f4175b8fe8
+  main28 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,A><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ w1 :: Miso.Effect.Sink Main.Action
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.$wa @ Main.Action Main.main29 w2) -}
+f3dd26ce40aed2ee5800e0a3657d37ff
+  main29 :: Data.JSString.Internal.Type.JSString
+  {- Unfolding: (Data.JSString.unpackCString# "SPREMNI!"#) -}
+8567ddc68bb1bc5c600706e33eccfa5b
+  main3 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.IORef.IORef Miso.Html.Internal.VTree #)
+  {- Arity: 2,
+     Unfolding: (\ writeEvent :: Miso.Effect.Sink Main.Action[OneShot]
+                   s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case Main.main4 writeEvent s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z $r = document.body; GHC.Prim.State#
+                                                                                              GHC.Prim.RealWorld
+                                                                                            -> (# GHC.Prim.State#
+                                                                                                    GHC.Prim.RealWorld,
+                                                                                                  GHC.Prim.ByteArray# #)}
+                        ipv of wild1 { (#,#) ds ds2 ->
+                 case {__pkg_ccall miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z $r = document; GHC.Prim.State#
+                                                                                         GHC.Prim.RealWorld
+                                                                                       -> (# GHC.Prim.State#
+                                                                                               GHC.Prim.RealWorld,
+                                                                                             GHC.Prim.ByteArray# #)}
+                        ds of wild { (#,#) ds3 ds4 ->
+                 case {__pkg_ccall ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA $r = null; GHC.Prim.Int#
+                                                                                              -> GHC.Prim.State#
+                                                                                                   GHC.Prim.RealWorld
+                                                                                              -> (# GHC.Prim.State#
+                                                                                                      GHC.Prim.RealWorld,
+                                                                                                    GHC.Prim.ByteArray# #)}
+                        0
+                        GHC.Prim.realWorld# of wild3 { (#,#) ds5 ds6 ->
+                 case ipv1
+                        `cast`
+                      (Trans
+                           (Miso.Html.Internal.NTCo:VTree[0])
+                           (JavaScript.Object.Internal.NTCo:Object[0])) of ds7 { GHCJS.Prim.JSVal ds8 ->
+                 case {__pkg_ccall miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z diff($1, $2, $3, $4); GHC.Prim.ByteArray#
+                                                                                              -> GHC.Prim.ByteArray#
+                                                                                              -> GHC.Prim.ByteArray#
+                                                                                              -> GHC.Prim.ByteArray#
+                                                                                              -> GHC.Prim.State#
+                                                                                                   GHC.Prim.RealWorld
+                                                                                              -> (# GHC.Prim.State#
+                                                                                                      GHC.Prim.RealWorld #)}
+                        ds6
+                        ds8
+                        ds2
+                        ds4
+                        ds3 of wild4 { (##) ds9 ->
+                 case GHC.Prim.newMutVar#
+                        @ Miso.Html.Internal.VTree
+                        @ GHC.Prim.RealWorld
+                        ds7
+                          `cast`
+                        (Trans
+                             (Sym (JavaScript.Object.Internal.NTCo:Object[0]))
+                             (Sym (Miso.Html.Internal.NTCo:VTree[0])))
+                        ds9 of ds10 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    (GHC.STRef.STRef
+                       @ GHC.Prim.RealWorld
+                       @ Miso.Html.Internal.VTree
+                       ipv3)
+                      `cast`
+                    (Sym (GHC.IORef.NTCo:IORef[0]) <Miso.Html.Internal.VTree>_N) #) } } } } } } }) -}
+9efc00ced8dbffd1c1bfc852d18cb236
+  main30 :: [Miso.Html.Internal.Attribute Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.Attribute Main.Action)
+                   Main.main31
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))) -}
+93ea0afeca2f1a3aaafe830a6b61bc4a
+  main31 :: Miso.Html.Internal.Attribute Main.Action
+  {- Unfolding: (Miso.Html.Internal.$wonWithOptions
+                   @ ()
+                   @ Main.Action
+                   Miso.Event.Types.defaultOptions
+                   Miso.Html.Event.onClick1
+                   Miso.Event.Decoder.emptyDecoder1
+                   Miso.Event.Decoder.emptyDecoder_decodeAt
+                   Main.main32) -}
+7034c7a1b36ae7f9ba9a33563b20245d
+  main32 :: () -> Main.Action
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ ds :: () ->
+                 case ds of wild { () -> Main.ToGameplay }) -}
+f3de8841675218b88079ac3a5bf70226
+  main33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ", jeste spremni? Imate 60 sekundi"#) -}
+ebea5ad25a44211dadbe6d8fc079c6b3
+  main34 ::
+    (GHC.Base.String, GHC.Types.Int)
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 1, Strictness: <L,1*U(1*U,1*U(U))>,
+     Unfolding: (\ t :: (GHC.Base.String, GHC.Types.Int) ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.liKeyed_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   (GHC.Types.:
+                      @ (Miso.Html.Internal.View Main.Action)
+                      (let {
+                         w :: Miso.String.MisoString
+                         = case t of wild { (,) x ds1 ->
+                           let {
+                             x1 :: GHC.Base.String
+                             = GHC.Base.++
+                                 @ GHC.Types.Char
+                                 x
+                                 (GHC.CString.unpackAppendCString#
+                                    ": "#
+                                    (case ds1 of ww2 { GHC.Types.I# ww3 ->
+                                     case GHC.Show.$wshowSignedInt
+                                            0
+                                            ww3
+                                            (GHC.Types.[]
+                                               @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                                     GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))
+                           } in
+                           case Control.DeepSeq.$fNFDataArray_$crnf1
+                                  @ GHC.Types.Char
+                                  Control.DeepSeq.$fNFDataChar_$crnf
+                                    `cast`
+                                  (Sym (Control.DeepSeq.NTCo:NFData[0] <GHC.Types.Char>_N))
+                                  x1 of wild1 { () ->
+                           case x1
+                                  `cast`
+                                (UnivCo mkUnsafeCo representational GHC.Base.String GHC.Prim.Any) of wild2 { DEFAULT ->
+                           case {__pkg_ccall ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA h$jsstringPack($1) GHC.Prim.Any
+                                                                                                                -> GHC.Prim.State#
+                                                                                                                     GHC.Prim.RealWorld
+                                                                                                                -> (# GHC.Prim.State#
+                                                                                                                        GHC.Prim.RealWorld,
+                                                                                                                      GHC.Prim.ByteArray# #)}
+                                  wild2
+                                  GHC.Prim.realWorld# of wild3 { (#,#) ds ds2 ->
+                           (GHCJS.Prim.JSVal ds2)
+                             `cast`
+                           (Sym (Data.JSString.Internal.Type.NTCo:JSString[0])) } } } }
+                       } in
+                       (\ w1 :: Miso.Effect.Sink Main.Action
+                          w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                        Miso.Html.Internal.$wa @ Main.Action w w2)
+                         `cast`
+                       (Trans
+                            (<Miso.Effect.Sink Main.Action>_R
+                             ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                            (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))))
+                      (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action)))) -}
+0018908f488abafe122ff4eab7e133b3
+  main35 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,A><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ w1 :: Miso.Effect.Sink Main.Action
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.$wa @ Main.Action Main.main36 w2) -}
+11970f3e239f2a4f9732f04143b58e4c
+  main36 :: Miso.String.MisoString
+  {- Unfolding: (Data.JSString.unpackCString#
+                   "Vrijeme je isteklo"#) -}
+361c3127f132827fafda16225601cb34
+  main37 ::
+    [GHC.Base.String]
+    -> GHC.Types.Int
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,1*U><L,1*U(U)>,
+     Unfolding: (\ ww :: [GHC.Base.String] ww1 :: GHC.Types.Int ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.div_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   (GHC.Types.:
+                      @ (Miso.Html.Internal.View Main.Action)
+                      (let {
+                         w :: Miso.String.MisoString
+                         = case ww of wild {
+                             [] -> case GHC.List.badHead ret_ty Miso.String.MisoString of {}
+                             : x ds1
+                             -> case Control.DeepSeq.$fNFDataArray_$crnf1
+                                       @ GHC.Types.Char
+                                       Control.DeepSeq.$fNFDataChar_$crnf
+                                         `cast`
+                                       (Sym (Control.DeepSeq.NTCo:NFData[0] <GHC.Types.Char>_N))
+                                       x of wild1 { () ->
+                                case x `cast`
+                                     (UnivCo mkUnsafeCo representational GHC.Base.String GHC.Prim.Any) of wild2 { DEFAULT ->
+                                case {__pkg_ccall ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA h$jsstringPack($1) GHC.Prim.Any
+                                                                                                                     -> GHC.Prim.State#
+                                                                                                                          GHC.Prim.RealWorld
+                                                                                                                     -> (# GHC.Prim.State#
+                                                                                                                             GHC.Prim.RealWorld,
+                                                                                                                           GHC.Prim.ByteArray# #)}
+                                       wild2
+                                       GHC.Prim.realWorld# of wild3 { (#,#) ds ds2 ->
+                                (GHCJS.Prim.JSVal ds2)
+                                  `cast`
+                                (Sym (Data.JSString.Internal.Type.NTCo:JSString[0])) } } } }
+                       } in
+                       (\ w1 :: Miso.Effect.Sink Main.Action
+                          w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                        Miso.Html.Internal.$wa @ Main.Action w w2)
+                         `cast`
+                       (Trans
+                            (<Miso.Effect.Sink Main.Action>_R
+                             ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                            (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))))
+                      (GHC.Types.:
+                         @ (Miso.Html.Internal.View Main.Action)
+                         Main.main20
+                           `cast`
+                         (Trans
+                              (<Miso.Effect.Sink Main.Action>_R
+                               ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                              (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                         (GHC.Types.:
+                            @ (Miso.Html.Internal.View Main.Action)
+                            Main.main20
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                            (GHC.Types.:
+                               @ (Miso.Html.Internal.View Main.Action)
+                               (let {
+                                  w :: Miso.String.MisoString
+                                  = case ww1 of ww2 { GHC.Types.I# ww3 ->
+                                    case GHC.Show.$wshowSignedInt
+                                           0
+                                           ww3
+                                           (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                                    case Control.DeepSeq.$fNFDataArray_$crnf1
+                                           @ GHC.Types.Char
+                                           Control.DeepSeq.$fNFDataChar_$crnf
+                                             `cast`
+                                           (Sym (Control.DeepSeq.NTCo:NFData[0] <GHC.Types.Char>_N))
+                                           (GHC.Types.: @ GHC.Types.Char ww5 ww6) of wild { () ->
+                                    case {__pkg_ccall ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA h$jsstringPack($1) GHC.Prim.Any
+                                                                                                                         -> GHC.Prim.State#
+                                                                                                                              GHC.Prim.RealWorld
+                                                                                                                         -> (# GHC.Prim.State#
+                                                                                                                                 GHC.Prim.RealWorld,
+                                                                                                                               GHC.Prim.ByteArray# #)}
+                                           (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                                             `cast`
+                                           (UnivCo mkUnsafeCo representational GHC.Base.String GHC.Prim.Any)
+                                           GHC.Prim.realWorld# of wild2 { (#,#) ds ds1 ->
+                                    (GHCJS.Prim.JSVal ds1)
+                                      `cast`
+                                    (Sym (Data.JSString.Internal.Type.NTCo:JSString[0])) } } } }
+                                } in
+                                (\ w1 :: Miso.Effect.Sink Main.Action
+                                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                                 Miso.Html.Internal.$wa @ Main.Action w w2)
+                                  `cast`
+                                (Trans
+                                     (<Miso.Effect.Sink Main.Action>_R
+                                      ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                     (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))))
+                               Main.main38))))) -}
+00eb91c95a947f3e563991fa2f08426d
+  main38 :: [Miso.Html.Internal.View Main.Action]
+  {- Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main20
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   Main.main39) -}
+125e75b10b60d08da084229bcb17fd67
+  main39 :: [Miso.Html.Internal.View Main.Action]
+  {- Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main20
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   Main.main40) -}
+91aeaebb461847c1cbedb59122d8fc66
+  main4 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Unfolding: (Main.main5
+                   Main.MainMenu
+                   Data.JSString.Internal.Type.js_empty
+                   Main.initialModel14
+                   GHC.Types.False
+                   Main.initialModel10
+                   Main.initialModel2
+                   Main.$fShowAction2
+                   Main.initialModel1
+                   Main.initialModel15) -}
+959b6d545a7bba288de06df0f1c99c74
+  main40 :: [Miso.Html.Internal.View Main.Action]
+  {- Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main41
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+f9108d63bcde98ace13f3414cf2e0c53
+  main41 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2,
+     Unfolding: (Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.button_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   Main.main45
+                   Main.main42) -}
+da78bd5569d9a36270f9be9eeea435c5
+  main42 :: [Miso.Html.Internal.View Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main43
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+294728b56966fa076838cb903ae69fbb
+  main43 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,A><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ w1 :: Miso.Effect.Sink Main.Action
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.$wa @ Main.Action Main.main44 w2) -}
+515a16e63eed9da46d846e9029d2529a
+  main44 :: Data.JSString.Internal.Type.JSString
+  {- Unfolding: (Data.JSString.unpackCString# "DALJE!"#) -}
+888a5679d3de7b857476deb665d9b473
+  main45 :: [Miso.Html.Internal.Attribute Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.Attribute Main.Action)
+                   Main.main46
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))) -}
+eb913c85e159d4578a734b3d22d48a26
+  main46 :: Miso.Html.Internal.Attribute Main.Action
+  {- Unfolding: (Miso.Html.Internal.$wonWithOptions
+                   @ ()
+                   @ Main.Action
+                   Miso.Event.Types.defaultOptions
+                   Miso.Html.Event.onClick1
+                   Miso.Event.Decoder.emptyDecoder1
+                   Miso.Event.Decoder.emptyDecoder_decodeAt
+                   Main.main47) -}
+d3add15f2d239240bdac8bf5e521def1
+  main47 :: () -> Main.Action
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ ds :: () ->
+                 case ds of wild { () -> Main.NextWord }) -}
+9f92ba7ae2950982cd307777ccb1a099
+  main48 ::
+    [(GHC.Base.String, GHC.Types.Int)]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 3, Strictness: <L,U><L,1*U(U)><L,U(U)> -}
+e8a1691dee79dc16688ef6bcfff70a7b
+  main49 ::
+    GHC.Types.Bool
+    -> [GHC.Base.String]
+    -> Miso.String.MisoString
+    -> Miso.String.MisoString
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 4, Strictness: <L,1*U><L,1*U><L,U><L,U> -}
+ef458b1110a67082560e42754d6db553
+  main5 ::
+    Main.States
+    -> Miso.String.MisoString
+    -> Miso.String.MisoString
+    -> GHC.Types.Bool
+    -> [GHC.Base.String]
+    -> [(GHC.Base.String, GHC.Types.Int)]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 9,
+     Strictness: <L,U><L,U><L,U><L,1*U><L,U><L,U><L,1*U(U)><L,1*U(U)><L,U(U)>,
+     Unfolding: (\ ww :: Main.States
+                   ww1 :: Miso.String.MisoString
+                   ww2 :: Miso.String.MisoString
+                   ww3 :: GHC.Types.Bool
+                   ww4 :: [GHC.Base.String]
+                   ww5 :: [(GHC.Base.String, GHC.Types.Int)]
+                   ww6 :: GHC.Types.Int
+                   ww7 :: GHC.Types.Int
+                   ww8 :: GHC.Types.Int ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.div_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   (GHC.Types.:
+                      @ (Miso.Html.Internal.View Main.Action)
+                      (case ww of wild {
+                         Main.MainMenu
+                         -> Main.main74
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                         Main.TeamInput
+                         -> (Main.main50 ww5 ww1)
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                         Main.SynInput
+                         -> (Main.main49 ww3 ww4 ww1 ww2)
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                         Main.RoundPrep
+                         -> (Main.main48 ww5 ww6 ww8)
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                         Main.Gameplay
+                         -> (Main.main37 ww4 ww7)
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                         Main.TimeOut
+                         -> (Main.main23 ww5 ww6)
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                         Main.GameOver
+                         -> (Main.main9 ww5)
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))) })
+                      (GHC.Types.:
+                         @ (Miso.Html.Internal.View Main.Action)
+                         Main.main7
+                           `cast`
+                         (Trans
+                              (<Miso.Effect.Sink Main.Action>_R
+                               ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                              (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                         (GHC.Types.:
+                            @ (Miso.Html.Internal.View Main.Action)
+                            (Miso.Html.Internal.node1
+                               @ Main.Action
+                               Miso.Html.Internal.HTML
+                               Miso.Html.Element.div_2
+                               (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                               (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                               (GHC.Types.:
+                                  @ (Miso.Html.Internal.View Main.Action)
+                                  (let {
+                                     w :: Miso.String.MisoString
+                                     = let {
+                                         x :: GHC.Base.String
+                                         = Main.$w$cshowsPrec1 ww (GHC.Types.[] @ GHC.Types.Char)
+                                       } in
+                                       case Control.DeepSeq.$fNFDataArray_$crnf1
+                                              @ GHC.Types.Char
+                                              Control.DeepSeq.$fNFDataChar_$crnf
+                                                `cast`
+                                              (Sym (Control.DeepSeq.NTCo:NFData[0]
+                                                        <GHC.Types.Char>_N))
+                                              x of wild { () ->
+                                       case x `cast`
+                                            (UnivCo mkUnsafeCo representational GHC.Base.String GHC.Prim.Any) of wild1 { DEFAULT ->
+                                       case {__pkg_ccall ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA h$jsstringPack($1) GHC.Prim.Any
+                                                                                                                            -> GHC.Prim.State#
+                                                                                                                                 GHC.Prim.RealWorld
+                                                                                                                            -> (# GHC.Prim.State#
+                                                                                                                                    GHC.Prim.RealWorld,
+                                                                                                                                  GHC.Prim.ByteArray# #)}
+                                              wild1
+                                              GHC.Prim.realWorld# of wild2 { (#,#) ds ds1 ->
+                                       (GHCJS.Prim.JSVal ds1)
+                                         `cast`
+                                       (Sym (Data.JSString.Internal.Type.NTCo:JSString[0])) } } }
+                                   } in
+                                   (\ w1 :: Miso.Effect.Sink Main.Action
+                                      w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                                    Miso.Html.Internal.$wa @ Main.Action w w2)
+                                     `cast`
+                                   (Trans
+                                        (<Miso.Effect.Sink Main.Action>_R
+                                         ->_R Sym (GHC.Types.NTCo:IO[0]
+                                                       <Miso.Html.Internal.VTree>_R))
+                                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))))
+                                  (GHC.Types.:
+                                     @ (Miso.Html.Internal.View Main.Action)
+                                     (Miso.Html.Internal.node1
+                                        @ Main.Action
+                                        Miso.Html.Internal.HTML
+                                        Miso.Html.Element.ul_2
+                                        (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                                        (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                                        (GHC.Base.map
+                                           @ [GHC.Types.Char]
+                                           @ (Miso.Html.Internal.View Main.Action)
+                                           Main.main6
+                                             `cast`
+                                           (<GHC.Base.String>_R
+                                            ->_R Trans
+                                                     (<Miso.Effect.Sink Main.Action>_R
+                                                      ->_R Sym (GHC.Types.NTCo:IO[0]
+                                                                    <Miso.Html.Internal.VTree>_R))
+                                                     (Sym (Miso.Html.Internal.NTCo:View[0]
+                                                               <Main.Action>_R)))
+                                           ww4))
+                                       `cast`
+                                     (Trans
+                                          (<Miso.Effect.Sink Main.Action>_R
+                                           ->_R Sym (GHC.Types.NTCo:IO[0]
+                                                         <Miso.Html.Internal.VTree>_R))
+                                          (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                                     (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action)))))
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                            (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action)))))) -}
+6a9db7969a25bb87ff70e5cc7755f793
+  main50 ::
+    [(GHC.Base.String, GHC.Types.Int)]
+    -> Miso.String.MisoString
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,1*U><L,U>,
+     Unfolding: (\ ww :: [(GHC.Base.String, GHC.Types.Int)]
+                   w :: Miso.String.MisoString ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.div_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   (GHC.Types.:
+                      @ (Miso.Html.Internal.View Main.Action)
+                      Main.main70
+                        `cast`
+                      (Trans
+                           (<Miso.Effect.Sink Main.Action>_R
+                            ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                           (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                      (GHC.Types.:
+                         @ (Miso.Html.Internal.View Main.Action)
+                         (let {
+                            a23 :: Miso.Html.Internal.Attribute Main.Action
+                            = Miso.Html.Internal.prop
+                                @ Miso.String.MisoString
+                                @ Main.Action
+                                GHCJS.Marshal.$fToJSValJSString
+                                Miso.Html.Property.value_1
+                                w
+                          } in
+                          let {
+                            a24 :: [Miso.Html.Internal.Attribute Main.Action]
+                            = GHC.Types.:
+                                @ (Miso.Html.Internal.Attribute Main.Action)
+                                a23
+                                Main.main63
+                          } in
+                          let {
+                            a25 :: [Miso.Html.Internal.Attribute Main.Action]
+                            = GHC.Types.:
+                                @ (Miso.Html.Internal.Attribute Main.Action)
+                                Main.main62
+                                a24
+                          } in
+                          let {
+                            y :: [Miso.Html.Internal.Attribute Main.Action]
+                            = GHC.Types.:
+                                @ (Miso.Html.Internal.Attribute Main.Action)
+                                Main.main60
+                                  `cast`
+                                (Trans
+                                     (<Miso.Effect.Sink Main.Action>_R
+                                      ->_R <JavaScript.Object.Internal.Object>_R
+                                      ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                                     (Sym (Miso.Html.Internal.NTCo:Attribute[0] <Main.Action>_R)))
+                                a25
+                          } in
+                          (\ eta :: Miso.Effect.Sink Main.Action
+                             eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                           Miso.Html.Internal.node1
+                             @ Main.Action
+                             Miso.Html.Internal.HTML
+                             Miso.Html.Element.input_2
+                             (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                             y
+                             (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))
+                             eta
+                             eta1)
+                            `cast`
+                          (Trans
+                               (<Miso.Effect.Sink Main.Action>_R
+                                ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                               (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))))
+                         (GHC.Types.:
+                            @ (Miso.Html.Internal.View Main.Action)
+                            (Miso.Html.Internal.node1
+                               @ Main.Action
+                               Miso.Html.Internal.HTML
+                               Miso.Html.Element.ul_2
+                               (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                               (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                               (GHC.Base.map
+                                  @ (GHC.Base.String, GHC.Types.Int)
+                                  @ (Miso.Html.Internal.View Main.Action)
+                                  Main.main59
+                                    `cast`
+                                  (<(GHC.Base.String, GHC.Types.Int)>_R
+                                   ->_R Trans
+                                            (<Miso.Effect.Sink Main.Action>_R
+                                             ->_R Sym (GHC.Types.NTCo:IO[0]
+                                                           <Miso.Html.Internal.VTree>_R))
+                                            (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                                  ww))
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                            Main.main51)))) -}
+53e2601d283f5072f813dc7e0cc8234c
+  main51 :: [Miso.Html.Internal.View Main.Action]
+  {- Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main52
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+e5ec23927fc95c133a775b734bc175a8
+  main52 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2,
+     Unfolding: (Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.button_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   Main.main56
+                   Main.main53) -}
+bdcc78837678f1f82e80191b3c4ff06f
+  main53 :: [Miso.Html.Internal.View Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main54
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+571e7e00d10cd30480b26c28a6db89d4
+  main54 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,A><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ w1 :: Miso.Effect.Sink Main.Action
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.$wa @ Main.Action Main.main55 w2) -}
+ab278bb20eb9ee572117e4da5f6a6e98
+  main55 :: Data.JSString.Internal.Type.JSString
+  {- Unfolding: (Data.JSString.unpackCString# "DALJE"#) -}
+ad257bf30dbbd45759ab4853b263143e
+  main56 :: [Miso.Html.Internal.Attribute Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.Attribute Main.Action)
+                   Main.main57
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))) -}
+61e80e9797377d065f958fdc815b14bc
+  main57 :: Miso.Html.Internal.Attribute Main.Action
+  {- Unfolding: (Miso.Html.Internal.$wonWithOptions
+                   @ ()
+                   @ Main.Action
+                   Miso.Event.Types.defaultOptions
+                   Miso.Html.Event.onClick1
+                   Miso.Event.Decoder.emptyDecoder1
+                   Miso.Event.Decoder.emptyDecoder_decodeAt
+                   Main.main58) -}
+b7870271c2a88973bb0621b6cf75e752
+  main58 :: () -> Main.Action
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ ds :: () ->
+                 case ds of wild { () -> Main.ToSynInput }) -}
+110b84aa53d717532ecc7deca18e409d
+  main59 ::
+    (GHC.Base.String, GHC.Types.Int)
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 1, Strictness: <L,1*U(U,A)>,
+     Unfolding: (\ t :: (GHC.Base.String, GHC.Types.Int) ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.liKeyed_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   (GHC.Types.:
+                      @ (Miso.Html.Internal.View Main.Action)
+                      (let {
+                         w :: Miso.String.MisoString
+                         = case t of wild { (,) x ds1 ->
+                           case Control.DeepSeq.$fNFDataArray_$crnf1
+                                  @ GHC.Types.Char
+                                  Control.DeepSeq.$fNFDataChar_$crnf
+                                    `cast`
+                                  (Sym (Control.DeepSeq.NTCo:NFData[0] <GHC.Types.Char>_N))
+                                  x of wild1 { () ->
+                           case x `cast`
+                                (UnivCo mkUnsafeCo representational GHC.Base.String GHC.Prim.Any) of wild2 { DEFAULT ->
+                           case {__pkg_ccall ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA h$jsstringPack($1) GHC.Prim.Any
+                                                                                                                -> GHC.Prim.State#
+                                                                                                                     GHC.Prim.RealWorld
+                                                                                                                -> (# GHC.Prim.State#
+                                                                                                                        GHC.Prim.RealWorld,
+                                                                                                                      GHC.Prim.ByteArray# #)}
+                                  wild2
+                                  GHC.Prim.realWorld# of wild3 { (#,#) ds ds2 ->
+                           (GHCJS.Prim.JSVal ds2)
+                             `cast`
+                           (Sym (Data.JSString.Internal.Type.NTCo:JSString[0])) } } } }
+                       } in
+                       (\ w1 :: Miso.Effect.Sink Main.Action
+                          w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                        Miso.Html.Internal.$wa @ Main.Action w w2)
+                         `cast`
+                       (Trans
+                            (<Miso.Effect.Sink Main.Action>_R
+                             ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                            (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))))
+                      (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action)))) -}
+f473a230679e6d2ee256b8fb3d894877
+  main6 ::
+    GHC.Base.String
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ t :: GHC.Base.String ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.liKeyed_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   (GHC.Types.:
+                      @ (Miso.Html.Internal.View Main.Action)
+                      (let {
+                         w :: Miso.String.MisoString
+                         = case Control.DeepSeq.$fNFDataArray_$crnf1
+                                  @ GHC.Types.Char
+                                  Control.DeepSeq.$fNFDataChar_$crnf
+                                    `cast`
+                                  (Sym (Control.DeepSeq.NTCo:NFData[0] <GHC.Types.Char>_N))
+                                  t of wild { () ->
+                           case t `cast`
+                                (UnivCo mkUnsafeCo representational GHC.Base.String GHC.Prim.Any) of wild1 { DEFAULT ->
+                           case {__pkg_ccall ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA h$jsstringPack($1) GHC.Prim.Any
+                                                                                                                -> GHC.Prim.State#
+                                                                                                                     GHC.Prim.RealWorld
+                                                                                                                -> (# GHC.Prim.State#
+                                                                                                                        GHC.Prim.RealWorld,
+                                                                                                                      GHC.Prim.ByteArray# #)}
+                                  wild1
+                                  GHC.Prim.realWorld# of wild2 { (#,#) ds ds1 ->
+                           (GHCJS.Prim.JSVal ds1)
+                             `cast`
+                           (Sym (Data.JSString.Internal.Type.NTCo:JSString[0])) } } }
+                       } in
+                       (\ w1 :: Miso.Effect.Sink Main.Action
+                          w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                        Miso.Html.Internal.$wa @ Main.Action w w2)
+                         `cast`
+                       (Trans
+                            (<Miso.Effect.Sink Main.Action>_R
+                             ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                            (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))))
+                      (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action)))) -}
+81244af5a77e8589a0321690a264f42a
+  main60 ::
+    Miso.Effect.Sink Main.Action
+    -> JavaScript.Object.Internal.Object
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S,1*U(U)><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: Miso.Effect.Sink Main.Action
+                   w1 :: JavaScript.Object.Internal.Object
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w1
+                        `cast`
+                      (JavaScript.Object.Internal.NTCo:Object[0]) of ww { GHCJS.Prim.JSVal ww1 ->
+                 Main.$wa1 ww1 w2 }) -}
+30cb4b51c29f930e0a2feb7f8921785d
+  main61 :: Data.JSString.Internal.Type.JSString
+  {- Unfolding: (Data.JSString.unpackCString# "ImeTima"#) -}
+2805058dd09dbadeacbd6b276ea56ca7
+  main62 :: Miso.Html.Internal.Attribute Main.Action
+  {- Unfolding: (Miso.Html.Internal.prop
+                   @ GHC.Types.Bool
+                   @ Main.Action
+                   GHCJS.Marshal.$fToJSValBool
+                   Miso.Html.Property.autofocus_1
+                   GHC.Types.True) -}
+fa037f0f592bee1d5035da623f5ffe99
+  main63 :: [Miso.Html.Internal.Attribute Main.Action]
+  {- Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.Attribute Main.Action)
+                   Main.main68
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R <JavaScript.Object.Internal.Object>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                        (Sym (Miso.Html.Internal.NTCo:Attribute[0] <Main.Action>_R)))
+                   Main.main64) -}
+6dc72a5cc7ce5c2ac6196bd91f48d75c
+  main64 :: [Miso.Html.Internal.Attribute Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.Attribute Main.Action)
+                   Main.main67
+                   Main.main65) -}
+325d7c01f45672f4deb3d476ba1ec0af
+  main65 :: [Miso.Html.Internal.Attribute Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.Attribute Main.Action)
+                   Main.main66
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))) -}
+da31eed4e6d581ee82ebe1828b67c093
+  main66 :: Miso.Html.Internal.Attribute Main.Action
+  {- Unfolding: (Main.onEnter Main.AddTeam) -}
+5818e81368d9843cf5eb8dcfaeaea1b8
+  main67 :: Miso.Html.Internal.Attribute Main.Action
+  {- Unfolding: (Miso.Html.Internal.$wonWithOptions
+                   @ Miso.String.MisoString
+                   @ Main.Action
+                   Miso.Event.Types.defaultOptions
+                   Miso.Html.Event.onInput1
+                   Miso.Event.Decoder.valueDecoder_decoder
+                   Miso.Event.Decoder.checkedDecoder_decodeAt
+                   Main.UpdateTeamField) -}
+98d3b741fa824b4a230bc52e19726bff
+  main68 ::
+    Miso.Effect.Sink Main.Action
+    -> JavaScript.Object.Internal.Object
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S,1*U(U)><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: Miso.Effect.Sink Main.Action
+                   w1 :: JavaScript.Object.Internal.Object
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w1
+                        `cast`
+                      (JavaScript.Object.Internal.NTCo:Object[0]) of ww { GHCJS.Prim.JSVal ww1 ->
+                 Main.$wa2 ww1 w2 }) -}
+d870b1b0a5d37174e73e6d6206d0ea31
+  main69 :: Data.JSString.Internal.Type.JSString
+  {- Unfolding: (Data.JSString.unpackCString# "newTeamName"#) -}
+0db1b21c813c66444d05298336ed5bc5
+  main7 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,A><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ w1 :: Miso.Effect.Sink Main.Action
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.$wa @ Main.Action Main.main8 w2) -}
+1098c10d894b3fee444d4f622e50be33
+  main70 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2,
+     Unfolding: (Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.div_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   Main.main71) -}
+fa598bdeaafe409dd0d054f112b64d39
+  main71 :: [Miso.Html.Internal.View Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main72
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+c1dcb9f8660b6034dcddc884257a64aa
+  main72 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,A><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ w1 :: Miso.Effect.Sink Main.Action
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.$wa @ Main.Action Main.main73 w2) -}
+4594eaf37519a57bacbc27113f9424b2
+  main73 :: Data.JSString.Internal.Type.JSString
+  {- Unfolding: (Data.JSString.unpackCString#
+                   "Molimo unesite timove. Potrebno je barem 2 tima za nastaviti dalje"#) -}
+e75bdc1db13ef82050cb9fbca15b360b
+  main74 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2,
+     Unfolding: (\ eta :: Miso.Effect.Sink Main.Action
+                   eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.ul_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   Main.main75
+                   eta
+                   eta1) -}
+a197c68a4ce2769552ff3e39c46ff19c
+  main75 :: [Miso.Html.Internal.View Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main86
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   Main.main76) -}
+3820f4dfadb86c538babb4cec54ba2be
+  main76 :: [Miso.Html.Internal.View Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main77
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+33ede1820eb956d4d6963a023af200e4
+  main77 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2,
+     Unfolding: (Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.liKeyed_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   Main.main78) -}
+00ac1ab399db2bce14aa604e960a32e3
+  main78 :: [Miso.Html.Internal.View Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main79
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+dae204b3f3a3090055525bba24e83164
+  main79 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2,
+     Unfolding: (Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.button_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   Main.main83
+                   Main.main80) -}
+e981173a2a124c6f61ba2bfafc5d28b4
+  main8 :: Miso.String.MisoString
+  {- Unfolding: (Data.JSString.unpackCString#
+                   "-----------------------------------"#) -}
+7c9a7f35783ae5afb362588793b37be4
+  main80 :: [Miso.Html.Internal.View Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main81
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+37dc1aac91e8d59958f90c14e425dc9d
+  main81 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,A><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ w1 :: Miso.Effect.Sink Main.Action
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.$wa @ Main.Action Main.main82 w2) -}
+89cbb431504ddc5881d97d4baca85587
+  main82 :: Data.JSString.Internal.Type.JSString
+  {- Unfolding: (Data.JSString.unpackCString# "NOVA IGRA"#) -}
+97670947987f509ebdd0cb8d6f9e5b90
+  main83 :: [Miso.Html.Internal.Attribute Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.Attribute Main.Action)
+                   Main.main84
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))) -}
+85626bdfadaef7afbb651fb3a0bd77ef
+  main84 :: Miso.Html.Internal.Attribute Main.Action
+  {- Unfolding: (Miso.Html.Internal.$wonWithOptions
+                   @ ()
+                   @ Main.Action
+                   Miso.Event.Types.defaultOptions
+                   Miso.Html.Event.onClick1
+                   Miso.Event.Decoder.emptyDecoder1
+                   Miso.Event.Decoder.emptyDecoder_decodeAt
+                   Main.main85) -}
+495d12539505560b310b96e52e14c433
+  main85 :: () -> Main.Action
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ ds :: () ->
+                 case ds of wild { () -> Main.ToTeamInput }) -}
+b7e3e2c0f5f12e3706bd739cb350fd5f
+  main86 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2,
+     Unfolding: (Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.liKeyed_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   Main.main87) -}
+90362a4f1173a0807e0f526701597e3b
+  main87 :: [Miso.Html.Internal.View Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.View Main.Action)
+                   Main.main88
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                        (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))) -}
+1d15b5e77b36bb0eacf23b3f091e552e
+  main88 ::
+    Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ eta :: Miso.Effect.Sink Main.Action
+                   eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.img_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   Main.main_y
+                   (GHC.Types.[] @ (Miso.Html.Internal.View Main.Action))
+                   eta
+                   eta1) -}
+215818fb997aa35d0aa6ecb9a6c79a26
+  main89 ::
+    Miso.Effect.Sink Main.Action
+    -> JavaScript.Object.Internal.Object
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S,1*U(U)><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: Miso.Effect.Sink Main.Action
+                   w1 :: JavaScript.Object.Internal.Object
+                   w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w1
+                        `cast`
+                      (JavaScript.Object.Internal.NTCo:Object[0]) of ww { GHCJS.Prim.JSVal ww1 ->
+                 Main.$wa3 ww1 w2 }) -}
+4caacdc14aba1dd21e2b957ea10a98b0
+  main9 ::
+    [(GHC.Base.String, GHC.Types.Int)]
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ ww :: [(GHC.Base.String, GHC.Types.Int)] ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.div_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   (GHC.Types.:
+                      @ (Miso.Html.Internal.View Main.Action)
+                      Main.main21
+                        `cast`
+                      (Trans
+                           (<Miso.Effect.Sink Main.Action>_R
+                            ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                           (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                      (GHC.Types.:
+                         @ (Miso.Html.Internal.View Main.Action)
+                         Main.main20
+                           `cast`
+                         (Trans
+                              (<Miso.Effect.Sink Main.Action>_R
+                               ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                              (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                         (GHC.Types.:
+                            @ (Miso.Html.Internal.View Main.Action)
+                            Main.main20
+                              `cast`
+                            (Trans
+                                 (<Miso.Effect.Sink Main.Action>_R
+                                  ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                 (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                            (GHC.Types.:
+                               @ (Miso.Html.Internal.View Main.Action)
+                               (Miso.Html.Internal.node1
+                                  @ Main.Action
+                                  Miso.Html.Internal.HTML
+                                  Miso.Html.Element.ul_2
+                                  (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                                  (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                                  (GHC.Base.map
+                                     @ (GHC.Base.String, GHC.Types.Int)
+                                     @ (Miso.Html.Internal.View Main.Action)
+                                     Main.main19
+                                       `cast`
+                                     (<(GHC.Base.String, GHC.Types.Int)>_R
+                                      ->_R Trans
+                                               (<Miso.Effect.Sink Main.Action>_R
+                                                ->_R Sym (GHC.Types.NTCo:IO[0]
+                                                              <Miso.Html.Internal.VTree>_R))
+                                               (Sym (Miso.Html.Internal.NTCo:View[0]
+                                                         <Main.Action>_R)))
+                                     (GHC.List.$wunsafeTake
+                                        @ (GHC.Base.String, GHC.Types.Int)
+                                        5
+                                        (Data.OldList.sortBy
+                                           @ (GHC.Base.String, GHC.Types.Int)
+                                           Main.main18
+                                           ww))))
+                                 `cast`
+                               (Trans
+                                    (<Miso.Effect.Sink Main.Action>_R
+                                     ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                                    (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R)))
+                               Main.main10))))) -}
+ac8d9aaa98aa6930abdd9257fda2702b
+  main90 :: Data.JSString.Internal.Type.JSString
+  {- Unfolding: (Data.JSString.unpackCString# "./logo-320.png"#) -}
+752bd15788aac641cd41a51efaff3cf3
+  main91 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 GHC.Prim.catch#
+                   @ ()
+                   @ GHC.Exception.SomeException
+                   (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                    case GHC.Prim.myThreadId# s of ds { (#,#) ipv ipv1 ->
+                    case GHC.Prim.mkWeakNoFinalizer#
+                           @ GHC.Prim.ThreadId#
+                           @ GHC.Conc.Sync.ThreadId
+                           ipv1
+                           (GHC.Conc.Sync.ThreadId ipv1)
+                           ipv of ds1 { (#,#) ipv2 ipv3 ->
+                    case System.Random.theStdGen
+                           `cast`
+                         (GHC.IORef.NTCo:IORef[0] <System.Random.StdGen>_N) of wild { GHC.STRef.STRef var# ->
+                    case GHC.Prim.readMutVar#
+                           @ GHC.Prim.RealWorld
+                           @ System.Random.StdGen
+                           var#
+                           ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                    Main.main2 ipv5 ipv4 } } } })
+                   (GHC.TopHandler.runIO2 @ ())
+                   eta) -}
+65d7761722fecd39ea78be6565382dd6
+  main_y :: [Miso.Html.Internal.Attribute Main.Action]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Miso.Html.Internal.Attribute Main.Action)
+                   Main.main89
+                     `cast`
+                   (Trans
+                        (<Miso.Effect.Sink Main.Action>_R
+                         ->_R <JavaScript.Object.Internal.Object>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                        (Sym (Miso.Html.Internal.NTCo:Attribute[0] <Main.Action>_R)))
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))) -}
+7fcd93275770b65964173fe6c3515ed9
+  newAttribute :: GHC.Base.String -> GHC.Types.IO GHC.Base.String
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.newAttribute1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)) -}
+14c210d80af4f0bce2afb15ddd518f37
+  newAttribute1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <L,U><L,U> -}
+c7b6f266e5a1607c0f59d6ac619d78e7
+  numberField :: Main.Model -> Miso.String.MisoString
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLLLLL),1*U(A,A,A,1*U(U),A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds4 }) -}
+6e6f49b39b2e473bd62c80fd0048ad88
+  onEnter :: Main.Action -> Miso.Html.Internal.Attribute Main.Action
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ action :: Main.Action ->
+                 Miso.Html.Internal.$wonWithOptions
+                   @ Miso.Event.Types.KeyCode
+                   @ Main.Action
+                   Miso.Event.Types.defaultOptions
+                   Miso.Html.Event.onKeyDown1
+                   Miso.Event.Decoder.keycodeDecoder_decoder
+                   Miso.Event.Decoder.emptyDecoder_decodeAt
+                   (\ x :: Miso.Event.Types.KeyCode ->
+                    case x `cast`
+                         (Miso.Event.Types.NTCo:KeyCode[0]) of wild { GHC.Types.I# x1 ->
+                    case x1 of wild1 { DEFAULT -> Main.NoOp 13 -> action } })) -}
+9a4aed307e0dee33119f0d9cc70bf973
+  runda :: Main.Model -> GHC.Types.Int
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLS),1*U(A,A,A,A,A,A,A,A,A,A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds11 }) -}
+d2cf71f2ee2d9e8285d1b057a147fd8b
+  sample ::
+    GHC.Classes.Eq a => GHC.Types.Int -> [a] -> GHC.Types.IO [a]
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A)><S(S),1*U(1*U)><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.sample2
+                  `cast`
+                (forall a23.
+                 <GHC.Classes.Eq a23>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <[a23]>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <[a23]>_R)) -}
+fe1f960bb687044b15c603055b9c4c24
+  sample1 :: [a] -> GHC.Types.IO a
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.sample3
+                  `cast`
+                (forall a23. <[a23]>_R ->_R Sym (GHC.Types.NTCo:IO[0] <a23>_R)) -}
+89bfa83a7e85ce931fc459e0de579635
+  sample2 ::
+    GHC.Classes.Eq a =>
+    GHC.Types.Int
+    -> [a]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [a] #)
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A)><S(S),1*U(1*U)><L,U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a23
+                   w :: GHC.Classes.Eq a23
+                   w1 :: GHC.Types.Int
+                   w2 :: [a23]
+                   w3 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 Main.$wa4 @ a23 w ww1 w2 w3 }) -}
+d124fd5a0e4c52a118ad3525ef4f2f01
+  sample3 ::
+    [a]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ @ a23
+                   xs :: [a23]
+                   s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.Random.$fRandomInt3
+                        (Main.$fShowAction2,
+                         case GHC.List.$wlenAcc @ a23 xs 0 of ww2 { DEFAULT ->
+                         GHC.Types.I# (GHC.Prim.-# ww2 1) })
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.List.!! @ a23 xs ipv1 #) }) -}
+dcc7ce8c8ed45725ec9912d77ddc1c19
+  seed :: Main.Model -> GHC.Types.Int
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLLLLL),1*U(A,1*U(U),A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds2 }) -}
+29840c9717ac7b73d65b97e37ca1bcf7
+  state :: Main.Model -> Main.States
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLLLL),1*U(1*U,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds1 }) -}
+bf2b2eae97687c93a673aa5202ef9889
+  syntagmas :: Main.Model -> [GHC.Base.String]
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLLLLL),1*U(A,A,A,A,A,1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds6 }) -}
+00302c8aebc20841daf90a2ade03187f
+  teams :: Main.Model -> [(GHC.Base.String, GHC.Types.Int)]
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLSLLL),1*U(A,A,A,A,A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds8 }) -}
+b3cbdd70bdf85b854be592bc88f77c60
+  time :: Main.Model -> GHC.Types.Int
+  RecSel Main.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLSL),1*U(A,A,A,A,A,A,A,A,A,1*U(U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.Model ->
+                 case ds of wild { Main.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ->
+                 ds10 }) -}
+743ce282588227ceca36da732cd40da1
+  top5 ::
+    [(GHC.Base.String, GHC.Types.Int)]
+    -> [(GHC.Base.String, GHC.Types.Int)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: [(GHC.Base.String, GHC.Types.Int)] ->
+                 GHC.List.$wunsafeTake
+                   @ (GHC.Base.String, GHC.Types.Int)
+                   5
+                   (Data.OldList.sortBy
+                      @ (GHC.Base.String, GHC.Types.Int)
+                      Main.main18
+                      x)) -}
+f22bbc5a072c55dbe0619bc6c1472291
+  updateModel ::
+    Main.Action
+    -> Main.Model -> Miso.Effect.Effect Main.Action Main.Model
+  {- Arity: 2,
+     Strictness: <S,1*U><L,U(U,U(U),U(U),U(U),U,U,U,U,U(U),U(U),U(U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Main.Action w1 :: Main.Model ->
+                 case Main.$wupdateModel w w1 of ww { (#,#) ww1 ww2 ->
+                 Miso.Effect.Effect @ Main.Action @ Main.Model ww1 ww2 }) -}
+78d1f83ae06ec19af7582c95daa083bc
+  updateTeams :: Main.Model -> [(GHC.Base.String, GHC.Types.Int)]
+  {- Arity: 1,
+     Strictness: <S(LLLLLLLLSLL),1*U(A,A,A,A,A,A,A,U,1*U(U),A,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Main.Model ->
+                 case w of ww { Main.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                 case ww9 of ww12 { GHC.Types.I# ww13 ->
+                 Main.$wupdateTeams ww8 ww13 } }) -}
+4ebc8b00d1dbdf2c19bcf29395cf48f3
+  viewGameOver :: Main.Model -> Miso.Html.Internal.View Main.Action
+  {- Arity: 1, Strictness: <S,1*U(A,A,A,A,A,A,A,1*U,A,A,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Main.Model ->
+                 case w of ww { Main.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                 (Main.main9 ww8)
+                   `cast`
+                 (Trans
+                      (<Miso.Effect.Sink Main.Action>_R
+                       ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                      (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))) }) -}
+c77c5f3f92ef9c5f595173703d760d4a
+  viewGameplay :: Main.Model -> Miso.Html.Internal.View Main.Action
+  {- Arity: 1, Strictness: <S,1*U(A,A,A,A,A,1*U,A,A,A,1*U(U),A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Main.Model ->
+                 case w of ww { Main.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                 (Main.main37 ww6 ww10)
+                   `cast`
+                 (Trans
+                      (<Miso.Effect.Sink Main.Action>_R
+                       ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                      (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))) }) -}
+a76e5fc36fc21ed090ae3ab433d0568f
+  viewMainMenu :: Main.Model -> Miso.Html.Internal.View Main.Action
+  {- Arity: 3, Strictness: <S,1*H><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.viewMainMenu1
+                  `cast`
+                (<Main.Model>_R
+                 ->_R Trans
+                          (<Miso.Effect.Sink Main.Action>_R
+                           ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                          (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))) -}
+ec243bb490903c98477c659a7a150773
+  viewMainMenu1 ::
+    Main.Model
+    -> Miso.Effect.Sink Main.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Arity: 3, Strictness: <S,1*H><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ g :: Main.Model
+                   eta :: Miso.Effect.Sink Main.Action
+                   eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case g of wild { Main.Model ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 Miso.Html.Internal.node1
+                   @ Main.Action
+                   Miso.Html.Internal.HTML
+                   Miso.Html.Element.ul_2
+                   (GHC.Base.Nothing @ Miso.Html.Internal.Key)
+                   (GHC.Types.[] @ (Miso.Html.Internal.Attribute Main.Action))
+                   Main.main75
+                   eta
+                   eta1 }) -}
+61d195e5c6fbfd82e772a574c4d22c13
+  viewModel :: Main.Model -> Miso.Html.Internal.View Main.Action
+  {- Arity: 1,
+     Strictness: <S,1*U(U,A,U,U,1*U,U,A,U,1*U(U),1*U(U),U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Main.Model ->
+                 case w of ww { Main.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                 (Main.main5 ww1 ww3 ww4 ww5 ww6 ww8 ww9 ww10 ww11)
+                   `cast`
+                 (Trans
+                      (<Miso.Effect.Sink Main.Action>_R
+                       ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                      (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))) }) -}
+aed0991c06a70f9b85f95e286f270b7e
+  viewRoundPrep :: Main.Model -> Miso.Html.Internal.View Main.Action
+  {- Arity: 1, Strictness: <S,1*U(A,A,A,A,A,A,A,U,1*U(U),A,U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Main.Model ->
+                 case w of ww { Main.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                 (Main.main48 ww8 ww9 ww11)
+                   `cast`
+                 (Trans
+                      (<Miso.Effect.Sink Main.Action>_R
+                       ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                      (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))) }) -}
+34ad6553f1f400efdde7076de500af70
+  viewSynInput ::
+    Main.Model
+    -> Miso.String.MisoString
+    -> Miso.String.MisoString
+    -> Miso.Html.Internal.View Main.Action
+  {- Arity: 3,
+     Strictness: <S,1*U(A,A,A,A,1*U,1*U,A,A,A,A,A)><L,U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: Main.Model
+                   w1 :: Miso.String.MisoString
+                   w2 :: Miso.String.MisoString ->
+                 case w of ww { Main.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                 (Main.main49 ww5 ww6 w1 w2)
+                   `cast`
+                 (Trans
+                      (<Miso.Effect.Sink Main.Action>_R
+                       ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                      (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))) }) -}
+989cf97c4d12bd16271eda603292da7e
+  viewTeamInput ::
+    Main.Model
+    -> Miso.String.MisoString -> Miso.Html.Internal.View Main.Action
+  {- Arity: 2, Strictness: <S,1*U(A,A,A,A,A,A,A,1*U,A,A,A)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Main.Model w1 :: Miso.String.MisoString ->
+                 case w of ww { Main.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                 (Main.main50 ww8 w1)
+                   `cast`
+                 (Trans
+                      (<Miso.Effect.Sink Main.Action>_R
+                       ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                      (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))) }) -}
+e698d5e2dd43fc8a43b49467330d2ab7
+  viewTimeOut :: Main.Model -> Miso.Html.Internal.View Main.Action
+  {- Arity: 1, Strictness: <S,1*U(A,A,A,A,A,A,A,U,1*U(U),A,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Main.Model ->
+                 case w of ww { Main.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                 (Main.main23 ww8 ww9)
+                   `cast`
+                 (Trans
+                      (<Miso.Effect.Sink Main.Action>_R
+                       ->_R Sym (GHC.Types.NTCo:IO[0] <Miso.Html.Internal.VTree>_R))
+                      (Sym (Miso.Html.Internal.NTCo:View[0] <Main.Action>_R))) }) -}
+instance GHC.Classes.Eq [Main.Action] = Main.$fEqAction
+instance GHC.Classes.Eq [Main.Model] = Main.$fEqModel
+instance GHC.Classes.Eq [Main.States] = Main.$fEqStates
+instance GHC.Show.Show [Main.Action] = Main.$fShowAction
+instance GHC.Show.Show [Main.Model] = Main.$fShowModel
+instance GHC.Show.Show [Main.States] = Main.$fShowStates
+"SPEC/Main $fEq(,) @ [Char] @ Int" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                             [GHC.Types.Char]
+                                                   $dEq1 :: GHC.Classes.Eq GHC.Types.Int
+  GHC.Classes.$fEq(,) @ [GHC.Types.Char] @ GHC.Types.Int $dEq $dEq1
+  = Main.$fEqAction_$s$fEq(,)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

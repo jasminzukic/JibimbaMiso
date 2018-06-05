@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,900&subset=latin-ext');
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    color: #2C3E50;
+
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+button:hover {
+  color: #18BC9C;
+}
+
+button:focus {outline:0;}
+
+.centerOfScreen {
+    max-width: 320px;
+    height: auto;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+ul {
+    list-style:none;
+    padding-left:0;
+}
+
+li {
+    line-height: 1.6em;
+    font-size: 300%;
+    text-align: center;
+}
+
+li:hover {
+    color: #18BC9C;
+}

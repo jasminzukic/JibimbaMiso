@@ -1,0 +1,244 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-05 10:03:21.304683 UTC
+
+interface main@main:Update 7103
+  interface hash: ce486c42ae18c13ffc746196a787f914
+  ABI hash: 86ef70319086e2b8f2da94a48a61fb21
+  export-list hash: 04e887348e1f43b62ca06a80b4ca236e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ed2ea50e0056ee7ed57de36f3bcd6bbd
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Update.updateModel
+module dependencies: CommonSyns FpnAttributes FsnAttributes Model
+                     MpnAttributes MsmpAttributes MsnAttributes Nouns NpnAttributes
+                     NsnAttributes
+package dependencies: vault-0.3.0.6@3aMjlHrKCJhIxveeXtcsc8
+                      time-locale-compat-0.1.1.3@4ww81SmMgsh5XzEiHjqYFj
+                      string-conversions-0.4.0.1@6IPX0T6LgwmAQrumGhNmFD
+                      blaze-builder-0.4.0.2@7IG4YvzEuZ07ymzKaTmpGZ
+                      double-conversion-2.0.2.0@8CGA0UjqT0U5WI5aCB2OGA
+                      utf8-string-1.0.1.1@8oOAZ6IwtjTCVi66vOztid
+                      http-api-data-0.2.4@9WyOtwKyJU13YHNetDNTM1
+                      random-1.1@BofHAI91DNcFFKfbBMPPtG
+                      parsec-3.1.11@C8IpmeP0Ud7KoD9bWQ4uRX
+                      servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl
+                      miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z
+                      http-types-0.9.1@I7NvCg9MtLYJyr8t4sWpHF
+                      random-shuffle-0.0.4@IOL5KW9YQiHGMQ1f5cNk4t
+                      http-media-0.6.4@IRYJDDSYrQe2KQ7RgfzW5U
+                      MonadRandom-0.4.2.3@IRgDpjrQSWr6m6yRGgh51b
+                      base-compat-0.9.1@KLqE4DmcSdeI96ryhDdoGE
+                      network-uri-2.6.1.0@LLIr0eP6ccoKFdUO8ej6BP
+                      bytestring-conversion-0.3.1@Ld4gu1gs70jHRgrKzulY0n
+                      aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd
+                      array-0.5.1.0@array_30xqJMcqwbkI6LBfgLltdH
+                      attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU base-4.8.2.0
+                      binary-0.7.5.0@binar_03WQkzzYAE08cZoz1r0IhX
+                      bytestring-0.10.6.0@bytes_96M8oqQTVIe6bIZr9qhhuC
+                      case-insensitive-1.2.0.7@casei_E4YHUGk4BDR8rpU3pmZYPg
+                      containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8
+                      deepseq-1.4.1.1@deeps_6zNFUGyDFQ59UU8BCTkqk0
+                      dlist-0.7.1.2@dlist_H1vOXFk9eUBGkwT4KVRG25
+                      fail-4.9.0.0@fail_9oXv4m1cFET3xpGVsHCxUq ghc-prim-0.4.0.0
+                      ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA
+                      ghcjs-prim-0.1.0.0@ghcjs_9jpamHTyFf8CL10DbS4jxv
+                      hashable-1.2.4.0@hasha_Bj7NmECL61JJPMp5YcPO6u integer-gmp-0.5.1.0
+                      mtl-2.2.1@mtl_JNINybzCkug09H8kU1kQe9
+                      primitive-0.6.1.0@primi_CRhbMv8kA5dFpZOCD0QPrI
+                      scientific-0.3.4.9@scien_7RWav52ZEb8LpSeINhjuJE
+                      semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu
+                      tagged-0.8.4@tagge_EpMmiBjiJPdFiokZ6hOmMm template-haskell-2.10.0.0
+                      text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ
+                      time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf
+                      transformers-0.4.2.0@trans_EziP6JoSSK398q9vuXpnAA
+                      unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP
+                      vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ
+orphans: miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Internal
+         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.String
+         MonadRandom-0.4.2.3@IRgDpjrQSWr6m6yRGgh51b:Control.Monad.Random
+         aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd:Data.Aeson.Types.Generic
+         aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd:Data.Aeson.Types.Instances
+         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.Text.Internal
+         base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_03WQkzzYAE08cZoz1r0IhX:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_96M8oqQTVIe6bIZr9qhhuC:Data.ByteString.Builder
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:Data.JSString
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Internal.Types
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Marshal
+         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Marshal.Pure
+         hashable-1.2.4.0@hasha_Bj7NmECL61JJPMp5YcPO6u:Data.Hashable.Generic
+         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text
+         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Lazy
+         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Show
+         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.Format.Parse
+         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_EziP6JoSSK398q9vuXpnAA:Control.Monad.Trans.Error
+         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed
+family instance modules: servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl:Servant.API.ContentTypes
+                         servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl:Servant.API.Verbs
+                         servant-0.7.1@GkfryHVxsNV9mQ5TfVsIZl:Servant.Utils.Links
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Effect.XHR
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Event.Types
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Html.Internal
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Router
+                         miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Subscription.WebSocket
+                         network-uri-2.6.1.0@LLIr0eP6ccoKFdUO8ej6BP:Network.URI
+                         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.Internal.Types
+                         base-4.8.2.0:Control.Applicative base-4.8.2.0:Data.Either
+                         base-4.8.2.0:Data.Functor.Identity base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:Data.Void
+                         base-4.8.2.0:GHC.Exts base-4.8.2.0:GHC.Generics
+                         base-4.8.2.0:GHC.TypeLits
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.IntMap.Base
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.IntSet.Base
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Map.Base
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Sequence
+                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Set.Base
+                         dlist-0.7.1.2@dlist_H1vOXFk9eUBGkwT4KVRG25:Data.DList
+                         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:Data.JSString
+                         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:JavaScript.Web.XMLHttpRequest
+                         primitive-0.6.1.0@primi_CRhbMv8kA5dFpZOCD0QPrI:Control.Monad.Primitive
+                         semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu:Data.List.NonEmpty
+                         semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu:Data.Semigroup
+                         tagged-0.8.4@tagge_EpMmiBjiJPdFiokZ6hOmMm:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text
+                         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Lazy
+                         unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP:Data.HashMap.Base
+                         unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP:Data.HashSet
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Primitive
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Storable
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed
+                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed.Base
+import  -/  random-1.1@BofHAI91DNcFFKfbBMPPtG:System.Random f7c70b339bc6d54a3ac32ce9fecab4ae
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso c142e447f77081452fae60810c4ba04f
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Effect ecaf91c9c61f851b8afff97feca8aaca
+import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.String 7ac2d50578f40022cfb12b9400e313e9
+import  -/  random-shuffle-0.0.4@IOL5KW9YQiHGMQ1f5cNk4t:System.Random.Shuffle 25f985014cda2af5b7130cc30570bb1e
+import  -/  base-4.8.2.0:Control.Concurrent 153317891d179fa670008e5330e6fff2
+import  -/  base-4.8.2.0:Control.Monad 70b8d00bb1204799892fc8bc04b92859
+import  -/  base-4.8.2.0:Data.Char b6b769efb0c5749c32c721d738e6b3b4
+import  -/  base-4.8.2.0:Data.Foldable e02ef8f402ecf74de677f4cf912139e1
+import  -/  base-4.8.2.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.2.0:Data.List b8b653f5927cedfddc115efcbc90af59
+import  -/  base-4.8.2.0:Data.OldList 877897032d4acf896fd3ceca4f23ddd5
+import  -/  base-4.8.2.0:Data.Traversable 1bfe16a980b18d4cd14245777ae0979c
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
+import  -/  base-4.8.2.0:GHC.Conc.IO 88469c13ccaea3e6dde3e14d2f0d3df9
+import  -/  base-4.8.2.0:GHC.List fbd910b126f36c7feead9fbba6aa48a0
+import  -/  base-4.8.2.0:GHC.Num f16387d7a90bf7ef0bf31e86d0ac9645
+import  -/  base-4.8.2.0:GHC.Real 19512fd0180d01f4277618956f9ad661
+import  -/  base-4.8.2.0:GHC.Show ed2e62a4d3cc01e973aec92d52f5786d
+import  -/  base-4.8.2.0:Prelude aeed44d4e8d251a340a1597dd2a0cbc5
+import  -/  base-4.8.2.0:Text.Read aeeed1e6079a513a81f1e6da7d722d5d
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  CommonSyns 9ce8ec28a61cc7d7aeb73594be4f2423
+  exports: 8fd07fbcb660df9609d6984b63dc098c
+  commonSyns 2803f34ad15161dc06b2294bc42a5b66
+import  -/  FpnAttributes 0283a21cadc76e2f454c6f57841d2712
+  exports: 4935504e01ef8ac61483a92dbf59eda8
+  fpnAttributes bb7929bb1e44e6b0fabfe5db29eb5c69
+import  -/  FsnAttributes 46ee8ff103f31bdac48bf8ce1926249e
+  exports: ae28332bf75c4b98bbca8b8d29c27ead
+  fsnAttributes 7caa9817945576f6de82ba3030aafb8b
+import  -/  Model 02a4ba4a567d2044214753248accc2c5
+  exports: 1bf7a4eaaee9a6c12c99933b1198a390
+  Action 23a276d3c13f1dfaa2fcf7de2aa197b4
+  AddSyn 1b1cbc904906500b8bfffd6256817489
+  AddTeam 6e387abae6f862edb51593c8d5145125
+  BackToMainMenu 3468f2d5ab3f69d29316f3b088422f20
+  GameOver 1a8953747cf6dfd9adde17a506e4e6d4
+  Gameplay a340ff5c044156ab788017caae8f63c4
+  GenerateSyntagmas 52f2a3b1e1428451e872ddf9852d7f9e
+  MainMenu 909186d0d166ca688c8c364106803969
+  Model 24224dba4c409b4a49e6fa78d903310e
+  Model 9225ec19181a85123aa2c200c834c727
+  NextWord 4eaad93396ef36b66678c867ed823602
+  NoOp db418fde8b6d546eaadf385a86c22953
+  RoundPrep eea4909134a19a9c6f4dab79996ffe9c
+  Rules 3c2b657f578406b930264974a30ff695
+  Settings ee3d0586e7df4249885097ff31099ea2
+  ShuffleSyns 4780f47ac58c06c66b68bd9cab437b1f
+  ShuffleTeams 6e2e7eb456601c70ad01736d11e13a35
+  SkipWord 6a12d5a813751d46b45b9acba576bc13
+  StartCounter d68b3cfe55fd0e79eccf47095eb9c3c9
+  SynInput b2e2e29267ec1bd74c86acdc79aad5ec
+  TeamInput 417c9dd964c5709022897e2430274c54
+  Tick da08b8a33b77f359604c655d407ec788
+  TimeOut 1b6004bf86b691721ceffad7bab7e215
+  ToGameplay 452b69a8f12cbd90768605e4d3986401
+  ToMainMenu e6d6766dca10d08b562a7d01ca4b160d
+  ToRoundPrep f06f26ce32265d5e4e6af3ac75969731
+  ToRules f5d590fed764b304f3261a4a05c5f69e
+  ToSettings 518e454763620bc741cf81b0f08a7f7e
+  ToSynInput e23d595d0d2c3fb0aa73c46074541894
+  ToTeamInput 3062f1c95406dfe1ff37ef9187203b58
+  UpdateNumberField e692ececcce223170a555f931255e784
+  UpdateSynField 6fa3c4389404879d9754c942c342f152
+  UpdateTeamField bcbe430ee38a96936c49fc52d1f2bcc3
+  buttonEnabled 58660c58253407a9aa4da4b5e6e8eb57
+  currentTeam 643c176e98ee7b2c339a7a20f6490896
+  guessed 28082e30baf4a07eadedee506c3f1eb7
+  inputField f97036ba75bc9508e437e4cf156ef9b4
+  invalidSyntagma ef64d8031874776a343473cb1b58ec45
+  invalidTeamName 902363ba1db51cfa61bef7bfddf522e6
+  numberField ad74d63ce6ed6e3349d58dc0afd19602
+  runda 4b79c9493027c0865e0fee0690f72c59
+  state fcb007dc23d016efaafd2b58bae0571f
+  syntagmas 201d34eb69b6fbf5520d55dbe2521c06
+  teams 504d2cce2af3967e3bb8165b04de9466
+  time fbb699a429f4d81a2f5a918f1b157d44
+import  -/  MpnAttributes 1d5078651bb38cfeae13be53429783dc
+  exports: 983be302bb1a2654a9789eed59dfc4aa
+  mpnAttributes c0b81133f9153ad771018adf0be4b1fa
+import  -/  MsmpAttributes d7c61ddc61b93feaa7ee51f3cf191b0b
+  exports: a01483e88a1fc7a9dd45b59ce8ff9021
+  msmpAttributes 1c9fb7f94a07480efe2631241c310feb
+import  -/  MsnAttributes 8d6aa2e8948126a4f1b0a76b3faca1aa
+  exports: 5406bd68d2ee5c6bc907792275155a59
+  msnAttributes abdc5a32d34d6068c24c67dabf5c625e
+import  -/  Nouns cf358c9f7ace96d2cd4113bdf32f8f7a
+  exports: 24e08ef07e19bab9ab4a4162c8e204af
+  nouns d740d8d92c1386403798f3ff48b8e96e
+import  -/  NpnAttributes 2406995dafaf09174f8ff85deefbe920
+  exports: 8b08b9048b23bba361173782517a87e1
+  npnAttributes ecb2575ae87a20a8b217c0f818502e31
+import  -/  NsnAttributes d9cbb0ee72ed7d268dfdc4d63d36f89f
+  exports: af11b369d2fd326f911784b686d13afc
+  nsnAttributes a942840168ae7cb9b87a56e18e418343
+31a859d045c76abf07da652f90b368ef
+  $wupdateModel ::
+    Model.Action
+    -> Model.Model -> (# Model.Model, [Miso.Effect.Sub Model.Action] #)
+  {- Arity: 2,
+     Strictness: <S,1*U><L,U(U,U(U),U(U),U,U,U,U,U,U,U(U),U(U),U(U))>,
+     Inline: [0] -}
+6ae97ccb0dd3f21c0e7569164552db75
+  updateModel ::
+    Model.Action
+    -> Model.Model -> Miso.Effect.Effect Model.Action Model.Model
+  {- Arity: 2,
+     Strictness: <S,1*U><L,U(U,U(U),U(U),U,U,U,U,U,U,U(U),U(U),U(U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Model.Action w1 :: Model.Model ->
+                 case Update.$wupdateModel w w1 of ww { (#,#) ww1 ww2 ->
+                 Miso.Effect.Effect @ Model.Action @ Model.Model ww1 ww2 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

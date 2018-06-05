@@ -1,0 +1,49 @@
+Configuring miso-0.18.0.0...
+Building miso-0.18.0.0...
+Preprocessing library miso-0.18.0.0...
+[ 1 of 33] Compiling Miso.String      ( ghcjs-src/Miso/String.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/String.js_o )
+[ 2 of 33] Compiling Miso.Event.Types ( src/Miso/Event/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Event/Types.js_o )
+[ 3 of 33] Compiling Miso.Event.Decoder ( src/Miso/Event/Decoder.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Event/Decoder.js_o )
+[ 4 of 33] Compiling Miso.Effect.XHR  ( ghcjs-src/Miso/Effect/XHR.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Effect/XHR.js_o )
+[ 5 of 33] Compiling Miso.Effect.DOM  ( ghcjs-src/Miso/Effect/DOM.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Effect/DOM.js_o )
+[ 6 of 33] Compiling Miso.Concurrent  ( src/Miso/Concurrent.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Concurrent.js_o )
+[ 7 of 33] Compiling Miso.FFI         ( ghcjs-src/Miso/FFI.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/FFI.js_o )
+[ 8 of 33] Compiling Miso.Dev         ( ghcjs-src/Miso/Dev.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Dev.js_o )
+[ 9 of 33] Compiling Miso.Effect.Storage ( ghcjs-src/Miso/Effect/Storage.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Effect/Storage.js_o )
+[10 of 33] Compiling Miso.Event       ( src/Miso/Event.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Event.js_o )
+[11 of 33] Compiling Miso.Effect      ( ghcjs-src/Miso/Effect.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Effect.js_o )
+[12 of 33] Compiling Miso.Html.Internal ( ghcjs-src/Miso/Html/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Html/Internal.js_o )
+[13 of 33] Compiling Miso.Types       ( ghcjs-src/Miso/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Types.js_o )
+[14 of 33] Compiling Miso.Delegate    ( ghcjs-src/Miso/Delegate.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Delegate.js_o )
+[15 of 33] Compiling Miso.Diff        ( ghcjs-src/Miso/Diff.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Diff.js_o )
+[16 of 33] Compiling Miso.Html.Element ( src/Miso/Html/Element.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Html/Element.js_o )
+[17 of 33] Compiling Miso.Html.Event  ( src/Miso/Html/Event.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Html/Event.js_o )
+[18 of 33] Compiling Miso.Html.Property ( src/Miso/Html/Property.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Html/Property.js_o )
+[19 of 33] Compiling Miso.Html        ( src/Miso/Html.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Html.js_o )
+[20 of 33] Compiling Miso.Router      ( src/Miso/Router.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Router.js_o )
+[21 of 33] Compiling Miso.Util        ( src/Miso/Util.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Util.js_o )
+[22 of 33] Compiling Miso.Svg.Element ( src/Miso/Svg/Element.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Svg/Element.js_o )
+[23 of 33] Compiling Miso.Svg.Attribute ( src/Miso/Svg/Attribute.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Svg/Attribute.js_o )
+[24 of 33] Compiling Miso.Svg.Event   ( src/Miso/Svg/Event.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Svg/Event.js_o )
+[25 of 33] Compiling Miso.Svg         ( src/Miso/Svg.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Svg.js_o )
+[26 of 33] Compiling Miso.Subscription.Mouse ( ghcjs-src/Miso/Subscription/Mouse.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Subscription/Mouse.js_o )
+[27 of 33] Compiling Miso.Subscription.Keyboard ( ghcjs-src/Miso/Subscription/Keyboard.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Subscription/Keyboard.js_o )
+[28 of 33] Compiling Miso.Subscription.History ( ghcjs-src/Miso/Subscription/History.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Subscription/History.js_o )
+[29 of 33] Compiling Miso.Subscription.WebSocket ( ghcjs-src/Miso/Subscription/WebSocket.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Subscription/WebSocket.js_o )
+[30 of 33] Compiling Miso.Subscription.Window ( ghcjs-src/Miso/Subscription/Window.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Subscription/Window.js_o )
+
+ghcjs-src/Miso/Subscription/Window.hs:27:1: Warning:
+    The import of ‘Miso.String’ is redundant
+      except perhaps to import instances from ‘Miso.String’
+    To import instances alone, use: import Miso.String()
+
+ghcjs-src/Miso/Subscription/Window.hs:28:1: Warning:
+    The import of ‘Miso.Event’ is redundant
+      except perhaps to import instances from ‘Miso.Event’
+    To import instances alone, use: import Miso.Event()
+[31 of 33] Compiling Miso.Subscription.SSE ( ghcjs-src/Miso/Subscription/SSE.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Subscription/SSE.js_o )
+[32 of 33] Compiling Miso.Subscription ( ghcjs-src/Miso/Subscription.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Subscription.js_o )
+[33 of 33] Compiling Miso             ( ghcjs-src/Miso.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso.js_o )
+Installing library in
+/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-6.30/ghcjs-0.2.0.9006030_ghc-7.10.3/lib/x86_64-linux-ghcjs-0.2.0.9006030-ghc7_10_3/miso-0.18.0.0-HRRS7cQi8bU4jYuh6NkL5Z
+Registering miso-0.18.0.0...
