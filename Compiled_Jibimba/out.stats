@@ -1,18 +1,18 @@
 code size summary per package:
 
 BofHAI91DNcFFKfbBMPPtG:  28914
-HRRS7cQi8bU4jYuh6NkL5Z:  124067
+HRRS7cQi8bU4jYuh6NkL5Z:  125075
 IOL5KW9YQiHGMQ1f5cNk4t:  15905
 IRgDpjrQSWr6m6yRGgh51b:  2275
 aeson_JYLYzg269i8LI7KZ5LWbtd:33316
-base:                    556468
+base:                    567183
 conta_3UVKjic2MoqF92jHhg7Ur8:73593
 deeps_6zNFUGyDFQ59UU8BCTkqk0:850
-ghc-prim:                21850
-ghcjs_210XEgjDa5q074bipEhzRA:17630
+ghc-prim:                25744
+ghcjs_210XEgjDa5q074bipEhzRA:23993
 ghcjs_9jpamHTyFf8CL10DbS4jxv:10248
 integer-gmp:             43175
-main:                    2163327
+main:                    2151002
 scien_7RWav52ZEb8LpSeINhjuJE:12705
 text_AoFu0I23s11C5sDmOoIAPZ:18768
 time_1GoZbNl2fDzKHJr3QPGAAf:5865
@@ -36,7 +36,7 @@ HRRS7cQi8bU4jYuh6NkL5Z
     Miso.Html.Element:                  2986
     Miso.Html.Event:                    985
     Miso.Html.Internal:                 25713
-    Miso.Html.Property:                 3068
+    Miso.Html.Property:                 4076
     Miso.String:                        99
 
 IOL5KW9YQiHGMQ1f5cNk4t
@@ -68,7 +68,7 @@ base
     Foreign.Marshal.Array:              2038
     Foreign.Storable:                   2680
     GHC.Arr:                            3643
-    GHC.Base:                           6416
+    GHC.Base:                           7274
     GHC.Char:                           718
     GHC.Conc.Sync:                      7822
     GHC.Enum:                           17887
@@ -93,7 +93,7 @@ base
     GHC.IO.Handle.Internals:            27136
     GHC.IO.Handle.Types:                3571
     GHC.Int:                            3258
-    GHC.List:                           8482
+    GHC.List:                           7775
     GHC.MVar:                           188
     GHC.Num:                            3347
     GHC.Ptr:                            188
@@ -101,7 +101,7 @@ base
     GHC.Real:                           34432
     GHC.ST:                             186
     GHC.STRef:                          194
-    GHC.Show:                           24129
+    GHC.Show:                           34693
     GHC.Storable:                       1084
     GHC.TopHandler:                     13541
     GHC.Unicode:                        1315
@@ -122,14 +122,14 @@ deeps_6zNFUGyDFQ59UU8BCTkqk0
 
 ghc-prim
     GHC.CString:                        4537
-    GHC.Classes:                        15149
+    GHC.Classes:                        19043
     GHC.IntWord64:                      146
     GHC.Tuple:                          802
     GHC.Types:                          1216
 
 ghcjs_210XEgjDa5q074bipEhzRA
-    Data.JSString:                      5824
-    Data.JSString.Internal.Type:        243
+    Data.JSString:                      11944
+    Data.JSString.Internal.Type:        486
     GHCJS.Foreign.Internal:             364
     GHCJS.Internal.Types:               232
     GHCJS.Marshal:                      8518
@@ -149,16 +149,16 @@ main
     CommonSyns:                         1036316
     FpnAttributes:                      50035
     FsnAttributes:                      142750
-    Main:                               2145
-    Model:                              60860
+    Main:                               2094
+    Model:                              44210
     MpnAttributes:                      54806
     MsmpAttributes:                     37746
     MsnAttributes:                      130789
     Nouns:                              427221
     NpnAttributes:                      2104
     NsnAttributes:                      75452
-    Update:                             43096
-    View:                               100007
+    Update:                             43480
+    View:                               103999
 
 scien_7RWav52ZEb8LpSeINhjuJE
     Data.Scientific:                    7323
@@ -183,5 +183,5 @@ vecto_DeaUpJs6ZtbBhz15yBYLWJ
 
 
 
-packed metadata: 3129544
+packed metadata: 3133760
 

@@ -13,7 +13,7 @@ import Miso.String (MisoString, ms)
 import Model
 
 import Data.Char (toUpper)
-import Data.Map (singleton)
+import qualified Data.Map as M
 import Data.Bool (bool)
 import Data.Function (on)
 import Data.List (sortBy)
@@ -82,7 +82,7 @@ viewTeamInput g@Model{..} teamName =
       text "Molimo unesite timove.", br_ []
     , text "Minimalno 2 tima!"
     ]
-  , div_ [ style_ (singleton "visibility" (bool "hidden" "visible" invalidTeamName))
+  , div_ [ style_ (M.singleton "visibility" (bool "hidden" "visible" invalidTeamName))
          , class_ "backButton" ] [
       text "Postoji već tim sa takvim imenom! (ili ste unijeli prazno polje)"
     ]
@@ -91,6 +91,7 @@ viewTeamInput g@Model{..} teamName =
       [ placeholder_ "ImeTima"
       , type_ "text"
       , autofocus_ True
+      , maxlength_ "15"
       , value_ teamName
       , name_ "newTeamName"
       , onInput UpdateTeamField
@@ -110,11 +111,11 @@ viewSynInput g@Model{..} syn num =
   div_ [] [
     div_ [] [
         span_ [] [ text "Broj sintagmi: " ]
-      , span_ [ style_ (singleton "color" (bool "#EC676E" "#18BC9C" (0 /= length syntagmas)))]
+      , span_ [ style_ (M.singleton "color" (bool "#EC676E" "#18BC9C" (0 /= length syntagmas)))]
               [ text (ms (show (length syntagmas)))]
       , span_ [] [ text " (max 50)"]
       ]
-  , div_ [ style_ (singleton "visibility" (bool "hidden" "visible" invalidSyntagma))
+  , div_ [ style_ (M.singleton "visibility" (bool "hidden" "visible" invalidSyntagma))
          , class_ "backButton"]
          [ text "Sintagma treba sadržavati dvije riječi koje sadrže samo slova."
          ]
@@ -138,9 +139,11 @@ viewSynInput g@Model{..} syn num =
     -- , text "Za vaše psihičko zdravlje, ograničit ćemo ukupan broj na maksimalno 50." , br_ []
     , input_ [
         type_ "number"
-      , defaultValue_ "1"
+      , defaultValue_ "30"
       , autofocus_ False
       , value_ num
+      , min_ "1"
+      , max_ "50"
       , name_ "numberToGenerate"
       , onInput UpdateNumberField
       , onEnter GenerateSyntagmas

@@ -6,7 +6,6 @@ module Update (
   updateModel
   ) where
 
-
 -- | Miso framework import
 import Miso hiding (on)
 import Miso.String (fromMisoString, ms)
@@ -61,7 +60,7 @@ updateModel ToRoundPrep g@Model{..} =
 updateModel ToGameplay g@Model{..} =
   g {
     state = Gameplay
-  , time = 60 -- TODO promijenti u 60 ---------------------------------------
+  , time = 60
   } <# do
     shuff <- shuffleM syntagmas
     return $ ShuffleSyns shuff
@@ -143,16 +142,9 @@ updateModel GenerateSyntagmas g@Model{..} =
           then 0
           else number
 
-updateModel (UpdateTeamField str) g = noEff g { inputField = shortStr }
-  where -- TODO NE RADIIIIIIIIIIIIIIIIIIIIII
-    shortStr = ms $ take 15 $ (fromMisoString str :: String)
+updateModel (UpdateTeamField str) g = noEff g { inputField = str }
 updateModel (UpdateSynField str) g = noEff g { inputField = str }
 updateModel (UpdateNumberField str) g = noEff g { numberField = str }
-  -- where
-  --   field | num < 0   = ms $ show 0
-  --         | num > 50  = ms $ show 50
-  --         | otherwise = ms $ show 15
-  --   num = read (fromMisoString str) :: Int
 
 updateModel StartCounter g@Model{..} = effectSub g $ \sink ->
   forM_ [0..] $ \n -> do
