@@ -9,6 +9,7 @@ data Model = Model
   { state :: States
   , inputField :: MisoString
   , numberField :: MisoString
+  , timerField :: MisoString
   , invalidTeamName :: Bool
   , invalidSyntagma :: Bool
   , buttonEnabled :: Bool
@@ -16,6 +17,7 @@ data Model = Model
   , guessed :: [String]
   , teams :: [(String, Int)]
   , currentTeam :: Int
+  , timer :: Int
   , time :: Int
   , runda :: Int
   } deriving (Eq, Show)
@@ -51,9 +53,10 @@ data Action
   | ToMainMenu
   | BackToMainMenu
 
-  | UpdateTeamField MisoString
-  | UpdateSynField MisoString
+  | UpdateTeamField   MisoString
+  | UpdateSynField    MisoString
   | UpdateNumberField MisoString
+  | UpdateTimerField  MisoString
 
   | NextWord
   | SkipWord
@@ -63,6 +66,7 @@ data Action
   | GenerateSyntagmas
   | ShuffleTeams [(String, Int)]
   | ShuffleSyns [String]
+  | SetTime
   | StartCounter
   | Tick
   | NoOp
@@ -74,6 +78,7 @@ initialModel = Model
   { state = MainMenu
   , inputField = mempty
   , numberField = "25"
+  , timerField = "60"
   , invalidTeamName = False
   , invalidSyntagma = False
   , buttonEnabled = False
@@ -81,5 +86,6 @@ initialModel = Model
   , guessed = []
   , teams = []
   , currentTeam = 0
+  , timer = 60
   , time = -1
   , runda = 1 }

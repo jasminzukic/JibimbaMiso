@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-06 09:11:52.537171 UTC
+2018-06-06 12:04:18.7573 UTC
 
 interface main@main:Update 7103
-  interface hash: cc91fb2d63cf0d1d0a3737a9524227fe
-  ABI hash: 8ea359f2fdc3c11a748c39ed5548a08e
+  interface hash: 941d7faf5b3b5f35f073dc94de88b927
+  ABI hash: be15a88dda2c75f21fc783ced7c2d29a
   export-list hash: 04e887348e1f43b62ca06a80b4ca236e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ed2ea50e0056ee7ed57de36f3bcd6bbd
@@ -151,59 +151,63 @@ import  -/  FpnAttributes 0283a21cadc76e2f454c6f57841d2712
 import  -/  FsnAttributes 46ee8ff103f31bdac48bf8ce1926249e
   exports: ae28332bf75c4b98bbca8b8d29c27ead
   fsnAttributes 7caa9817945576f6de82ba3030aafb8b
-import  -/  Model 6c4013d179ec3a7770ca14b3e26af3b8
-  exports: b0844451e857cf9604724bf6e6e7d53e
-  Action 15d5adcb78c5255b09b08790918ba0cb
-  AddSyn 63903ab001cf4734f2a2ac85322407f2
-  AddTeam 051d2ad8b7cdc8c23d535a42160b0363
+import  -/  Model 17686c68bf4ce89bb7f4d3e356474e4d
+  exports: e33e42621f8b0aa38d0e523792d0d01d
+  Action 4657afaa88952862887f45fbdec2f519
+  AddSyn 827485392ebee093ffb6c53948daa41c
+  AddTeam b770bc68aabf27f6940e49f12745991f
   AliasRules 23493c889ffd6df2e5622749ef93053b
-  BackToMainMenu aac72653a54e2307ad1118af454c52c9
+  BackToMainMenu 01fe4ea22752d70c085ea400cca93454
   BasicRules d06eb1bc750cf91bb4e3f3a3a4f79b7e
   CharadesRules fb3c676e8433141c733de4642cfa22f0
   GameOver 7e6d7de57f4c414438d059f3b0152d97
   Gameplay 71767082901452bbbdf359e5b4257aea
-  GenerateSyntagmas cabac3e969776249fc523b92aea729ab
+  GenerateSyntagmas 47f8d1bee1d957ed2eddf8f1d7f429e5
   MainMenu 795e1b1a9ad70b0dc56d78d8cb4f4899
-  Model eb8b828a83f393be3db117cfb71afd63
-  Model 95fc89fe89340df75a2860829fc3779c
-  NextWord 16dcbdc4c826fc9cfd424b5e94155273
-  NoOp f1a6c770ce7fb883a2f9432b0fc2000a
+  Model ce61b0aa1303fd076d8e62245e7b5249
+  Model 1a58e08aadfc10734b929fd46c20f12a
+  NextWord a708040dfc255407b8f3fa7222e30c7f
+  NoOp 140cd2b09c2f03798f2509e38c78bfbf
   OneWordRules b8faed36822a173e093a8d6c658e2a13
   RoundPrep eca1915cfd84bfb2e4164b5f6759e50e
+  SetTime 94abaa7bbf8faf3895d2773af9783774
   Settings 768f358c52c43b18dd21e4c8b6b4e996
-  ShuffleSyns 5207239b2b67aafa23e69deff3e1561d
-  ShuffleTeams bc50104e1133f5f566d728edec34ac72
-  SkipWord b9ae5655e9e3c327e1d4f457fc7fe0d4
-  StartCounter d1772afed5fb8ec515c0aabbaf1189a2
+  ShuffleSyns 2bb67cc4db4524638c9956c4bbf13f71
+  ShuffleTeams b98b646301e0c99c1008e2b872496d64
+  SkipWord da7db4df219095fc16c6b5eddfc89102
+  StartCounter 55581061325fdce2ce17edad04213ef2
   SynInput 30d2603870dfa281f7a92c76d15bdbb3
   TeamInput d2446adc045072bacfbc2587f2c360f6
-  Tick 3e992dcd9fa0ac99c31ef0c3ae332aa3
+  Tick a07b8c844aba45f8af3db3494e7e6356
   TimeOut a6a7399659b9628ba571e9af0226f846
-  ToAliasRules 4ab610a2c357c66588fab3a1dbdbc00d
-  ToBasicRules 257b7da6a54e7f2dff6618433c65fc34
-  ToCharadesRules 581920b5a571bfcba5609517c943db72
-  ToGameplay 4e9858cc1f27741c0719c2847f9cb938
-  ToMainMenu 7631b5bc8abd57ab6f4daf852619c3ea
-  ToOneWordRules 0132450c540943f8554327f15025445a
-  ToRoundPrep 92f0ef61f7a6fd9180a53862f3e43199
-  ToSettings f7fae9c28b979752c8e10d712000e3cb
-  ToSynInput f8bc004910a5f789b8dd55021880f9c0
-  ToTeamInput ac123bfef1db8473a237a060853648cd
-  UpdateNumberField 5cda945b553dc8598a6c2fe888899277
-  UpdateSynField 9a7d60a3409972759768db8585d40f80
-  UpdateTeamField e3a204b0b5b879c166ae588abaa65c5e
-  buttonEnabled 5d5c0d84d938726126f1d05e98035902
-  currentTeam 0a331b84d5bb810fdb2b2e29a2986dfa
-  guessed ed22c1dc25630c6889a14015b6c57ae4
-  inputField bdae2437e01e3be837ef0e9bf008377f
-  invalidSyntagma bb88df12564c09f003a6fb13e3e4b338
-  invalidTeamName 51c45b6c396e36d83cfe90463465365f
-  numberField 7d384e8dc50d2c206d4855c488e3f1ad
-  runda 6f1d200b2b0be7cc52d9d6a2b01c672e
-  state e7e677b9f275cd06c67cb0e687b2d7b2
-  syntagmas 2286f2eb091ea007edcc77ee173945b6
-  teams a38790c6a5b3d97c623aead21191b706
-  time 4302a91ec43be4c7d040687638eeaee6
+  ToAliasRules eb760917ca54d517f9f5320cd7feae5f
+  ToBasicRules 86b90294f64f38c2d4cc0ae89154bae3
+  ToCharadesRules 413c7087e8e1ad0d28ddde0238055eac
+  ToGameplay 0c3a5d4920daf2d41bfb342fdc0618f6
+  ToMainMenu 7892cc74a3617f56851185b973f96797
+  ToOneWordRules 62b40b72e5cffaa3e79d6e74501aa2ce
+  ToRoundPrep b9d13b31c6ecfa94801ca0b2957fa235
+  ToSettings 731329f81cab3699e55ceb69f08f5b5c
+  ToSynInput 22a0f1fcf91279b7373e770b5d5183b7
+  ToTeamInput 885cae67d954d3091f702578b6bf656d
+  UpdateNumberField b2cfdf3f344d3b6aa99c5abe1cfcf9e9
+  UpdateSynField 8aa69f10dbcdb75f88fcedae8647e2d0
+  UpdateTeamField 7d1fee41a494111a9c17400384852180
+  UpdateTimerField fd20637e256c68346ca9476f93a7ea37
+  buttonEnabled 9a351b5b17464d7090e7fc5541006966
+  currentTeam 16c86afb05036d8909728ae125aeda7a
+  guessed efbf74ef15ea0c5e3ff537a0f35c6f99
+  inputField 22fe75f88f63ef2ac3c960b9797b9ccf
+  invalidSyntagma 859881c79f3fe81341dd6bf9ec273e8d
+  invalidTeamName dbcf0f12b880178acafea809a0a29ca4
+  numberField 95e86f4dbc2edc752212e46d22f2d471
+  runda ecbefce8ef485d8dc82483204e904514
+  state b417a67a686a19946eb3ffb24ffeff2f
+  syntagmas 54bd287f8fa717f2fbf84bfc6658a632
+  teams 7e8e53a510c6bedf276beb07bfb4a8cc
+  time 920dc222fe7374115a830f7010cf43e5
+  timer c49a76a64bf13b900e3be55f1fac7953
+  timerField 424fe4276840d6282b7ed1920e43a436
 import  -/  MpnAttributes 1d5078651bb38cfeae13be53429783dc
   exports: 983be302bb1a2654a9789eed59dfc4aa
   mpnAttributes c0b81133f9153ad771018adf0be4b1fa
@@ -222,19 +226,19 @@ import  -/  NpnAttributes 2406995dafaf09174f8ff85deefbe920
 import  -/  NsnAttributes 34c367c1a005d23077ae304739c00dd0
   exports: af11b369d2fd326f911784b686d13afc
   nsnAttributes 4addc0649dff8f99d9ad87e676f08e18
-ec272ef7f4704f5ca0337d28f8f9e549
+52a44f7e9c892e2ea41232da9db3ffd6
   $wupdateModel ::
     Model.Action
     -> Model.Model -> (# Model.Model, [Miso.Effect.Sub Model.Action] #)
   {- Arity: 2,
-     Strictness: <S,1*U><L,U(U,U(U),U(U),U,U,U,U,U,U,U(U),U(U),U(U))>,
+     Strictness: <S,1*U><L,U(U,U(U),U(U),U(U),U,U,U,U,U,U,U(U),U(U),U(U),U(U))>,
      Inline: [0] -}
-197f9fd4b0f25afddc22498baa206fba
+51cb502d1b31c95b3f2be43873fa52e0
   updateModel ::
     Model.Action
     -> Model.Model -> Miso.Effect.Effect Model.Action Model.Model
   {- Arity: 2,
-     Strictness: <S,1*U><L,U(U,U(U),U(U),U,U,U,U,U,U,U(U),U(U),U(U))>m,
+     Strictness: <S,1*U><L,U(U,U(U),U(U),U(U),U,U,U,U,U,U,U(U),U(U),U(U),U(U))>m,
      Inline: INLINE[0],
      Unfolding: InlineRule (2, True, False)
                 (\ w :: Model.Action w1 :: Model.Model ->

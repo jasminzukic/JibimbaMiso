@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-06 08:42:47.960432 UTC
+2018-06-06 11:38:48.78014 UTC
 
 interface main@main:Model 7103
-  interface hash: d6485229903edd853cc2c0c316f70988
-  ABI hash: 6c4013d179ec3a7770ca14b3e26af3b8
-  export-list hash: b0844451e857cf9604724bf6e6e7d53e
+  interface hash: 4f8975c0db6ce5b64190a2b55934e78c
+  ABI hash: 17686c68bf4ce89bb7f4d3e356474e4d
+  export-list hash: e33e42621f8b0aa38d0e523792d0d01d
   orphan hash: 815178c2e5f9afc461d1fe8c5918c0bb
   flag hash: 8c2b7e70e6c4f30ecf05b3f3a01022df
   sig of: Nothing
@@ -13,8 +13,8 @@ interface main@main:Model 7103
   where
 exports:
   Model.initialModel
-  Model.Action{Model.AddSyn Model.AddTeam Model.BackToMainMenu Model.GenerateSyntagmas Model.NextWord Model.NoOp Model.ShuffleSyns Model.ShuffleTeams Model.SkipWord Model.StartCounter Model.Tick Model.ToAliasRules Model.ToBasicRules Model.ToCharadesRules Model.ToGameOver Model.ToGameplay Model.ToMainMenu Model.ToOneWordRules Model.ToRoundPrep Model.ToRules Model.ToSettings Model.ToSynInput Model.ToTeamInput Model.UpdateNumberField Model.UpdateSynField Model.UpdateTeamField}
-  Model.Model{Model.Model Model.buttonEnabled Model.currentTeam Model.guessed Model.inputField Model.invalidSyntagma Model.invalidTeamName Model.numberField Model.runda Model.state Model.syntagmas Model.teams Model.time}
+  Model.Action{Model.AddSyn Model.AddTeam Model.BackToMainMenu Model.GenerateSyntagmas Model.NextWord Model.NoOp Model.SetTime Model.ShuffleSyns Model.ShuffleTeams Model.SkipWord Model.StartCounter Model.Tick Model.ToAliasRules Model.ToBasicRules Model.ToCharadesRules Model.ToGameOver Model.ToGameplay Model.ToMainMenu Model.ToOneWordRules Model.ToRoundPrep Model.ToRules Model.ToSettings Model.ToSynInput Model.ToTeamInput Model.UpdateNumberField Model.UpdateSynField Model.UpdateTeamField Model.UpdateTimerField}
+  Model.Model{Model.Model Model.buttonEnabled Model.currentTeam Model.guessed Model.inputField Model.invalidSyntagma Model.invalidTeamName Model.numberField Model.runda Model.state Model.syntagmas Model.teams Model.time Model.timer Model.timerField}
   Model.States{Model.AliasRules Model.BasicRules Model.CharadesRules Model.GameOver Model.Gameplay Model.MainMenu Model.OneWordRules Model.RoundPrep Model.Settings Model.SynInput Model.TeamInput Model.TimeOut}
 module dependencies:
 package dependencies: miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z
@@ -91,7 +91,7 @@ import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
 import  -/  base-4.8.2.0:GHC.Show ed2e62a4d3cc01e973aec92d52f5786d
 import  -/  base-4.8.2.0:Prelude aeed44d4e8d251a340a1597dd2a0cbc5
 import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
-15d5adcb78c5255b09b08790918ba0cb
+4657afaa88952862887f45fbdec2f519
   $fEqAction :: GHC.Classes.Eq Model.Action
   DFunId[0]
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -102,7 +102,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 GHC.Classes.$fEq[]_$s$fEq[]1 -}
-15d5adcb78c5255b09b08790918ba0cb
+4657afaa88952862887f45fbdec2f519
   $fEqAction_$c/= :: Model.Action -> Model.Action -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: InlineRule (2, True, False)
@@ -110,7 +110,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                  case Model.$fEqAction_$c== a b of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-15d5adcb78c5255b09b08790918ba0cb
+4657afaa88952862887f45fbdec2f519
   $fEqAction_$c== :: Model.Action -> Model.Action -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: (\ ds :: Model.Action ds1 :: Model.Action ->
@@ -140,11 +140,17 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                         -> case GHC.Prim.dataToTag# @ Model.Action wild1 of wild2 {
                              DEFAULT -> GHC.Types.False 15 -> GHC.Types.True }
                         Model.UpdateNumberField b1 -> Data.JSString.js_eq a1 b1 }
+                   Model.UpdateTimerField a1
+                   -> case ds1 of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.dataToTag# @ Model.Action wild1 of wild2 {
+                             DEFAULT -> GHC.Types.False 16 -> GHC.Types.True }
+                        Model.UpdateTimerField b1 -> Data.JSString.js_eq a1 b1 }
                    Model.ShuffleTeams a1
                    -> case ds1 of wild1 {
                         DEFAULT
                         -> case GHC.Prim.dataToTag# @ Model.Action wild1 of wild2 {
-                             DEFAULT -> GHC.Types.False 21 -> GHC.Types.True }
+                             DEFAULT -> GHC.Types.False 22 -> GHC.Types.True }
                         Model.ShuffleTeams b1
                         -> GHC.Classes.$fEq[]_$c==
                              @ (GHC.Base.String, GHC.Types.Int)
@@ -155,7 +161,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                    -> case ds1 of wild1 {
                         DEFAULT
                         -> case GHC.Prim.dataToTag# @ Model.Action wild1 of wild2 {
-                             DEFAULT -> GHC.Types.False 22 -> GHC.Types.True }
+                             DEFAULT -> GHC.Types.False 23 -> GHC.Types.True }
                         Model.ShuffleSyns b1 -> GHC.Classes.$fEq[]_$s$c==2 a1 b1 } }) -}
 bbe1459a77db30032d99d0f63a58bfe3
   $fEqAction_$s$fEq(,) ::
@@ -173,30 +179,30 @@ bbe1459a77db30032d99d0f63a58bfe3
                      @ GHC.Types.Int
                      Model.$fEqAction1
                      GHC.Classes.$fEqInt) -}
-95fc89fe89340df75a2860829fc3779c
+1a58e08aadfc10734b929fd46c20f12a
   $fEqModel :: GHC.Classes.Eq Model.Model
   DFunId[0]
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
                   @ Model.Model Model.$fEqModel_$c== Model.$fEqModel_$c/= -}
-95fc89fe89340df75a2860829fc3779c
+1a58e08aadfc10734b929fd46c20f12a
   $fEqModel_$c/= :: Model.Model -> Model.Model -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <S(SLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))><S(SLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))>,
+     Strictness: <S(SLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))><S(SLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))>,
      Unfolding: InlineRule (2, True, False)
                 (\ a :: Model.Model b :: Model.Model ->
                  case Model.$fEqModel_$c== a b of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-95fc89fe89340df75a2860829fc3779c
+1a58e08aadfc10734b929fd46c20f12a
   $fEqModel_$c== :: Model.Model -> Model.Model -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <S(SLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))><S(SLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))>,
+     Strictness: <S(SLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))><S(SLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))>,
      Inline: INLINE[0],
      Unfolding: InlineRule (2, True, False)
                 (\ w :: Model.Model w1 :: Model.Model ->
-                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ->
-                 case w1 of ww13 { Model.Model ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ww22 ww23 ww24 ww25 ->
+                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ->
+                 case w1 of ww15 { Model.Model ww16 ww17 ww18 ww19 ww20 ww21 ww22 ww23 ww24 ww25 ww26 ww27 ww28 ww29 ->
                  Model.$w$c==
                    ww1
                    ww2
@@ -210,8 +216,8 @@ bbe1459a77db30032d99d0f63a58bfe3
                    ww10
                    ww11
                    ww12
+                   ww13
                    ww14
-                   ww15
                    ww16
                    ww17
                    ww18
@@ -221,7 +227,11 @@ bbe1459a77db30032d99d0f63a58bfe3
                    ww22
                    ww23
                    ww24
-                   ww25 } }) -}
+                   ww25
+                   ww26
+                   ww27
+                   ww28
+                   ww29 } }) -}
 015c0ea1a31b67a28b8dcfeb86d6d392
   $fEqStates :: GHC.Classes.Eq Model.States
   DFunId[0]
@@ -254,7 +264,7 @@ bbe1459a77db30032d99d0f63a58bfe3
                    (GHC.Prim.==#
                       (GHC.Prim.dataToTag# @ Model.States x1)
                       (GHC.Prim.dataToTag# @ Model.States x2)) } }) -}
-15d5adcb78c5255b09b08790918ba0cb
+4657afaa88952862887f45fbdec2f519
   $fShowAction :: GHC.Show.Show Model.Action
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -263,14 +273,14 @@ bbe1459a77db30032d99d0f63a58bfe3
                   Model.$fShowAction_$cshowsPrec
                   Model.$fShowAction_$cshow
                   Model.$fShowAction_$cshowList -}
-15d5adcb78c5255b09b08790918ba0cb
+4657afaa88952862887f45fbdec2f519
   $fShowAction1 :: Model.Action -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (Model.$fShowAction_$cshowsPrec Model.$fShowAction2) -}
 334e8c4e968af868dfa40f9304d1c6ee
   $fShowAction2 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
-15d5adcb78c5255b09b08790918ba0cb
+4657afaa88952862887f45fbdec2f519
   $fShowAction_$cshow :: Model.Action -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -279,17 +289,17 @@ bbe1459a77db30032d99d0f63a58bfe3
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-15d5adcb78c5255b09b08790918ba0cb
+4657afaa88952862887f45fbdec2f519
   $fShowAction_$cshowList :: [Model.Action] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Model.Action
                    Model.$fShowAction1) -}
-15d5adcb78c5255b09b08790918ba0cb
+4657afaa88952862887f45fbdec2f519
   $fShowAction_$cshowsPrec ::
     GHC.Types.Int -> Model.Action -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
-95fc89fe89340df75a2860829fc3779c
+1a58e08aadfc10734b929fd46c20f12a
   $fShowModel :: GHC.Show.Show Model.Model
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -298,11 +308,11 @@ bbe1459a77db30032d99d0f63a58bfe3
                   Model.$fShowModel_$cshowsPrec
                   Model.$fShowModel_$cshow
                   Model.$fShowModel_$cshowList -}
-95fc89fe89340df75a2860829fc3779c
+1a58e08aadfc10734b929fd46c20f12a
   $fShowModel1 :: Model.Model -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (\ w :: Model.Model w1 :: GHC.Base.String ->
-                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ->
+                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ->
                  Model.$w$cshowsPrec
                    0
                    ww1
@@ -317,33 +327,35 @@ bbe1459a77db30032d99d0f63a58bfe3
                    ww10
                    ww11
                    ww12
+                   ww13
+                   ww14
                    w1 }) -}
-95fc89fe89340df75a2860829fc3779c
+1a58e08aadfc10734b929fd46c20f12a
   $fShowModel_$cshow :: Model.Model -> GHC.Base.String
   {- Arity: 1,
-     Strictness: <S,1*U(1*U,U(U),U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))>,
+     Strictness: <S,1*U(1*U,U(U),U(U),U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))>,
      Unfolding: InlineRule (1, True, False)
                 (\ x :: Model.Model ->
                  Model.$fShowModel_$cshowsPrec
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-95fc89fe89340df75a2860829fc3779c
+1a58e08aadfc10734b929fd46c20f12a
   $fShowModel_$cshowList :: [Model.Model] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Model.Model
                    Model.$fShowModel1) -}
-95fc89fe89340df75a2860829fc3779c
+1a58e08aadfc10734b929fd46c20f12a
   $fShowModel_$cshowsPrec ::
     GHC.Types.Int -> Model.Model -> GHC.Show.ShowS
   {- Arity: 3,
-     Strictness: <S,1*U(U)><S,1*U(1*U,U(U),U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U))><L,U>,
+     Strictness: <S,1*U(U)><S,1*U(1*U,U(U),U(U),U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))><L,U>,
      Inline: INLINE[0],
      Unfolding: InlineRule (3, True, False)
                 (\ w :: GHC.Types.Int w1 :: Model.Model w2 :: GHC.Base.String ->
                  case w of ww { GHC.Types.I# ww1 ->
-                 case w1 of ww2 { Model.Model ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ->
+                 case w1 of ww2 { Model.Model ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ->
                  Model.$w$cshowsPrec
                    ww1
                    ww3
@@ -358,6 +370,8 @@ bbe1459a77db30032d99d0f63a58bfe3
                    ww12
                    ww13
                    ww14
+                   ww15
+                   ww16
                    w2 } }) -}
 015c0ea1a31b67a28b8dcfeb86d6d392
   $fShowStates :: GHC.Show.Show Model.States
@@ -426,9 +440,10 @@ ab8832c8719be04d6534408996bd0202
      Unfolding: InlineRule (3, True, True)
                 (\ w :: GHC.Types.Int w1 :: Model.States w2 :: GHC.Base.String ->
                  Model.$w$cshowsPrec1 w1 w2) -}
-1296b7049f75176e597a4a80cebf33b2
+6289b882f40eb181b1d2a340ba40dded
   $w$c== ::
     Model.States
+    -> Miso.String.MisoString
     -> Miso.String.MisoString
     -> Miso.String.MisoString
     -> GHC.Types.Bool
@@ -437,12 +452,14 @@ ab8832c8719be04d6534408996bd0202
     -> [GHC.Base.String]
     -> [GHC.Base.String]
     -> [(GHC.Base.String, GHC.Types.Int)]
+    -> GHC.Types.Int
     -> GHC.Types.Int
     -> GHC.Types.Int
     -> GHC.Types.Int
     -> Model.States
     -> Miso.String.MisoString
     -> Miso.String.MisoString
+    -> Miso.String.MisoString
     -> GHC.Types.Bool
     -> GHC.Types.Bool
     -> GHC.Types.Bool
@@ -452,16 +469,18 @@ ab8832c8719be04d6534408996bd0202
     -> GHC.Types.Int
     -> GHC.Types.Int
     -> GHC.Types.Int
+    -> GHC.Types.Int
     -> GHC.Types.Bool
-  {- Arity: 24, HasNoCafRefs,
-     Strictness: <S,1*U><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><S,1*U><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)>,
+  {- Arity: 28, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><S,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)>,
      Inline: [0] -}
-fa4632c1e48ec564a938b4a478e12ce8
+e64a37b5184e15918cfafdfaf3baabcc
   $w$cshowsPrec ::
     GHC.Prim.Int#
     -> Model.States
     -> Miso.String.MisoString
     -> Miso.String.MisoString
+    -> Miso.String.MisoString
     -> GHC.Types.Bool
     -> GHC.Types.Bool
     -> GHC.Types.Bool
@@ -471,10 +490,11 @@ fa4632c1e48ec564a938b4a478e12ce8
     -> GHC.Types.Int
     -> GHC.Types.Int
     -> GHC.Types.Int
+    -> GHC.Types.Int
     -> GHC.Base.String
     -> GHC.Base.String
-  {- Arity: 14,
-     Strictness: <L,U><L,1*U><L,U(U)><L,U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,U>,
+  {- Arity: 16,
+     Strictness: <L,U><L,1*U><L,U(U)><L,U(U)><L,U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,U>,
      Inline: [0] -}
 015c0ea1a31b67a28b8dcfeb86d6d392
   $w$cshowsPrec1 ::
@@ -506,7 +526,7 @@ fa4632c1e48ec564a938b4a478e12ce8
                    -> GHC.Base.++ @ GHC.Types.Char Model.$fShowStates2 w1
                    Model.GameOver
                    -> GHC.Base.++ @ GHC.Types.Char Model.$fShowStates1 w1 }) -}
-15d5adcb78c5255b09b08790918ba0cb
+4657afaa88952862887f45fbdec2f519
   data Action
     = ToRules
     | ToBasicRules
@@ -524,6 +544,7 @@ fa4632c1e48ec564a938b4a478e12ce8
     | UpdateTeamField Miso.String.MisoString
     | UpdateSynField Miso.String.MisoString
     | UpdateNumberField Miso.String.MisoString
+    | UpdateTimerField Miso.String.MisoString
     | NextWord
     | SkipWord
     | AddTeam
@@ -531,14 +552,16 @@ fa4632c1e48ec564a938b4a478e12ce8
     | GenerateSyntagmas
     | ShuffleTeams [(GHC.Base.String, GHC.Types.Int)]
     | ShuffleSyns [GHC.Base.String]
+    | SetTime
     | StartCounter
     | Tick
     | NoOp
-95fc89fe89340df75a2860829fc3779c
+1a58e08aadfc10734b929fd46c20f12a
   data Model
     = Model {state :: Model.States,
              inputField :: Miso.String.MisoString,
              numberField :: Miso.String.MisoString,
+             timerField :: Miso.String.MisoString,
              invalidTeamName :: GHC.Types.Bool,
              invalidSyntagma :: GHC.Types.Bool,
              buttonEnabled :: GHC.Types.Bool,
@@ -546,6 +569,7 @@ fa4632c1e48ec564a938b4a478e12ce8
              guessed :: [GHC.Base.String],
              teams :: [(GHC.Base.String, GHC.Types.Int)],
              currentTeam :: GHC.Types.Int,
+             timer :: GHC.Types.Int,
              time :: GHC.Types.Int,
              runda :: GHC.Types.Int}
 015c0ea1a31b67a28b8dcfeb86d6d392
@@ -563,39 +587,40 @@ fa4632c1e48ec564a938b4a478e12ce8
     | TimeOut
     | GameOver
     Promotable
-5d5c0d84d938726126f1d05e98035902
+9a351b5b17464d7090e7fc5541006966
   buttonEnabled :: Model.Model -> GHC.Types.Bool
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLSLLLLLL),1*U(A,A,A,A,A,1*U,A,A,A,A,A,A)>,
+     Strictness: <S(LLLLLLSLLLLLLL),1*U(A,A,A,A,A,A,1*U,A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
-                 ds6 }) -}
-0a331b84d5bb810fdb2b2e29a2986dfa
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds7 }) -}
+16c86afb05036d8909728ae125aeda7a
   currentTeam :: Model.Model -> GHC.Types.Int
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLLLSLL),1*U(A,A,A,A,A,A,A,A,A,1*U(U),A,A)>,
+     Strictness: <S(LLLLLLLLLLSLLL),1*U(A,A,A,A,A,A,A,A,A,A,1*U(U),A,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
-                 ds10 }) -}
-ed22c1dc25630c6889a14015b6c57ae4
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds11 }) -}
+efbf74ef15ea0c5e3ff537a0f35c6f99
   guessed :: Model.Model -> [GHC.Base.String]
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLSLLLL),1*U(A,A,A,A,A,A,A,1*U,A,A,A,A)>,
+     Strictness: <S(LLLLLLLLSLLLLL),1*U(A,A,A,A,A,A,A,A,1*U,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
-                 ds8 }) -}
-02fc13ae455c5adc368ee1c4fbb0d749
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds9 }) -}
+b4cc5ca0d573cfd3ea2d48237f649d4f
   initialModel :: Model.Model
   {- Unfolding: (Model.Model
                    Model.MainMenu
                    Data.JSString.Internal.Type.js_empty
-                   Model.initialModel3
+                   Model.initialModel5
+                   Model.initialModel4
                    GHC.Types.False
                    GHC.Types.False
                    GHC.Types.False
@@ -603,6 +628,7 @@ ed22c1dc25630c6889a14015b6c57ae4
                    (GHC.Types.[] @ GHC.Base.String)
                    (GHC.Types.[] @ (GHC.Base.String, GHC.Types.Int))
                    Model.$fShowAction2
+                   Model.initialModel3
                    Model.initialModel2
                    Model.initialModel1) -}
 4622ca5133f624603b7f6185b7ad4265
@@ -611,90 +637,114 @@ ed22c1dc25630c6889a14015b6c57ae4
 8a72ab38a94ff08fb368597b93e744b4
   initialModel2 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# (-1)) -}
-e5c1f179ef374b5aa3c9c6025b6ee003
-  initialModel3 :: Miso.String.MisoString
+94289d4ccab17f32c80879d681452c63
+  initialModel3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 60) -}
+71c00e7ff859ba4f503467154d29b0d3
+  initialModel4 :: Miso.String.MisoString
+  {- Unfolding: (Data.JSString.unpackCString# "60"#) -}
+62d69c9f1cf77ee2af96e1a75057094e
+  initialModel5 :: Miso.String.MisoString
   {- Unfolding: (Data.JSString.unpackCString# "25"#) -}
-bdae2437e01e3be837ef0e9bf008377f
+22fe75f88f63ef2ac3c960b9797b9ccf
   inputField :: Model.Model -> Miso.String.MisoString
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LSLLLLLLLLLL),1*U(A,1*U(U),A,A,A,A,A,A,A,A,A,A)>,
+     Strictness: <S(LSLLLLLLLLLLLL),1*U(A,1*U(U),A,A,A,A,A,A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
                  ds2 }) -}
-bb88df12564c09f003a6fb13e3e4b338
+859881c79f3fe81341dd6bf9ec273e8d
   invalidSyntagma :: Model.Model -> GHC.Types.Bool
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLSLLLLLLL),1*U(A,A,A,A,1*U,A,A,A,A,A,A,A)>,
+     Strictness: <S(LLLLLSLLLLLLLL),1*U(A,A,A,A,A,1*U,A,A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
-                 ds5 }) -}
-51c45b6c396e36d83cfe90463465365f
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds6 }) -}
+dbcf0f12b880178acafea809a0a29ca4
   invalidTeamName :: Model.Model -> GHC.Types.Bool
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLSLLLLLLLL),1*U(A,A,A,1*U,A,A,A,A,A,A,A,A)>,
+     Strictness: <S(LLLLSLLLLLLLLL),1*U(A,A,A,A,1*U,A,A,A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
-                 ds4 }) -}
-7d384e8dc50d2c206d4855c488e3f1ad
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds5 }) -}
+95e86f4dbc2edc752212e46d22f2d471
   numberField :: Model.Model -> Miso.String.MisoString
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLSLLLLLLLLL),1*U(A,A,1*U(U),A,A,A,A,A,A,A,A,A)>,
+     Strictness: <S(LLSLLLLLLLLLLL),1*U(A,A,1*U(U),A,A,A,A,A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
                  ds3 }) -}
-6f1d200b2b0be7cc52d9d6a2b01c672e
+ecbefce8ef485d8dc82483204e904514
   runda :: Model.Model -> GHC.Types.Int
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLLLLLS),1*U(A,A,A,A,A,A,A,A,A,A,A,1*U(U))>,
+     Strictness: <S(LLLLLLLLLLLLLS),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,1*U(U))>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
-                 ds12 }) -}
-e7e677b9f275cd06c67cb0e687b2d7b2
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds14 }) -}
+b417a67a686a19946eb3ffb24ffeff2f
   state :: Model.Model -> Model.States
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(SLLLLLLLLLLL),1*U(1*U,A,A,A,A,A,A,A,A,A,A,A)>,
+     Strictness: <S(SLLLLLLLLLLLLL),1*U(1*U,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
                  ds1 }) -}
-2286f2eb091ea007edcc77ee173945b6
+54bd287f8fa717f2fbf84bfc6658a632
   syntagmas :: Model.Model -> [GHC.Base.String]
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLSLLLLL),1*U(A,A,A,A,A,A,1*U,A,A,A,A,A)>,
+     Strictness: <S(LLLLLLLSLLLLLL),1*U(A,A,A,A,A,A,A,1*U,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
-                 ds7 }) -}
-a38790c6a5b3d97c623aead21191b706
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds8 }) -}
+7e8e53a510c6bedf276beb07bfb4a8cc
   teams :: Model.Model -> [(GHC.Base.String, GHC.Types.Int)]
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLLSLLL),1*U(A,A,A,A,A,A,A,A,1*U,A,A,A)>,
+     Strictness: <S(LLLLLLLLLSLLLL),1*U(A,A,A,A,A,A,A,A,A,1*U,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
-                 ds9 }) -}
-4302a91ec43be4c7d040687638eeaee6
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds10 }) -}
+920dc222fe7374115a830f7010cf43e5
   time :: Model.Model -> GHC.Types.Int
   RecSel Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLLLLSL),1*U(A,A,A,A,A,A,A,A,A,A,1*U(U),A)>,
+     Strictness: <S(LLLLLLLLLLLLSL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,1*U(U),A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
-                 ds11 }) -}
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds13 }) -}
+c49a76a64bf13b900e3be55f1fac7953
+  timer :: Model.Model -> GHC.Types.Int
+  RecSel Model.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLSLL),1*U(A,A,A,A,A,A,A,A,A,A,A,1*U(U),A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Model.Model ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds12 }) -}
+424fe4276840d6282b7ed1920e43a436
+  timerField :: Model.Model -> Miso.String.MisoString
+  RecSel Model.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLLLLLLLL),1*U(A,A,A,1*U(U),A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Model.Model ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                 ds4 }) -}
 instance GHC.Classes.Eq [Model.Action] = Model.$fEqAction
 instance GHC.Classes.Eq [Model.Model] = Model.$fEqModel
 instance GHC.Classes.Eq [Model.States] = Model.$fEqStates

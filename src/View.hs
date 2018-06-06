@@ -26,12 +26,7 @@ viewModel g@Model{..} = div_ [ class_ "mainDiv sredina" ] [
   , case state of -- MANUAL ROUTING
     MainMenu  -> viewMainMenu g
 
-    -- BasicRules    -> viewBasicRules g
-    -- AliasRules    -> viewAliasRules g
-    -- CharadesRules -> viewCharadesRules g
-    -- OneWordRules  -> viewOneWordRules g
-
-    Settings  -> viewSettings g -- TODO dodati polja za unos
+    Settings  -> viewSettings g timerField
 
     TeamInput -> viewTeamInput g inputField
 
@@ -47,12 +42,6 @@ viewModel g@Model{..} = div_ [ class_ "mainDiv sredina" ] [
 
     _         -> viewRules g
 
-  -- , text "-----------------------------------"
-  -- , div_ [] [
-  --     text (ms (show state))
-  --   , ul_ [] $
-  --       flip map syntagmas $ \t -> li_ [] [text (ms t)]
-  --   ]
     ]
   ]
 
@@ -133,10 +122,25 @@ viewOneWordRules =
   , p_ [] [ text "Za veću težinu igre probajte igrati bez gestikuliranja." ]
   ]
 
-viewSettings :: Model -> View Action
-viewSettings g@Model{..} =
+viewSettings :: Model -> MisoString -> View Action
+viewSettings g@Model{..} num =
   div_ [] [
-    text "tu treba settingse dodati"
+    div_ [ class_ "settings" ] [
+      text "Vrijeme: "
+    , input_ [
+        type_ "number"
+      , autofocus_ True
+      , defaultValue_ $ ms timer
+      , value_ num
+      , min_ "10"
+      , max_ "120"
+      , step_ "10"
+      , name_ "timeSettings"
+      , onInput UpdateTimerField
+      , onEnter SetTime
+      ]
+    , text " sekundi (10-120)"
+    ]
   , div_ [ class_ "bottomButtons" ] [
       button_ [ class_ "regularButton"
               , onClick BackToMainMenu ]
@@ -238,7 +242,7 @@ viewRoundPrep g@Model{..} =
       , div_ [ style_ (M.singleton "color" "#18BC9C") ]
              [ displayRoundDescription runda ]
       , viewTeamScores teams
-      , text (ms ("Tim " ++ map toUpper (fst (teams !! currentTeam)) ++ ", jeste spremni? Imate 60 sekundi")), br_ []
+      , text (ms ("Tim " ++ map toUpper (fst (teams !! currentTeam)) ++ ", jeste spremni? Imate " ++ (show timer) ++ " sekundi")), br_ []
     ]
   , div_ [ class_ "bottomButtons" ] [
       button_ [ class_ "backButton", onClick ToSynInput ] [ text "NATRAG" ]

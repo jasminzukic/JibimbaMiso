@@ -65,7 +65,7 @@ updateModel ToRoundPrep g@Model{..} =
 updateModel ToGameplay g@Model{..} =
   g {
     state = Gameplay
-  , time = 60
+  , time = timer
   } <# do
     shuff <- shuffleM syntagmas
     return $ ShuffleSyns shuff
@@ -147,9 +147,19 @@ updateModel GenerateSyntagmas g@Model{..} =
           then 0
           else number
 
-updateModel (UpdateTeamField str) g = noEff g { inputField = str }
-updateModel (UpdateSynField str) g = noEff g { inputField = str }
-updateModel (UpdateNumberField str) g = noEff g { numberField = str }
+updateModel (UpdateTeamField   str) g = noEff g { inputField  = str }
+updateModel (UpdateSynField    str) g = noEff g { inputField  = str }
+updateModel (UpdateNumberField num) g = noEff g { numberField = num }
+updateModel (UpdateTimerField  num) g = noEff g { timerField  = num }
+
+updateModel SetTime g@Model{..} = noEff g { timer = t }
+  where
+    t' = fromMisoString timerField
+    t = if t' < 0
+          then 10
+          else if t' > 120
+            then 120
+            else t'
 
 updateModel StartCounter g@Model{..} = effectSub g $ \sink ->
   forM_ [0..] $ \n -> do
@@ -157,7 +167,7 @@ updateModel StartCounter g@Model{..} = effectSub g $ \sink ->
     sink Tick
 
 updateModel Tick g@Model{..} =
-  if time <= 60 && time > 1
+  if time <= timer && time > 1
     then noEff g {
       time = time - 1
     , buttonEnabled = False

@@ -1,7 +1,7 @@
 code size summary per package:
 
 BofHAI91DNcFFKfbBMPPtG:  28914
-HRRS7cQi8bU4jYuh6NkL5Z:  125700
+HRRS7cQi8bU4jYuh6NkL5Z:  126034
 IOL5KW9YQiHGMQ1f5cNk4t:  15905
 IRgDpjrQSWr6m6yRGgh51b:  2275
 aeson_JYLYzg269i8LI7KZ5LWbtd:33316
@@ -12,7 +12,7 @@ ghc-prim:                21850
 ghcjs_210XEgjDa5q074bipEhzRA:17823
 ghcjs_9jpamHTyFf8CL10DbS4jxv:10248
 integer-gmp:             43175
-main:                    2184354
+main:                    2205245
 scien_7RWav52ZEb8LpSeINhjuJE:12705
 text_AoFu0I23s11C5sDmOoIAPZ:18768
 time_1GoZbNl2fDzKHJr3QPGAAf:5865
@@ -36,7 +36,7 @@ HRRS7cQi8bU4jYuh6NkL5Z
     Miso.Html.Element:                  3311
     Miso.Html.Event:                    985
     Miso.Html.Internal:                 26013
-    Miso.Html.Property:                 4076
+    Miso.Html.Property:                 4410
     Miso.String:                        99
 
 IOL5KW9YQiHGMQ1f5cNk4t
@@ -149,16 +149,16 @@ main
     CommonSyns:                         1036316
     FpnAttributes:                      50035
     FsnAttributes:                      142750
-    Main:                               2145
-    Model:                              57368
+    Main:                               2207
+    Model:                              64402
     MpnAttributes:                      54806
     MsmpAttributes:                     37746
     MsnAttributes:                      130789
     Nouns:                              427221
     NpnAttributes:                      2104
     NsnAttributes:                      75387
-    Update:                             43191
-    View:                               124496
+    Update:                             45941
+    View:                               135541
 
 scien_7RWav52ZEb8LpSeINhjuJE
     Data.Scientific:                    7323
@@ -183,5 +183,5 @@ vecto_DeaUpJs6ZtbBhz15yBYLWJ
 
 
 
-packed metadata: 3135872
+packed metadata: 3139077
 
