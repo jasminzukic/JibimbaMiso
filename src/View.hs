@@ -233,8 +233,10 @@ viewRoundPrep :: Model -> View Action
 viewRoundPrep g@Model{..} =
   div_ [] [
     div_ [] [
-        text (ms ("Runda: " ++ show runda)), br_ []
-      , displayRoundDescription runda , br_ [], br_ []
+        text (ms ("Runda: " ++ show runda))
+      , br_ []
+      , div_ [ style_ (M.singleton "color" "#18BC9C") ]
+             [ displayRoundDescription runda ]
       , viewTeamScores teams
       , text (ms ("Tim " ++ map toUpper (fst (teams !! currentTeam)) ++ ", jeste spremni? Imate 60 sekundi")), br_ []
     ]
@@ -274,8 +276,8 @@ viewGameplay g@Model{..} =
 viewTimeOut :: Model -> View Action
 viewTimeOut g@Model{..} =
   div_ [] [
-    div_ [ class_ "sredina" ] [
-        text "Vrijeme je isteklo", br_ [], br_ []
+    div_ [] [
+        text "Vrijeme je isteklo", br_ []
       , viewTeamScores teams
       , text (ms ("Tim " ++ map toUpper (fst (teams !! currentTeam)) ++ ", jeste spremni? Imate 60 sekundi")), br_ []
     ]
@@ -287,8 +289,8 @@ viewTimeOut g@Model{..} =
 viewGameOver :: Model -> View Action
 viewGameOver g@Model{..} =
   div_ [] [
-    div_ [ class_ "sredina" ] [
-        text "Igra je gotova!" , br_ [], br_ []
+    div_ [] [
+        text "Igra je gotova!" , br_ []
       , viewTeamScores teams
     ]
   , div_ [ class_ "bottomButtons" ] [

@@ -1,7 +1,7 @@
 code size summary per package:
 
 BofHAI91DNcFFKfbBMPPtG:  28914
-HRRS7cQi8bU4jYuh6NkL5Z:  125400
+HRRS7cQi8bU4jYuh6NkL5Z:  125700
 IOL5KW9YQiHGMQ1f5cNk4t:  15905
 IRgDpjrQSWr6m6yRGgh51b:  2275
 aeson_JYLYzg269i8LI7KZ5LWbtd:33316
@@ -12,7 +12,7 @@ ghc-prim:                21850
 ghcjs_210XEgjDa5q074bipEhzRA:17823
 ghcjs_9jpamHTyFf8CL10DbS4jxv:10248
 integer-gmp:             43175
-main:                    2185627
+main:                    2184354
 scien_7RWav52ZEb8LpSeINhjuJE:12705
 text_AoFu0I23s11C5sDmOoIAPZ:18768
 time_1GoZbNl2fDzKHJr3QPGAAf:5865
@@ -35,7 +35,7 @@ HRRS7cQi8bU4jYuh6NkL5Z
     Miso.FFI:                           10608
     Miso.Html.Element:                  3311
     Miso.Html.Event:                    985
-    Miso.Html.Internal:                 25713
+    Miso.Html.Internal:                 26013
     Miso.Html.Property:                 4076
     Miso.String:                        99
 
@@ -158,7 +158,7 @@ main
     NpnAttributes:                      2104
     NsnAttributes:                      75387
     Update:                             43191
-    View:                               125769
+    View:                               124496
 
 scien_7RWav52ZEb8LpSeINhjuJE
     Data.Scientific:                    7323
@@ -183,5 +183,5 @@ vecto_DeaUpJs6ZtbBhz15yBYLWJ
 
 
 
-packed metadata: 3135989
+packed metadata: 3135872
 

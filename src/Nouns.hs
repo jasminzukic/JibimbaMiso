@@ -423,7 +423,7 @@ nouns = [
   "bratstvo ns",
   "brava fs",
   "braća np",
-  "brašno ms",
+  "brašno ns",
   "brda np",
   "brend ms",
   "brendovi mp",
