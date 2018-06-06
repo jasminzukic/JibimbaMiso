@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-06 06:22:20.930752 UTC
+2018-06-06 08:42:49.777868 UTC
 
 interface main@main:Main 7103
-  interface hash: 5052beea78d2a1bbb4303e74ae6025c2
-  ABI hash: 1dbf11cbbfe492e271aa9776b3188862
+  interface hash: 32482fde5ad34e4da82df74bac7c0346
+  ABI hash: 30d842d242ec946454873be5894aca2f
   export-list hash: 91fd4c5645e347487ce40001f846ba65
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: d86d35ac53dbe32198cf79cede514e56
@@ -124,22 +124,22 @@ import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.Types a1a3679a439790272d6d
 import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
 import  -/  base-4.8.2.0:Prelude aeed44d4e8d251a340a1597dd2a0cbc5
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  Model 145188b506ea10e4d82328284bfa13b5
-  exports: 15aba1c4ead2fd803b6d5c0b0ed01a2a
-  StartCounter 2d0a478940f806bef8b2c2a430d78c71
-  initialModel 033950d686c733333b97fdb9b5d9b50c
-import  -/  Update 176d85af8ad9048910b6c00820a37266
-  exports: 1d6c13eb1c749d8a1156496d27160cbd
-  updateModel ed9fc481cbc7af55a96d738debe89f39
-import  -/  View 7a0ca2fb92e77d87ce04c216b4d04fcf
+import  -/  Model 6c4013d179ec3a7770ca14b3e26af3b8
+  exports: b0844451e857cf9604724bf6e6e7d53e
+  StartCounter d1772afed5fb8ec515c0aabbaf1189a2
+  initialModel 02fc13ae455c5adc368ee1c4fbb0d749
+import  -/  Update 8ea359f2fdc3c11a748c39ed5548a08e
+  exports: 04e887348e1f43b62ca06a80b4ca236e
+  updateModel 197f9fd4b0f25afddc22498baa206fba
+import  -/  View 0906901d5e9a367ff48e3e5f8240b0d2
   exports: dc9d1b341db2bbcfe55e6526c2959cf1
-  viewModel b18f575d2b267edd9870fcda7966fe71
-9e7753c1223407ef170b49dce9ff1773
+  viewModel 3efc1246ada5e0383406a0b1be811793
+1dd500784e906ea68c86a0315dcf198d
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-77093fdae886e0a486a35d25ac290c79
+daf055d8d94007a86363608632afe8c1
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -163,7 +163,7 @@ import  -/  View 7a0ca2fb92e77d87ce04c216b4d04fcf
                     ->_R Sym (GHC.Types.NTCo:IO[0]
                                   <GHC.IORef.IORef Miso.Html.Internal.VTree>_R))
                    w2) -}
-becdd0688061e176556124434fd04af7
+0bc4a2fb3ca8e1094cb5e230484b6382
   main2 ::
     Miso.Effect.Sink Model.Action
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -172,21 +172,7 @@ becdd0688061e176556124434fd04af7
   {- Arity: 2,
      Unfolding: (\ writeEvent :: Miso.Effect.Sink Model.Action[OneShot]
                    s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 case Model.initialModel of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ->
-                 case View.viewModel1
-                        ww1
-                        ww2
-                        ww3
-                        ww4
-                        ww5
-                        ww6
-                        ww7
-                        ww9
-                        ww10
-                        ww11
-                        ww12
-                        writeEvent
-                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Main.main3 writeEvent s of ds1 { (#,#) ipv ipv1 ->
                  case {__pkg_ccall miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z $r = document.body; GHC.Prim.State#
                                                                                               GHC.Prim.RealWorld
                                                                                             -> (# GHC.Prim.State#
@@ -240,9 +226,27 @@ becdd0688061e176556124434fd04af7
                        @ Miso.Html.Internal.VTree
                        ipv3)
                       `cast`
-                    (Sym (GHC.IORef.NTCo:IORef[0]) <Miso.Html.Internal.VTree>_N) #) } } } } } } } }) -}
-98a37370812c0b0640ac212c8988c31b
+                    (Sym (GHC.IORef.NTCo:IORef[0]) <Miso.Html.Internal.VTree>_N) #) } } } } } } }) -}
+d20f69158a39d2b7a8cfd5407cfc4863
   main3 ::
+    Miso.Effect.Sink Model.Action
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Miso.Html.Internal.VTree #)
+  {- Unfolding: (View.viewModel1
+                   Model.MainMenu
+                   Data.JSString.Internal.Type.js_empty
+                   Model.initialModel3
+                   GHC.Types.False
+                   GHC.Types.False
+                   GHC.Types.False
+                   (GHC.Types.[] @ GHC.Base.String)
+                   (GHC.Types.[] @ (GHC.Base.String, GHC.Types.Int))
+                   Model.$fShowAction2
+                   Model.initialModel2
+                   Model.initialModel1) -}
+1e5800549683666a60b020498570e50b
+  main4 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <L,U>,
@@ -250,11 +254,11 @@ becdd0688061e176556124434fd04af7
                  GHC.Prim.catch#
                    @ ()
                    @ GHC.Exception.SomeException
-                   Main.main4
+                   Main.main5
                    (GHC.TopHandler.runIO2 @ ())
                    eta) -}
-d1678fc36a09a22024862d5128b78725
-  main4 ::
+e3b1e106e6cd7cb35f8210ec125d228a
+  main5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,

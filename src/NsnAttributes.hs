@@ -806,7 +806,6 @@ nsnAttributes = [
   "slatko",
   "slijedeće",
   "slomljeno",
-  "slovo",
   "složeno",
   "slučajno",
   "smanjeno",

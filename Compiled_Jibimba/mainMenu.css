@@ -31,6 +31,15 @@ button:focus {
 .forwardButton:hover { color: #00A684; /* 100 saturation, 65 value */ }
 .forwardButton:focus { color: #00A684; /* 100 saturation, 65 value */ }
 
+.rulesButton {
+  color: #2C3E50;
+  width: 160px;
+  text-align: center;
+}
+.rulesButton:hover { color: #18BC9C; }
+.rulesButton:focus { color: #18BC9C; }
+
+
 .mainDiv {
     max-width: 320px;
     height: 480px;
@@ -78,10 +87,6 @@ ul {
   display: inline-block;
   padding-left: 0px;
 }
-
-/*ol li {
-  text-align: left;
-}*/
 
 li {
   text-align: center;

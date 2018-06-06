@@ -26,7 +26,10 @@ viewModel g@Model{..} = div_ [ class_ "mainDiv sredina" ] [
   , case state of -- MANUAL ROUTING
     MainMenu  -> viewMainMenu g
 
-    Rules     -> viewRules g
+    -- BasicRules    -> viewBasicRules g
+    -- AliasRules    -> viewAliasRules g
+    -- CharadesRules -> viewCharadesRules g
+    -- OneWordRules  -> viewOneWordRules g
 
     Settings  -> viewSettings g -- TODO dodati polja za unos
 
@@ -42,6 +45,8 @@ viewModel g@Model{..} = div_ [ class_ "mainDiv sredina" ] [
 
     GameOver  -> viewGameOver g
 
+    _         -> viewRules g
+
   -- , text "-----------------------------------"
   -- , div_ [] [
   --     text (ms (show state))
@@ -55,24 +60,88 @@ viewModel g@Model{..} = div_ [ class_ "mainDiv sredina" ] [
 viewMainMenu :: Model -> View Action
 viewMainMenu g@Model{..} =
     ul_ [ class_ "mainMenuList"] [
-      li_ [] [ button_ [ class_ "regularButton", onClick ToTeamInput ] [ text "NOVA IGRA" ] ]
-    , li_ [] [ button_ [ class_ "regularButton", onClick ToRules ] [ text "PRAVILA" ] ]
-    , li_ [] [ button_ [ class_ "regularButton", onClick ToSettings ] [ text "POSTAVKE" ] ]
+      li_ [] [ button_ [ class_ "regularButton", onClick ToTeamInput  ] [ text "NOVA IGRA" ] ]
+    , li_ [] [ button_ [ class_ "regularButton", onClick ToBasicRules ] [ text "PRAVILA"   ] ]
+    , li_ [] [ button_ [ class_ "regularButton", onClick ToSettings   ] [ text "POSTAVKE"  ] ]
     ]
 
 
 viewRules :: Model -> View Action
-viewRules _ =
+viewRules g@Model{..} =
   div_ [] [
-    text "tu treba pravila napisati", br_ []
-  , button_ [ onClick BackToMainMenu ] [ text "POČETAK" ]
+    div_ [] [
+      button_ [ class_ "rulesButton"
+              , onClick ToBasicRules ]
+              [ text "OSNOVE" ]
+    , button_ [ class_ "rulesButton"
+              , onClick ToAliasRules ]
+              [ text "ALIAS   " ]
+    ]
+  , div_ [] [
+      button_ [ class_ "rulesButton"
+              , onClick ToCharadesRules ]
+              [ text "PANTOMIMA" ]
+    , button_ [ class_ "rulesButton"
+              , onClick ToOneWordRules ]
+              [ text "JEDNA RIJEČ" ]
+    ]
+  , case state of
+      BasicRules    -> viewBasicRules
+      AliasRules    -> viewAliasRules
+      CharadesRules -> viewCharadesRules
+      OneWordRules  -> viewOneWordRules
+  , div_ [ class_ "bottomButtons" ] [
+      button_ [ class_ "regularButton"
+              , onClick BackToMainMenu ]
+              [ text "POČETAK" ]
+      ]
+  ]
+
+viewBasicRules :: View Action
+viewBasicRules =
+  div_ [] [
+    p_ [] [ text "Tri su kruga igre:", br_ []
+          , text "1. Alias", br_ []
+          , text "2. Pantomima", br_ []
+          , text "3. Jedna riječ", br_ []
+          ]
+  , p_ [] [ text "Sintagme se ponavljaju u svakom krugu." ]
+  , p_ [] [ text "" ]
+  ]
+
+viewAliasRules :: View Action
+viewAliasRules =
+  div_ [] [
+    p_ [] [ text "Sintagmu opisujete riječima." ]
+  , p_ [] [ text "Ne smijete koristiti korijene riječi niti strane jezike." ]
+  , p_ [] [ text "Za veću težinu igre probajte igrati bez gestikuliranja." ]
+  ]
+
+viewCharadesRules :: View Action
+viewCharadesRules =
+  div_ [] [
+    p_ [] [ text "Sintagmu opisujete kretnjom." ]
+  , p_ [] [ text "Ne smijete proizvoditi zvukove." ]
+  , p_ [] [ text "Za veću težinu igre probajte ne pokazivati prstom na stvari oko sebe." ]
+  ]
+
+viewOneWordRules :: View Action
+viewOneWordRules =
+  div_ [] [
+    p_ [] [ text "Sintagmu opisujete samo JEDNOM riječju." ]
+  , p_ [] [ text "Ne smijete koristiti korijene riječi niti strane jezike." ]
+  , p_ [] [ text "Za veću težinu igre probajte igrati bez gestikuliranja." ]
   ]
 
 viewSettings :: Model -> View Action
 viewSettings g@Model{..} =
   div_ [] [
-    text "tu treba settingse dodati", br_ []
-    , button_ [ onClick BackToMainMenu ] [ text "POČETAK" ]
+    text "tu treba settingse dodati"
+  , div_ [ class_ "bottomButtons" ] [
+      button_ [ class_ "regularButton"
+              , onClick BackToMainMenu ]
+              [ text "POČETAK" ]
+      ]
   ]
 
 viewTeamInput :: Model -> MisoString -> View Action
@@ -84,7 +153,7 @@ viewTeamInput g@Model{..} teamName =
     ]
   , div_ [ style_ (M.singleton "visibility" (bool "hidden" "visible" invalidTeamName))
          , class_ "backButton" ] [
-      text "Postoji već tim sa takvim imenom! (ili ste unijeli prazno polje)"
+      text "Unijeli ste prazno polje ili tim koji već postoji!"
     ]
   , div_ [] [
     input_

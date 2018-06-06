@@ -38,7 +38,12 @@ updateModel ToTeamInput g = noEff g {
     state = TeamInput
   , invalidTeamName = False
   }
-updateModel ToRules g = noEff g { state = Rules }
+
+updateModel ToBasicRules     g = noEff g { state = BasicRules    }
+updateModel ToAliasRules     g = noEff g { state = AliasRules    }
+updateModel ToCharadesRules g = noEff g { state = CharadesRules }
+updateModel ToOneWordRules   g = noEff g { state = OneWordRules  }
+
 updateModel ToSettings g = noEff g { state = Settings }
 updateModel ToSynInput  g@Model{..} =
   g {

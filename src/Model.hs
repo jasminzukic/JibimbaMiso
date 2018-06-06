@@ -22,7 +22,10 @@ data Model = Model
 
 
 data States = MainMenu
-            | Rules
+            | BasicRules
+            | AliasRules
+            | CharadesRules
+            | OneWordRules
             | Settings
             | TeamInput
             | SynInput
@@ -35,6 +38,10 @@ data States = MainMenu
 -- | Sum type for application events
 data Action
   = ToRules
+  | ToBasicRules
+  | ToAliasRules
+  | ToCharadesRules
+  | ToOneWordRules
   | ToSettings
   | ToTeamInput
   | ToSynInput
@@ -66,7 +73,7 @@ initialModel :: Model
 initialModel = Model
   { state = MainMenu
   , inputField = mempty
-  , numberField = "1"
+  , numberField = "25"
   , invalidTeamName = False
   , invalidSyntagma = False
   , buttonEnabled = False
