@@ -32,12 +32,12 @@ Preprocessing library miso-0.18.0.0...
 [29 of 33] Compiling Miso.Subscription.WebSocket ( ghcjs-src/Miso/Subscription/WebSocket.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Subscription/WebSocket.js_o )
 [30 of 33] Compiling Miso.Subscription.Window ( ghcjs-src/Miso/Subscription/Window.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Subscription/Window.js_o )
 
-ghcjs-src/Miso/Subscription/Window.hs:27:1: Warning:
+ghcjs-src/Miso/Subscription/Window.hs:27:1: warning: [-Wunused-imports]
     The import of ‘Miso.String’ is redundant
       except perhaps to import instances from ‘Miso.String’
     To import instances alone, use: import Miso.String()
 
-ghcjs-src/Miso/Subscription/Window.hs:28:1: Warning:
+ghcjs-src/Miso/Subscription/Window.hs:28:1: warning: [-Wunused-imports]
     The import of ‘Miso.Event’ is redundant
       except perhaps to import instances from ‘Miso.Event’
     To import instances alone, use: import Miso.Event()
@@ -45,5 +45,5 @@ ghcjs-src/Miso/Subscription/Window.hs:28:1: Warning:
 [32 of 33] Compiling Miso.Subscription ( ghcjs-src/Miso/Subscription.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso/Subscription.js_o )
 [33 of 33] Compiling Miso             ( ghcjs-src/Miso.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Miso.js_o )
 Installing library in
-/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-6.30/ghcjs-0.2.0.9006030_ghc-7.10.3/lib/x86_64-linux-ghcjs-0.2.0.9006030-ghc7_10_3/miso-0.18.0.0-HRRS7cQi8bU4jYuh6NkL5Z
+/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq
 Registering miso-0.18.0.0...

@@ -1,0 +1,29 @@
+Configuring http-types-0.9.1...
+Building http-types-0.9.1...
+Preprocessing library http-types-0.9.1...
+[1 of 7] Compiling Network.HTTP.Types.Version ( Network/HTTP/Types/Version.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Types/Version.js_o )
+[2 of 7] Compiling Network.HTTP.Types.URI ( Network/HTTP/Types/URI.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Types/URI.js_o )
+
+Network/HTTP/Types/URI.hs:148:26: warning: [-Wdeprecations]
+    In the use of ‘breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+
+Network/HTTP/Types/URI.hs:283:22: warning: [-Wdeprecations]
+    In the use of ‘breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+
+Network/HTTP/Types/URI.hs:313:20: warning: [-Wdeprecations]
+    In the use of ‘breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+
+Network/HTTP/Types/URI.hs:325:18: warning: [-Wdeprecations]
+    In the use of ‘breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+[3 of 7] Compiling Network.HTTP.Types.Status ( Network/HTTP/Types/Status.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Types/Status.js_o )
+[4 of 7] Compiling Network.HTTP.Types.QueryLike ( Network/HTTP/Types/QueryLike.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Types/QueryLike.js_o )
+[5 of 7] Compiling Network.HTTP.Types.Method ( Network/HTTP/Types/Method.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Types/Method.js_o )
+[6 of 7] Compiling Network.HTTP.Types.Header ( Network/HTTP/Types/Header.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Types/Header.js_o )
+[7 of 7] Compiling Network.HTTP.Types ( Network/HTTP/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Types.js_o )
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/http-types-0.9.1-CGBAFeRfXsP5IspMvEVgsT
+Registering http-types-0.9.1...

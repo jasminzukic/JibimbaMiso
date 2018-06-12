@@ -1,156 +1,157 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-06 11:38:48.78014 UTC
+2018-06-12 12:32:32.040495 UTC
 
-interface main@main:Model 7103
-  interface hash: 4f8975c0db6ce5b64190a2b55934e78c
-  ABI hash: 17686c68bf4ce89bb7f4d3e356474e4d
-  export-list hash: e33e42621f8b0aa38d0e523792d0d01d
-  orphan hash: 815178c2e5f9afc461d1fe8c5918c0bb
-  flag hash: 8c2b7e70e6c4f30ecf05b3f3a01022df
+interface main@main:Model 8001
+  interface hash: a054a1c4b96679d4488bf917253ab60e
+  ABI hash: 73a21e0d0bf318429f798b5c50371a84
+  export-list hash: 8859018b6a9534d7708837492ad17f1d
+  orphan hash: ba071ee87bb348079e991fc633a5e4f8
+  flag hash: 243f9b3762277ac9a9cd1c0afa23050d
   sig of: Nothing
   used TH splices: False
   where
 exports:
   Model.initialModel
-  Model.Action{Model.AddSyn Model.AddTeam Model.BackToMainMenu Model.GenerateSyntagmas Model.NextWord Model.NoOp Model.SetTime Model.ShuffleSyns Model.ShuffleTeams Model.SkipWord Model.StartCounter Model.Tick Model.ToAliasRules Model.ToBasicRules Model.ToCharadesRules Model.ToGameOver Model.ToGameplay Model.ToMainMenu Model.ToOneWordRules Model.ToRoundPrep Model.ToRules Model.ToSettings Model.ToSynInput Model.ToTeamInput Model.UpdateNumberField Model.UpdateSynField Model.UpdateTeamField Model.UpdateTimerField}
-  Model.Model{Model.Model Model.buttonEnabled Model.currentTeam Model.guessed Model.inputField Model.invalidSyntagma Model.invalidTeamName Model.numberField Model.runda Model.state Model.syntagmas Model.teams Model.time Model.timer Model.timerField}
+  Model.Action{Model.AddSyn Model.AddTeam Model.BackToMainMenu Model.GenerateSyntagmas Model.NextWord Model.NoOp Model.SetTime Model.SettingsToMainMenu Model.ShuffleSyns Model.ShuffleTeams Model.SkipWord Model.StartCounter Model.Tick Model.ToAliasRules Model.ToBasicRules Model.ToCharadesRules Model.ToGameOver Model.ToGameplay Model.ToMainMenu Model.ToOneWordRules Model.ToRoundPrep Model.ToRules Model.ToSettings Model.ToSynInput Model.ToTeamInput Model.UpdateNumberField Model.UpdateSynField Model.UpdateTeamField Model.UpdateTimerField}
+  Model.Generator{Model.Done Model.Generating Model.Idle}
+  Model.Model{Model.Model buttonEnabled currentTeam generator guessed inputField invalidSyntagma invalidTeamName numberField runda state syntagmas teams time timer timerField}
   Model.States{Model.AliasRules Model.BasicRules Model.CharadesRules Model.GameOver Model.Gameplay Model.MainMenu Model.OneWordRules Model.RoundPrep Model.Settings Model.SynInput Model.TeamInput Model.TimeOut}
 module dependencies:
-package dependencies: miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z
-                      aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd
-                      array-0.5.1.0@array_30xqJMcqwbkI6LBfgLltdH
-                      attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU base-4.8.2.0
-                      binary-0.7.5.0@binar_03WQkzzYAE08cZoz1r0IhX
-                      bytestring-0.10.6.0@bytes_96M8oqQTVIe6bIZr9qhhuC
-                      containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8
-                      deepseq-1.4.1.1@deeps_6zNFUGyDFQ59UU8BCTkqk0
-                      dlist-0.7.1.2@dlist_H1vOXFk9eUBGkwT4KVRG25
-                      fail-4.9.0.0@fail_9oXv4m1cFET3xpGVsHCxUq ghc-prim-0.4.0.0
-                      ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA
-                      ghcjs-prim-0.1.0.0@ghcjs_9jpamHTyFf8CL10DbS4jxv
-                      hashable-1.2.4.0@hasha_Bj7NmECL61JJPMp5YcPO6u integer-gmp-0.5.1.0
-                      primitive-0.6.1.0@primi_CRhbMv8kA5dFpZOCD0QPrI
-                      scientific-0.3.4.9@scien_7RWav52ZEb8LpSeINhjuJE
-                      semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu
-                      tagged-0.8.4@tagge_EpMmiBjiJPdFiokZ6hOmMm template-haskell-2.10.0.0
-                      text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ
-                      time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf
-                      transformers-0.4.2.0@trans_EziP6JoSSK398q9vuXpnAA
-                      unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP
-                      vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ
-orphans: miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.String
-         aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd:Data.Aeson.Types.Generic
-         aeson-0.11.3.0@aeson_JYLYzg269i8LI7KZ5LWbtd:Data.Aeson.Types.Instances
-         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.ByteString.Char8
-         attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.Text.Internal
-         base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
-         binary-0.7.5.0@binar_03WQkzzYAE08cZoz1r0IhX:Data.Binary.Generic
-         bytestring-0.10.6.0@bytes_96M8oqQTVIe6bIZr9qhhuC:Data.ByteString.Builder
-         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:Data.JSString
-         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Internal.Types
-         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:GHCJS.Marshal.Pure
-         hashable-1.2.4.0@hasha_Bj7NmECL61JJPMp5YcPO6u:Data.Hashable.Generic
-         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text
-         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Lazy
-         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Show
-         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.Calendar.Gregorian
-         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.Format.Parse
-         time-1.5.0.1@time_1GoZbNl2fDzKHJr3QPGAAf:Data.Time.LocalTime.LocalTime
-         transformers-0.4.2.0@trans_EziP6JoSSK398q9vuXpnAA:Control.Monad.Trans.Error
-         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Fusion.Bundle
-         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed
-family instance modules: attoparsec-0.13.1.0@attop_8CGTtPbG09CKTKQ3vR56BU:Data.Attoparsec.Internal.Types
-                         base-4.8.2.0:Control.Applicative base-4.8.2.0:Data.Either
-                         base-4.8.2.0:Data.Functor.Identity base-4.8.2.0:Data.Monoid
-                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:Data.Void
-                         base-4.8.2.0:GHC.Exts base-4.8.2.0:GHC.Generics
-                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.IntMap.Base
-                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.IntSet.Base
-                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Map.Base
-                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Sequence
-                         containers-0.5.6.2@conta_3UVKjic2MoqF92jHhg7Ur8:Data.Set.Base
-                         dlist-0.7.1.2@dlist_H1vOXFk9eUBGkwT4KVRG25:Data.DList
-                         ghcjs-base-0.2.0.0@ghcjs_210XEgjDa5q074bipEhzRA:Data.JSString
-                         primitive-0.6.1.0@primi_CRhbMv8kA5dFpZOCD0QPrI:Control.Monad.Primitive
-                         semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu:Data.List.NonEmpty
-                         semigroups-0.18.2@semig_F6zNE9TVLzf9ErbxvxghEu:Data.Semigroup
-                         tagged-0.8.4@tagge_EpMmiBjiJPdFiokZ6hOmMm:Data.Tagged
-                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
-                         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text
-                         text-1.2.2.1@text_AoFu0I23s11C5sDmOoIAPZ:Data.Text.Lazy
-                         unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP:Data.HashMap.Base
-                         unordered-containers-0.2.7.2@unord_H1f6VqdfPrVIuMiYe9bmpP:Data.HashSet
-                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector
-                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Primitive
-                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Storable
-                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed
-                         vector-0.11.0.0@vecto_DeaUpJs6ZtbBhz15yBYLWJ:Data.Vector.Unboxed.Base
-import  -/  miso-0.18.0.0@HRRS7cQi8bU4jYuh6NkL5Z:Miso.String 7ac2d50578f40022cfb12b9400e313e9
-import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
-import  -/  base-4.8.2.0:GHC.Show ed2e62a4d3cc01e973aec92d52f5786d
-import  -/  base-4.8.2.0:Prelude aeed44d4e8d251a340a1597dd2a0cbc5
-import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
-4657afaa88952862887f45fbdec2f519
+package dependencies: aeson-0.11.2.1@aeson-0.11.2.1-I1KatMa4W9ixd2YOOZBlo
+                      array-0.5.1.1@array-0.5.1.1-1offYsvY37TGbzCUgWEHEU
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr
+                      base-4.9.0.0 binary-0.8.3.0@binary-0.8.3.0-DwQB8humYS6LcpJE7eJOnK
+                      bytestring-0.10.8.1@bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU
+                      containers-0.5.7.1@containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz
+                      deepseq-1.4.2.0@deepseq-1.4.2.0-47yvsc92PQF1rYmebWoAXZ
+                      dlist-0.8.0.2@dlist-0.8.0.2-bmLGGycPAf1a4WhgcTjJe
+                      ghc-boot-th-8.0.1@ghc-boot-th-8.0.1-IXcAbyMES6C8N2jkxSNIfd
+                      ghc-prim-0.5.0.0
+                      ghcjs-base-0.2.0.0@ghcjs-base-0.2.0.0-9RAUV0fc0ApBW3Hd7VHXty
+                      ghcjs-prim-0.1.0.0@ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA
+                      hashable-1.2.4.0@hashable-1.2.4.0-JK3S4kKZeqBK2uNUBMBbVU
+                      integer-gmp-1.0.0.1
+                      miso-0.18.0.0@miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq
+                      primitive-0.6.1.0@primitive-0.6.1.0-PBvNfnj6B81wEvI5CBk0H
+                      scientific-0.3.4.9@scientific-0.3.4.9-3BpR9ETsBN0En6PwfRuei7
+                      tagged-0.8.5@tagged-0.8.5-ClPyT1ynPh3Pt9uy1atgR
+                      template-haskell-2.11.0.0
+                      text-1.2.2.1@text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P
+                      time-1.6.0.1@time-1.6.0.1-Lja9T8bqIudL0xdsRMOCyg
+                      transformers-0.5.2.0@transformers-0.5.2.0-Lvs3wlJMkpyLRFNHJ8pmeB
+                      unordered-containers-0.2.7.1@unordered-containers-0.2.7.1-1o1W2lHVEjB3TehsdLWvBe
+                      vector-0.11.0.0@vector-0.11.0.0-KJzdD0x8rviArqGbBh5Ng0
+orphans: aeson-0.11.2.1@aeson-0.11.2.1-I1KatMa4W9ixd2YOOZBlo:Data.Aeson.Types.Generic
+         aeson-0.11.2.1@aeson-0.11.2.1-I1KatMa4W9ixd2YOOZBlo:Data.Aeson.Types.Instances
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:Data.Attoparsec.Text.Internal
+         base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0-DwQB8humYS6LcpJE7eJOnK:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU:Data.ByteString.Builder
+         ghcjs-base-0.2.0.0@ghcjs-base-0.2.0.0-9RAUV0fc0ApBW3Hd7VHXty:Data.JSString
+         ghcjs-base-0.2.0.0@ghcjs-base-0.2.0.0-9RAUV0fc0ApBW3Hd7VHXty:GHCJS.Internal.Types
+         ghcjs-base-0.2.0.0@ghcjs-base-0.2.0.0-9RAUV0fc0ApBW3Hd7VHXty:GHCJS.Marshal.Pure
+         hashable-1.2.4.0@hashable-1.2.4.0-JK3S4kKZeqBK2uNUBMBbVU:Data.Hashable.Generic
+         miso-0.18.0.0@miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq:Miso.String
+         text-1.2.2.1@text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:Data.Text
+         text-1.2.2.1@text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1-Lja9T8bqIudL0xdsRMOCyg:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1-Lja9T8bqIudL0xdsRMOCyg:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1-Lja9T8bqIudL0xdsRMOCyg:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0-Lvs3wlJMkpyLRFNHJ8pmeB:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-KJzdD0x8rviArqGbBh5Ng0:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-KJzdD0x8rviArqGbBh5Ng0:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:Data.Attoparsec.Internal.Types
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-bmLGGycPAf1a4WhgcTjJe:Data.DList
+                         ghc-boot-th-8.0.1@ghc-boot-th-8.0.1-IXcAbyMES6C8N2jkxSNIfd:GHC.LanguageExtensions.Type
+                         ghcjs-base-0.2.0.0@ghcjs-base-0.2.0.0-9RAUV0fc0ApBW3Hd7VHXty:Data.JSString
+                         primitive-0.6.1.0@primitive-0.6.1.0-PBvNfnj6B81wEvI5CBk0H:Control.Monad.Primitive
+                         primitive-0.6.1.0@primitive-0.6.1.0-PBvNfnj6B81wEvI5CBk0H:Data.Primitive.Array
+                         tagged-0.8.5@tagged-0.8.5-ClPyT1ynPh3Pt9uy1atgR:Data.Tagged
+                         template-haskell-2.11.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:Data.Text.Lazy
+                         unordered-containers-0.2.7.1@unordered-containers-0.2.7.1-1o1W2lHVEjB3TehsdLWvBe:Data.HashMap.Base
+                         unordered-containers-0.2.7.1@unordered-containers-0.2.7.1-1o1W2lHVEjB3TehsdLWvBe:Data.HashSet
+                         vector-0.11.0.0@vector-0.11.0.0-KJzdD0x8rviArqGbBh5Ng0:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-KJzdD0x8rviArqGbBh5Ng0:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-KJzdD0x8rviArqGbBh5Ng0:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-KJzdD0x8rviArqGbBh5Ng0:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-KJzdD0x8rviArqGbBh5Ng0:Data.Vector.Unboxed.Base
+import  -/  base-4.9.0.0:GHC.Base 4699f18b160bade7d95bfac3b7a2af49
+import  -/  base-4.9.0.0:GHC.Show 8e8bd91d521144ca5163dc6428a28d36
+import  -/  base-4.9.0.0:Prelude d12376192cc2b7eb811b9b12d0e03e24
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 6d1806e3abfaa79b6a7243b0a9630c33
+import  -/  miso-0.18.0.0@miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq:Miso.String dc174614d39275d9a502fd7de146cc6f
+2d9c700670fb0c1060da9d79efe80b1e
   $fEqAction :: GHC.Classes.Eq Model.Action
-  DFunId[0]
+  DFunId
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
                   @ Model.Action Model.$fEqAction_$c== Model.$fEqAction_$c/= -}
-4ddf969523305c5290932984ce8aa35a
-  $fEqAction1 :: GHC.Classes.Eq [GHC.Types.Char]
-  {- Strictness: m,
-     Unfolding: InlineRule (0, True, True)
-                GHC.Classes.$fEq[]_$s$fEq[]1 -}
-4657afaa88952862887f45fbdec2f519
+2d9c700670fb0c1060da9d79efe80b1e
   $fEqAction_$c/= :: Model.Action -> Model.Action -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: InlineRule (2, True, False)
-                (\ a :: Model.Action b :: Model.Action ->
+                (\ (a :: Model.Action) (b :: Model.Action) ->
                  case Model.$fEqAction_$c== a b of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-4657afaa88952862887f45fbdec2f519
+2d9c700670fb0c1060da9d79efe80b1e
   $fEqAction_$c== :: Model.Action -> Model.Action -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
-     Unfolding: (\ ds :: Model.Action ds1 :: Model.Action ->
+     Unfolding: (\ (ds :: Model.Action) (ds1 :: Model.Action) ->
                  case ds of wild {
                    DEFAULT
-                   -> case ds1 of x1 { DEFAULT ->
-                      GHC.Prim.tagToEnum#
+                   -> GHC.Prim.tagToEnum#
                         @ GHC.Types.Bool
                         (GHC.Prim.==#
                            (GHC.Prim.dataToTag# @ Model.Action wild)
-                           (GHC.Prim.dataToTag# @ Model.Action x1)) }
+                           (GHC.Prim.dataToTag# @ Model.Action ds1))
                    Model.UpdateTeamField a1
                    -> case ds1 of wild1 {
                         DEFAULT
                         -> case GHC.Prim.dataToTag# @ Model.Action wild1 of wild2 {
-                             DEFAULT -> GHC.Types.False 13 -> GHC.Types.True }
+                             DEFAULT -> GHC.Types.False 14# -> GHC.Types.True }
                         Model.UpdateTeamField b1 -> Data.JSString.js_eq a1 b1 }
                    Model.UpdateSynField a1
                    -> case ds1 of wild1 {
                         DEFAULT
                         -> case GHC.Prim.dataToTag# @ Model.Action wild1 of wild2 {
-                             DEFAULT -> GHC.Types.False 14 -> GHC.Types.True }
+                             DEFAULT -> GHC.Types.False 15# -> GHC.Types.True }
                         Model.UpdateSynField b1 -> Data.JSString.js_eq a1 b1 }
                    Model.UpdateNumberField a1
                    -> case ds1 of wild1 {
                         DEFAULT
                         -> case GHC.Prim.dataToTag# @ Model.Action wild1 of wild2 {
-                             DEFAULT -> GHC.Types.False 15 -> GHC.Types.True }
+                             DEFAULT -> GHC.Types.False 16# -> GHC.Types.True }
                         Model.UpdateNumberField b1 -> Data.JSString.js_eq a1 b1 }
                    Model.UpdateTimerField a1
                    -> case ds1 of wild1 {
                         DEFAULT
                         -> case GHC.Prim.dataToTag# @ Model.Action wild1 of wild2 {
-                             DEFAULT -> GHC.Types.False 16 -> GHC.Types.True }
+                             DEFAULT -> GHC.Types.False 17# -> GHC.Types.True }
                         Model.UpdateTimerField b1 -> Data.JSString.js_eq a1 b1 }
                    Model.ShuffleTeams a1
                    -> case ds1 of wild1 {
                         DEFAULT
                         -> case GHC.Prim.dataToTag# @ Model.Action wild1 of wild2 {
-                             DEFAULT -> GHC.Types.False 22 -> GHC.Types.True }
+                             DEFAULT -> GHC.Types.False 23# -> GHC.Types.True }
                         Model.ShuffleTeams b1
                         -> GHC.Classes.$fEq[]_$c==
                              @ (GHC.Base.String, GHC.Types.Int)
@@ -161,9 +162,9 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                    -> case ds1 of wild1 {
                         DEFAULT
                         -> case GHC.Prim.dataToTag# @ Model.Action wild1 of wild2 {
-                             DEFAULT -> GHC.Types.False 23 -> GHC.Types.True }
+                             DEFAULT -> GHC.Types.False 24# -> GHC.Types.True }
                         Model.ShuffleSyns b1 -> GHC.Classes.$fEq[]_$s$c==2 a1 b1 } }) -}
-bbe1459a77db30032d99d0f63a58bfe3
+778f659c9984910e27dce553ffd4d3bd
   $fEqAction_$s$fEq(,) ::
     GHC.Classes.Eq ([GHC.Types.Char], GHC.Types.Int)
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -172,37 +173,77 @@ bbe1459a77db30032d99d0f63a58bfe3
                   (GHC.Classes.$fEq(,)_$c==
                      @ [GHC.Types.Char]
                      @ GHC.Types.Int
-                     Model.$fEqAction1
+                     GHC.Classes.$fEq[]_$s$fEq[]1
                      GHC.Classes.$fEqInt)
                   (GHC.Classes.$fEq(,)_$c/=
                      @ [GHC.Types.Char]
                      @ GHC.Types.Int
-                     Model.$fEqAction1
+                     GHC.Classes.$fEq[]_$s$fEq[]1
                      GHC.Classes.$fEqInt) -}
-1a58e08aadfc10734b929fd46c20f12a
+ccbb9aac717062030c9d72de4e3d3252
+  $fEqGenerator :: GHC.Classes.Eq Model.Generator
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Model.Generator
+                  Model.$fEqGenerator_$c==
+                  Model.$fEqGenerator_$c/= -}
+ccbb9aac717062030c9d72de4e3d3252
+  $fEqGenerator_$c/= ::
+    Model.Generator -> Model.Generator -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Model.Generator) (b :: Model.Generator) ->
+                 case a of wild {
+                   Model.Idle
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Model.Idle -> GHC.Types.False }
+                   Model.Generating
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Model.Generating -> GHC.Types.False }
+                   Model.Done
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Model.Done -> GHC.Types.False } }) -}
+ccbb9aac717062030c9d72de4e3d3252
+  $fEqGenerator_$c== ::
+    Model.Generator -> Model.Generator -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Model.Generator) (ds1 :: Model.Generator) ->
+                 case ds of wild {
+                   Model.Idle
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Model.Idle -> GHC.Types.True }
+                   Model.Generating
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Model.Generating -> GHC.Types.True }
+                   Model.Done
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Model.Done -> GHC.Types.True } }) -}
+bd1b8032814385ecc91741b99200476f
   $fEqModel :: GHC.Classes.Eq Model.Model
-  DFunId[0]
+  DFunId
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
                   @ Model.Model Model.$fEqModel_$c== Model.$fEqModel_$c/= -}
-1a58e08aadfc10734b929fd46c20f12a
+bd1b8032814385ecc91741b99200476f
   $fEqModel_$c/= :: Model.Model -> Model.Model -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <S(SLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))><S(SLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Strictness: <S(SLLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))><S(SLLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))>,
      Unfolding: InlineRule (2, True, False)
-                (\ a :: Model.Model b :: Model.Model ->
+                (\ (a :: Model.Model) (b :: Model.Model) ->
                  case Model.$fEqModel_$c== a b of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-1a58e08aadfc10734b929fd46c20f12a
+bd1b8032814385ecc91741b99200476f
   $fEqModel_$c== :: Model.Model -> Model.Model -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <S(SLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))><S(SLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Strictness: <S(SLLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))><S(SLLLLLLLLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))>,
      Inline: INLINE[0],
      Unfolding: InlineRule (2, True, False)
-                (\ w :: Model.Model w1 :: Model.Model ->
-                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ->
-                 case w1 of ww15 { Model.Model ww16 ww17 ww18 ww19 ww20 ww21 ww22 ww23 ww24 ww25 ww26 ww27 ww28 ww29 ->
+                (\ (w :: Model.Model) (w1 :: Model.Model) ->
+                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ->
+                 case w1 of ww16 { Model.Model ww17 ww18 ww19 ww20 ww21 ww22 ww23 ww24 ww25 ww26 ww27 ww28 ww29 ww30 ww31 ->
                  Model.$w$c==
                    ww1
                    ww2
@@ -218,7 +259,7 @@ bbe1459a77db30032d99d0f63a58bfe3
                    ww12
                    ww13
                    ww14
-                   ww16
+                   ww15
                    ww17
                    ww18
                    ww19
@@ -231,18 +272,20 @@ bbe1459a77db30032d99d0f63a58bfe3
                    ww26
                    ww27
                    ww28
-                   ww29 } }) -}
-015c0ea1a31b67a28b8dcfeb86d6d392
+                   ww29
+                   ww30
+                   ww31 } }) -}
+6e3c17d2cb642b3a5f71b3774a8cd426
   $fEqStates :: GHC.Classes.Eq Model.States
-  DFunId[0]
+  DFunId
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
                   @ Model.States Model.$fEqStates_$c== Model.$fEqStates_$c/= -}
-015c0ea1a31b67a28b8dcfeb86d6d392
+6e3c17d2cb642b3a5f71b3774a8cd426
   $fEqStates_$c/= :: Model.States -> Model.States -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: InlineRule (2, True, False)
-                (\ a :: Model.States b :: Model.States ->
+                (\ (a :: Model.States) (b :: Model.States) ->
                  case a of x1 { DEFAULT ->
                  case b of x2 { DEFAULT ->
                  case GHC.Prim.tagToEnum#
@@ -252,11 +295,11 @@ bbe1459a77db30032d99d0f63a58bfe3
                            (GHC.Prim.dataToTag# @ Model.States x2)) of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False } } }) -}
-015c0ea1a31b67a28b8dcfeb86d6d392
+6e3c17d2cb642b3a5f71b3774a8cd426
   $fEqStates_$c== :: Model.States -> Model.States -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: InlineRule (2, True, False)
-                (\ a :: Model.States b :: Model.States ->
+                (\ (a :: Model.States) (b :: Model.States) ->
                  case a of x1 { DEFAULT ->
                  case b of x2 { DEFAULT ->
                  GHC.Prim.tagToEnum#
@@ -264,57 +307,278 @@ bbe1459a77db30032d99d0f63a58bfe3
                    (GHC.Prim.==#
                       (GHC.Prim.dataToTag# @ Model.States x1)
                       (GHC.Prim.dataToTag# @ Model.States x2)) } }) -}
-4657afaa88952862887f45fbdec2f519
+2d9c700670fb0c1060da9d79efe80b1e
   $fShowAction :: GHC.Show.Show Model.Action
-  DFunId[0]
+  DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
                   @ Model.Action
                   Model.$fShowAction_$cshowsPrec
                   Model.$fShowAction_$cshow
                   Model.$fShowAction_$cshowList -}
-4657afaa88952862887f45fbdec2f519
+2d9c700670fb0c1060da9d79efe80b1e
   $fShowAction1 :: Model.Action -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (Model.$fShowAction_$cshowsPrec Model.$fShowAction2) -}
-334e8c4e968af868dfa40f9304d1c6ee
+04d808a2c44f064a79db87df61d6a4b0
+  $fShowAction10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "GenerateSyntagmas"#) -}
+068d4365c62f69709e2ef8bf18bd5999
+  $fShowAction11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "AddSyn"#) -}
+1f887f4c141953a9dd5f8422b3d74906
+  $fShowAction12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "AddTeam"#) -}
+ba9d70dcabc5baeedf3b2f458b92448d
+  $fShowAction13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "SkipWord"#) -}
+1b9b7cccce933bf6ae7f5168829a8ca7
+  $fShowAction14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "NextWord"#) -}
+d75fa3e6c4a032becb2ece3d0e488fce
+  $fShowAction15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "UpdateTimerField "#) -}
+076f1e2a37c0f490833bb792a8213ba8
+  $fShowAction16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "UpdateNumberField "#) -}
+dee694872a9778e80f95126d43d07191
+  $fShowAction17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "UpdateSynField "#) -}
+67d11f78bbbf18a3cc091048e800ec82
+  $fShowAction18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "UpdateTeamField "#) -}
+f7f311e38c95c6b76dd85e1d5bcd5ef3
+  $fShowAction19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "SettingsToMainMenu"#) -}
+259ff799a703d747c756bb14873085f5
   $fShowAction2 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
-4657afaa88952862887f45fbdec2f519
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+ef96a59d7ee65ccd9a519dfb22acf753
+  $fShowAction20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "BackToMainMenu"#) -}
+7e72d8effb756605b434224ddc9ef318
+  $fShowAction21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToMainMenu"#) -}
+0cfc5bc248e3cca755ce613a312bf038
+  $fShowAction22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToGameOver"#) -}
+06798f33fa7c3321248732ee86de4b27
+  $fShowAction23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToGameplay"#) -}
+08242df4d468bb0660138a128e47076d
+  $fShowAction24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToRoundPrep"#) -}
+17de6f3ce2ac9c2d3ca1f2066aeb3375
+  $fShowAction25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToSynInput"#) -}
+6306bda771cb8e48ff25d6859926b4dd
+  $fShowAction26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToTeamInput"#) -}
+84878a11f102426c9fc23ebbe1baea04
+  $fShowAction27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToSettings"#) -}
+fec3c2df067e7015e9465218978b9d1c
+  $fShowAction28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToOneWordRules"#) -}
+e78df1cf350c3be1f26f35651a577ec3
+  $fShowAction29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToCharadesRules"#) -}
+6b9251e74b3c1965814a0f9b0ecfa19f
+  $fShowAction3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "NoOp"#) -}
+22948ef1448509a83cf192a62d84d630
+  $fShowAction30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToAliasRules"#) -}
+a3cdb8527b247c2b9696c458040157a4
+  $fShowAction31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToBasicRules"#) -}
+4ad035761ce76907a5ab5387c578c528
+  $fShowAction32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ToRules"#) -}
+8dc5072efd9c9a9fda15bd58e372a4c0
+  $fShowAction4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Tick"#) -}
+74c3b705be0cb20d6c217bf54a039d4b
+  $fShowAction5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "StartCounter"#) -}
+fabcb103904b3842b2695b025125411e
+  $fShowAction6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "SetTime"#) -}
+9924dc61f3bb862675f6037e3a0ed974
+  $fShowAction7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ShuffleSyns "#) -}
+b62d45b17b3711f9922f01d34fddfe89
+  $fShowAction8 ::
+    ([GHC.Types.Char], GHC.Types.Int)
+    -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (w3 :: ([GHC.Types.Char], GHC.Types.Int))
+                   (w4 :: GHC.Base.String)[OneShot] ->
+                 case w3 of ww { (,) ww1 ww2 ->
+                 GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows8
+                   (GHC.Show.$fShow(,)_go
+                      (GHC.Types.:
+                         @ GHC.Show.ShowS
+                         (\ (eta1 :: GHC.Base.String) -> GHC.Show.shows_$cshowList ww1 eta1)
+                         (GHC.Types.:
+                            @ GHC.Show.ShowS
+                            (\ (w2 :: GHC.Base.String) ->
+                             case ww2 of ww4 { GHC.Types.I# ww3 ->
+                             case GHC.Show.$wshowSignedInt 0# ww3 w2 of ww5 { (#,#) ww6 ww7 ->
+                             GHC.Types.: @ GHC.Types.Char ww6 ww7 } })
+                            (GHC.Types.[] @ GHC.Show.ShowS)))
+                      (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w4)) }) -}
+940558fd45a62b76fe7c444fcb132662
+  $fShowAction9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ShuffleTeams "#) -}
+2d9c700670fb0c1060da9d79efe80b1e
   $fShowAction_$cshow :: Model.Action -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
-     Unfolding: InlineRule (1, True, False)
-                (\ x :: Model.Action ->
-                 Model.$fShowAction_$cshowsPrec
-                   GHC.Show.shows18
-                   x
-                   (GHC.Types.[] @ GHC.Types.Char)) -}
-4657afaa88952862887f45fbdec2f519
+     Unfolding: (\ (x :: Model.Action) ->
+                 case x of wild {
+                   Model.ToRules -> Model.$fShowAction32
+                   Model.ToBasicRules -> Model.$fShowAction31
+                   Model.ToAliasRules -> Model.$fShowAction30
+                   Model.ToCharadesRules -> Model.$fShowAction29
+                   Model.ToOneWordRules -> Model.$fShowAction28
+                   Model.ToSettings -> Model.$fShowAction27
+                   Model.ToTeamInput -> Model.$fShowAction26
+                   Model.ToSynInput -> Model.$fShowAction25
+                   Model.ToRoundPrep -> Model.$fShowAction24
+                   Model.ToGameplay -> Model.$fShowAction23
+                   Model.ToGameOver -> Model.$fShowAction22
+                   Model.ToMainMenu -> Model.$fShowAction21
+                   Model.BackToMainMenu -> Model.$fShowAction20
+                   Model.SettingsToMainMenu -> Model.$fShowAction19
+                   Model.UpdateTeamField b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Model.$fShowAction18
+                        (case Data.JSString.$w$cshowsPrec
+                                b1
+                                (GHC.Types.[] @ GHC.Types.Char) of ww { (#,#) ww1 ww2 ->
+                         GHC.Types.: @ GHC.Types.Char ww1 ww2 })
+                   Model.UpdateSynField b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Model.$fShowAction17
+                        (case Data.JSString.$w$cshowsPrec
+                                b1
+                                (GHC.Types.[] @ GHC.Types.Char) of ww { (#,#) ww1 ww2 ->
+                         GHC.Types.: @ GHC.Types.Char ww1 ww2 })
+                   Model.UpdateNumberField b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Model.$fShowAction16
+                        (case Data.JSString.$w$cshowsPrec
+                                b1
+                                (GHC.Types.[] @ GHC.Types.Char) of ww { (#,#) ww1 ww2 ->
+                         GHC.Types.: @ GHC.Types.Char ww1 ww2 })
+                   Model.UpdateTimerField b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Model.$fShowAction15
+                        (case Data.JSString.$w$cshowsPrec
+                                b1
+                                (GHC.Types.[] @ GHC.Types.Char) of ww { (#,#) ww1 ww2 ->
+                         GHC.Types.: @ GHC.Types.Char ww1 ww2 })
+                   Model.NextWord -> Model.$fShowAction14
+                   Model.SkipWord -> Model.$fShowAction13
+                   Model.AddTeam -> Model.$fShowAction12
+                   Model.AddSyn -> Model.$fShowAction11
+                   Model.GenerateSyntagmas -> Model.$fShowAction10
+                   Model.ShuffleTeams b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Model.$fShowAction9
+                        (GHC.Show.showList__
+                           @ ([GHC.Types.Char], GHC.Types.Int)
+                           Model.$fShowAction8
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char))
+                   Model.ShuffleSyns b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Model.$fShowAction7
+                        (GHC.Show.showList__
+                           @ [GHC.Types.Char]
+                           GHC.Show.shows_$cshowList
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char))
+                   Model.SetTime -> Model.$fShowAction6
+                   Model.StartCounter -> Model.$fShowAction5
+                   Model.Tick -> Model.$fShowAction4
+                   Model.NoOp -> Model.$fShowAction3 }) -}
+2d9c700670fb0c1060da9d79efe80b1e
   $fShowAction_$cshowList :: [Model.Action] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Model.Action
                    Model.$fShowAction1) -}
-4657afaa88952862887f45fbdec2f519
+2d9c700670fb0c1060da9d79efe80b1e
   $fShowAction_$cshowsPrec ::
     GHC.Types.Int -> Model.Action -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
-1a58e08aadfc10734b929fd46c20f12a
+ccbb9aac717062030c9d72de4e3d3252
+  $fShowGenerator :: GHC.Show.Show Model.Generator
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Model.Generator
+                  Model.$fShowGenerator_$cshowsPrec
+                  Model.$fShowGenerator_$cshow
+                  Model.$fShowGenerator_$cshowList -}
+942128c8f03dacff0adfaa7f5b4fcd40
+  $fShowGenerator1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Done"#) -}
+ecd72c1fc8fd1cd752dde4124310581d
+  $fShowGenerator2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Generating"#) -}
+20226a827e4a3b34414df94580ffc7fc
+  $fShowGenerator3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Idle"#) -}
+ccbb9aac717062030c9d72de4e3d3252
+  $fShowGenerator_$cshow :: Model.Generator -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Model.Generator) ->
+                 case x of wild {
+                   Model.Idle -> Model.$fShowGenerator3
+                   Model.Generating -> Model.$fShowGenerator2
+                   Model.Done -> Model.$fShowGenerator1 }) -}
+ccbb9aac717062030c9d72de4e3d3252
+  $fShowGenerator_$cshowList :: [Model.Generator] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Model.Generator
+                   Model.$w$cshowsPrec) -}
+ccbb9aac717062030c9d72de4e3d3252
+  $fShowGenerator_$cshowsPrec ::
+    GHC.Types.Int -> Model.Generator -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Model.Generator)
+                   (w2 :: GHC.Base.String) ->
+                 Model.$w$cshowsPrec w1 w2) -}
+bd1b8032814385ecc91741b99200476f
   $fShowModel :: GHC.Show.Show Model.Model
-  DFunId[0]
+  DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
                   @ Model.Model
                   Model.$fShowModel_$cshowsPrec
                   Model.$fShowModel_$cshow
                   Model.$fShowModel_$cshowList -}
-1a58e08aadfc10734b929fd46c20f12a
+bd1b8032814385ecc91741b99200476f
   $fShowModel1 :: Model.Model -> GHC.Show.ShowS
   {- Arity: 2,
-     Unfolding: (\ w :: Model.Model w1 :: GHC.Base.String ->
-                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ->
-                 Model.$w$cshowsPrec
-                   0
+     Unfolding: (\ (w :: Model.Model) (w1 :: GHC.Base.String) ->
+                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ->
+                 Model.$w$cshowsPrec1
+                   0#
                    ww1
                    ww2
                    ww3
@@ -329,34 +593,37 @@ bbe1459a77db30032d99d0f63a58bfe3
                    ww12
                    ww13
                    ww14
+                   ww15
                    w1 }) -}
-1a58e08aadfc10734b929fd46c20f12a
+bd1b8032814385ecc91741b99200476f
   $fShowModel_$cshow :: Model.Model -> GHC.Base.String
   {- Arity: 1,
-     Strictness: <S,1*U(1*U,U(U),U(U),U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Strictness: <S,1*U(1*U,U(U),U(U),U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))>,
      Unfolding: InlineRule (1, True, False)
-                (\ x :: Model.Model ->
+                (\ (x :: Model.Model) ->
                  Model.$fShowModel_$cshowsPrec
-                   GHC.Show.shows18
+                   GHC.Show.shows21
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-1a58e08aadfc10734b929fd46c20f12a
+bd1b8032814385ecc91741b99200476f
   $fShowModel_$cshowList :: [Model.Model] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Model.Model
                    Model.$fShowModel1) -}
-1a58e08aadfc10734b929fd46c20f12a
+bd1b8032814385ecc91741b99200476f
   $fShowModel_$cshowsPrec ::
     GHC.Types.Int -> Model.Model -> GHC.Show.ShowS
   {- Arity: 3,
-     Strictness: <S,1*U(U)><S,1*U(1*U,U(U),U(U),U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))><L,U>,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U,U(U),U(U),U(U),1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U(U),1*U(U),1*U(U),1*U(U))><L,U>,
      Inline: INLINE[0],
      Unfolding: InlineRule (3, True, False)
-                (\ w :: GHC.Types.Int w1 :: Model.Model w2 :: GHC.Base.String ->
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Model.Model)
+                   (w2 :: GHC.Base.String) ->
                  case w of ww { GHC.Types.I# ww1 ->
-                 case w1 of ww2 { Model.Model ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ->
-                 Model.$w$cshowsPrec
+                 case w1 of ww2 { Model.Model ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ->
+                 Model.$w$cshowsPrec1
                    ww1
                    ww3
                    ww4
@@ -372,75 +639,674 @@ bbe1459a77db30032d99d0f63a58bfe3
                    ww14
                    ww15
                    ww16
+                   ww17
                    w2 } }) -}
-015c0ea1a31b67a28b8dcfeb86d6d392
+6e3c17d2cb642b3a5f71b3774a8cd426
   $fShowStates :: GHC.Show.Show Model.States
-  DFunId[0]
+  DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
                   @ Model.States
                   Model.$fShowStates_$cshowsPrec
                   Model.$fShowStates_$cshow
                   Model.$fShowStates_$cshowList -}
-a07a51f0e069e1b3da427305f05f8223
+4b93182e402e9f4d65b343c71c9cc1e3
   $fShowStates1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "GameOver"#) -}
-5e3105b84d928606b75f13affdcce840
+021a76fad9c644562d89e0be4cfa108a
   $fShowStates10 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "AliasRules"#) -}
-e011089da5839b559e21d9cfe2ddfe62
+f239c9c3d68da187f4c4d2a8a40f8524
   $fShowStates11 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "BasicRules"#) -}
-6742902985cdf0bf8be1367d4fb2801b
+69c12a3a843b02ea5bd2e3a7ff333d1d
   $fShowStates12 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "MainMenu"#) -}
-9c4f9381301506296a4a47d2a521fc95
+8cff029c76ad0e6f10dd79e1a8fdb897
   $fShowStates2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "TimeOut"#) -}
-8fae17ac51e8553fc7ad03dc921ddb39
+ab88baf26c559ab4753215041cd89e01
   $fShowStates3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Gameplay"#) -}
-c15364f000e5630808dbea4971f7181d
+b1f6560b07cb770ab73800ffa1e08a24
   $fShowStates4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "RoundPrep"#) -}
-edae513b6c1eab3c3c0e16e04b6611c3
+3186cb55383807f6bc8d9e13f8f181b8
   $fShowStates5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "SynInput"#) -}
-f9f1e084e4af9b2f76218f7df17b38b7
+dd42b49401f9cb651d8eab93e0d4a0e7
   $fShowStates6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "TeamInput"#) -}
-443b1a46b68f99c436c260520133aa7a
+1969e8ee9a2ba8966543eddb35fc4242
   $fShowStates7 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Settings"#) -}
-7e329531e4f3735f066ae8ced9578dea
+6dd6a94e46a2881404226134285bc197
   $fShowStates8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "OneWordRules"#) -}
-ab8832c8719be04d6534408996bd0202
+47c85962081e8172b860b165b9f866cc
   $fShowStates9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "CharadesRules"#) -}
-015c0ea1a31b67a28b8dcfeb86d6d392
+6e3c17d2cb642b3a5f71b3774a8cd426
   $fShowStates_$cshow :: Model.States -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
-                (\ x :: Model.States ->
+                (\ (x :: Model.States) ->
                  Model.$fShowStates_$cshowsPrec
-                   GHC.Show.shows18
+                   GHC.Show.shows21
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-015c0ea1a31b67a28b8dcfeb86d6d392
+6e3c17d2cb642b3a5f71b3774a8cd426
   $fShowStates_$cshowList :: [Model.States] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Model.States
-                   Model.$w$cshowsPrec1) -}
-015c0ea1a31b67a28b8dcfeb86d6d392
+                   Model.$w$cshowsPrec2) -}
+6e3c17d2cb642b3a5f71b3774a8cd426
   $fShowStates_$cshowsPrec ::
     GHC.Types.Int -> Model.States -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
      Unfolding: InlineRule (3, True, True)
-                (\ w :: GHC.Types.Int w1 :: Model.States w2 :: GHC.Base.String ->
-                 Model.$w$cshowsPrec1 w1 w2) -}
-6289b882f40eb181b1d2a340ba40dded
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Model.States)
+                   (w2 :: GHC.Base.String) ->
+                 Model.$w$cshowsPrec2 w1 w2) -}
+7b2a43621a9d092f52053b45ebddcb73
+  $tc'AddSyn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18172298051114293783L##
+                   18392623767857886564L##
+                   Model.$trModule
+                   Model.$tc'AddSyn1) -}
+d3ead98d41abae7cb869eb2070c37a26
+  $tc'AddSyn1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'AddSyn"#) -}
+317a85606302803b3a6bccd99958a63b
+  $tc'AddTeam :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13398263287483658001L##
+                   2586842730365131371L##
+                   Model.$trModule
+                   Model.$tc'AddTeam1) -}
+0e45d2009fcf46b74d15e77aa9ad8b6a
+  $tc'AddTeam1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'AddTeam"#) -}
+f78ba3eac7145878cefb886ac2f590bf
+  $tc'AliasRules :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3643696251039735316L##
+                   5117909437999381959L##
+                   Model.$trModule
+                   Model.$tc'AliasRules1) -}
+40194be151744751a865b7c17ec2c39b
+  $tc'AliasRules1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'AliasRules"#) -}
+787a0901dd2b5f4b7316f0ce35dc45a3
+  $tc'BackToMainMenu :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15347332037760544536L##
+                   2646422853149127512L##
+                   Model.$trModule
+                   Model.$tc'BackToMainMenu1) -}
+c0896b6bafc771c1d701eee445eb9ff8
+  $tc'BackToMainMenu1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'BackToMainMenu"#) -}
+e7273ecca73fa215140e14673e22e3d1
+  $tc'BasicRules :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2876119973845466006L##
+                   7951162646834948886L##
+                   Model.$trModule
+                   Model.$tc'BasicRules1) -}
+4626f3be1edb275f22f961425662fd29
+  $tc'BasicRules1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'BasicRules"#) -}
+e68cb50ddf3bdbda9cb24b740c7ddd99
+  $tc'CharadesRules :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14345320347718253097L##
+                   2276068309494031834L##
+                   Model.$trModule
+                   Model.$tc'CharadesRules1) -}
+1e63ebe3a73c5f7da099c3332bea30c5
+  $tc'CharadesRules1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'CharadesRules"#) -}
+abb3129cca40076875218116dc5cffcc
+  $tc'Done :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15978342736290105939L##
+                   16601009956223704851L##
+                   Model.$trModule
+                   Model.$tc'Done1) -}
+23599167d4bbb7663dac7d4d46476f56
+  $tc'Done1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Done"#) -}
+422eacf2625210cf3573ce81cddc7511
+  $tc'GameOver :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9126081586745156074L##
+                   3016496268211537957L##
+                   Model.$trModule
+                   Model.$tc'GameOver1) -}
+1140f4e059f4be7ce5e08b7c52375e58
+  $tc'GameOver1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'GameOver"#) -}
+30b7b3fe11b62ad82949c50b39e2f773
+  $tc'Gameplay :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   162888862746714327L##
+                   81155087435661004L##
+                   Model.$trModule
+                   Model.$tc'Gameplay1) -}
+f1c2d8c9dba94e8ca7f1893828d495e9
+  $tc'Gameplay1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Gameplay"#) -}
+56a0febe318e5ba28289310a7dbcfb52
+  $tc'GenerateSyntagmas :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3602926789061740147L##
+                   15079781248564843343L##
+                   Model.$trModule
+                   Model.$tc'GenerateSyntagmas1) -}
+3dda0c4c46920f697e3190a2c28a9209
+  $tc'GenerateSyntagmas1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'GenerateSyntagmas"#) -}
+4c1d643628b16daf3fd6d88d27117c86
+  $tc'Generating :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12233167770015269026L##
+                   1441303383969411086L##
+                   Model.$trModule
+                   Model.$tc'Generating1) -}
+5c018078c0aab7a27b2d05da0fa2a6a9
+  $tc'Generating1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Generating"#) -}
+2ab24a9be1472ccec33c7e18aa3aecc9
+  $tc'Idle :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13930721496689338201L##
+                   7823383839196310729L##
+                   Model.$trModule
+                   Model.$tc'Idle1) -}
+cf7fa31fd8a5b851f1a87128d6deae07
+  $tc'Idle1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Idle"#) -}
+22caced4b5f43844dc5cb19036c5286e
+  $tc'MainMenu :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2004248569653801645L##
+                   8327274675518064044L##
+                   Model.$trModule
+                   Model.$tc'MainMenu1) -}
+1d8ad9619b909b51ddc2f2a3a7a7d0c2
+  $tc'MainMenu1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'MainMenu"#) -}
+69030b78b7fa6866ce2cbb8153953210
+  $tc'Model :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3521621148976881613L##
+                   18183497264173550811L##
+                   Model.$trModule
+                   Model.$tc'Model1) -}
+818597e9256aaafdfedc7862a6a5c5f8
+  $tc'Model1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Model"#) -}
+dc83a9297a11ba1c0cd1bf74503a642b
+  $tc'NextWord :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10086589925333038155L##
+                   17555509004353941144L##
+                   Model.$trModule
+                   Model.$tc'NextWord1) -}
+52d7add58a8da5406a51b3e98d29c4e8
+  $tc'NextWord1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'NextWord"#) -}
+aa5451640862c0d6236141d789132e6e
+  $tc'NoOp :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7121409603274956168L##
+                   17782272663953400586L##
+                   Model.$trModule
+                   Model.$tc'NoOp1) -}
+56265c5d4b541baf491c80a7e0c33c75
+  $tc'NoOp1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'NoOp"#) -}
+4b86b70aaeb4ebf07758a95e21d20097
+  $tc'OneWordRules :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8481366004003065633L##
+                   13255341315406379384L##
+                   Model.$trModule
+                   Model.$tc'OneWordRules1) -}
+6d1aa8149081dba737f6f2977eaaf026
+  $tc'OneWordRules1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'OneWordRules"#) -}
+4a7a09fcca4fb68cb84de288a6fe58c0
+  $tc'RoundPrep :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2286061128888314489L##
+                   17328980425230898615L##
+                   Model.$trModule
+                   Model.$tc'RoundPrep1) -}
+f7574917399e9b9a7bc139aa427f7dda
+  $tc'RoundPrep1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'RoundPrep"#) -}
+1905fde2eb56da0d0d92d0c9ac6cc61f
+  $tc'SetTime :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4737546524612034367L##
+                   3847844736885788020L##
+                   Model.$trModule
+                   Model.$tc'SetTime1) -}
+dd1df35f57e55b794a68b72f9ffbfb85
+  $tc'SetTime1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'SetTime"#) -}
+567c5a039a1a77cb325132f3c3e629f9
+  $tc'Settings :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1342434285905623567L##
+                   2606304006829825166L##
+                   Model.$trModule
+                   Model.$tc'Settings1) -}
+f3e923cfb25417c962933a859e9583b6
+  $tc'Settings1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Settings"#) -}
+9c0cc103383b29f50e3b8a72dd318ac1
+  $tc'SettingsToMainMenu :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9464357254202114881L##
+                   7266134769022533304L##
+                   Model.$trModule
+                   Model.$tc'SettingsToMainMenu1) -}
+6d2076e7370b94d004c668b23edeea29
+  $tc'SettingsToMainMenu1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'SettingsToMainMenu"#) -}
+9f21ef4edce098461d3cff6de88d015e
+  $tc'ShuffleSyns :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12127287436360547798L##
+                   18190563524573835791L##
+                   Model.$trModule
+                   Model.$tc'ShuffleSyns1) -}
+437bfa92159758acb1e9ee51c6b47966
+  $tc'ShuffleSyns1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ShuffleSyns"#) -}
+256db46b18c8b8405feecded9425b958
+  $tc'ShuffleTeams :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14179260164831444798L##
+                   5177735542207147095L##
+                   Model.$trModule
+                   Model.$tc'ShuffleTeams1) -}
+be9882a19369c560bb29f00e761cbb56
+  $tc'ShuffleTeams1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ShuffleTeams"#) -}
+6e722e0324a59fbdcfde84dbe5a0bfda
+  $tc'SkipWord :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12431314547188326845L##
+                   13136662664337746235L##
+                   Model.$trModule
+                   Model.$tc'SkipWord1) -}
+a6c8aa021945984822d96cdc78bd95d5
+  $tc'SkipWord1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'SkipWord"#) -}
+4c19cf5859cc1a8f87e28f36a6bf0c44
+  $tc'StartCounter :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3978759070775242922L##
+                   1126022341572611086L##
+                   Model.$trModule
+                   Model.$tc'StartCounter1) -}
+c96e82ba25deb901116ff615864c5070
+  $tc'StartCounter1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'StartCounter"#) -}
+de939f474c7122ee10d4337c634e8d2a
+  $tc'SynInput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14108151673868690799L##
+                   9802310106054149695L##
+                   Model.$trModule
+                   Model.$tc'SynInput1) -}
+7bb7f0c03fa9f35a6bc0a83172a45b70
+  $tc'SynInput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'SynInput"#) -}
+25695bd0685dd5daba30799da276ff8c
+  $tc'TeamInput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17330852450078053557L##
+                   9248565547249305434L##
+                   Model.$trModule
+                   Model.$tc'TeamInput1) -}
+5138d9227e0b2651257b55d261fbcc11
+  $tc'TeamInput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'TeamInput"#) -}
+3fbd4cf413b4811c99498858aa6e778f
+  $tc'Tick :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2567169069574058614L##
+                   9308970127299755850L##
+                   Model.$trModule
+                   Model.$tc'Tick1) -}
+8b1b26aae6afb068be123883563bb444
+  $tc'Tick1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Tick"#) -}
+4c0d6d7e9885f1a3258086b88aafed23
+  $tc'TimeOut :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13622740394388512711L##
+                   3343632799325745610L##
+                   Model.$trModule
+                   Model.$tc'TimeOut1) -}
+fb9cf3ff9ee2d88979a12d5708c0ccd3
+  $tc'TimeOut1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'TimeOut"#) -}
+5a7f3f440658638668c492d6d66a2e63
+  $tc'ToAliasRules :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3489882130162825448L##
+                   1246739599910540469L##
+                   Model.$trModule
+                   Model.$tc'ToAliasRules1) -}
+12c2cf492a9a3821460e96723e58093a
+  $tc'ToAliasRules1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToAliasRules"#) -}
+23f200ce681b9c38f7c068dac12e6bcd
+  $tc'ToBasicRules :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14240936102184999438L##
+                   15266025655239146665L##
+                   Model.$trModule
+                   Model.$tc'ToBasicRules1) -}
+3c1cac1f0e4307aed7307333cfa49465
+  $tc'ToBasicRules1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToBasicRules"#) -}
+acb00b16216288df2204791b5b120333
+  $tc'ToCharadesRules :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1625914785220142232L##
+                   9099065117087945513L##
+                   Model.$trModule
+                   Model.$tc'ToCharadesRules1) -}
+fa8b5428254c684e0bd0cccd08b9a5db
+  $tc'ToCharadesRules1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToCharadesRules"#) -}
+db302a407928bf35b96f572392f586ce
+  $tc'ToGameOver :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16287154608819331759L##
+                   15768894872991400200L##
+                   Model.$trModule
+                   Model.$tc'ToGameOver1) -}
+5f1ca597a2ea096e1423818ac1ed1b19
+  $tc'ToGameOver1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToGameOver"#) -}
+fec5e01c78bb87fef19ca0f7b9d979d8
+  $tc'ToGameplay :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9467562574116389987L##
+                   11062494357822507943L##
+                   Model.$trModule
+                   Model.$tc'ToGameplay1) -}
+00a0da11229fa8f93a6da1911a5d47b6
+  $tc'ToGameplay1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToGameplay"#) -}
+bbc9cf339a7f14ed41a0e3b09c07beab
+  $tc'ToMainMenu :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14197698187250535015L##
+                   15118367324515352849L##
+                   Model.$trModule
+                   Model.$tc'ToMainMenu1) -}
+73e6be19e9a0853f26f7941cc431f88d
+  $tc'ToMainMenu1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToMainMenu"#) -}
+6ba125063303071ba7492ba420dd8e81
+  $tc'ToOneWordRules :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2671286389684079566L##
+                   5196509514035406058L##
+                   Model.$trModule
+                   Model.$tc'ToOneWordRules1) -}
+a50b09fba9cdc7e76df36ba0dcd884bf
+  $tc'ToOneWordRules1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToOneWordRules"#) -}
+7dbedfd39c5fc97e78e8ba1cd25cdc46
+  $tc'ToRoundPrep :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16527421758114409733L##
+                   12993292269195418585L##
+                   Model.$trModule
+                   Model.$tc'ToRoundPrep1) -}
+22f634875dd54b7212853f7d25c27ad2
+  $tc'ToRoundPrep1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToRoundPrep"#) -}
+f9db2c816077533d38c093b2de99a92f
+  $tc'ToRules :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16635287749188121429L##
+                   5918480100239612760L##
+                   Model.$trModule
+                   Model.$tc'ToRules1) -}
+b6ca1e96d010189b8ab6f41e63244093
+  $tc'ToRules1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToRules"#) -}
+1c47082404395fa1860e3a6e9053a5d9
+  $tc'ToSettings :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   512891517078127592L##
+                   9831639887893551262L##
+                   Model.$trModule
+                   Model.$tc'ToSettings1) -}
+d8919d8f0155d9e1c0f1d217ff73f6c1
+  $tc'ToSettings1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToSettings"#) -}
+16045a46abb6502441f7ab4ed7ed3c67
+  $tc'ToSynInput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14198926439308542639L##
+                   13086663560899937699L##
+                   Model.$trModule
+                   Model.$tc'ToSynInput1) -}
+fc4f58bab0fab9b4a2c0514927b2bcc9
+  $tc'ToSynInput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToSynInput"#) -}
+d16b8f3eab03e595cba20d7d982448c2
+  $tc'ToTeamInput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2496452289159388985L##
+                   1787451354669915964L##
+                   Model.$trModule
+                   Model.$tc'ToTeamInput1) -}
+1e98ddf7d950c3e0ba6e5cd6f9d9af97
+  $tc'ToTeamInput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ToTeamInput"#) -}
+3257b57be267714f7b5fc556d1b59b21
+  $tc'UpdateNumberField :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4997565642800407254L##
+                   3331830497029430767L##
+                   Model.$trModule
+                   Model.$tc'UpdateNumberField1) -}
+30a4d325d8a772eefc242706ab6592cd
+  $tc'UpdateNumberField1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'UpdateNumberField"#) -}
+df26490603f11ae995cbac331a8af30a
+  $tc'UpdateSynField :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   762158678148132466L##
+                   17679726873293528908L##
+                   Model.$trModule
+                   Model.$tc'UpdateSynField1) -}
+6d991b9a697acbf557cb1ba425a66bdc
+  $tc'UpdateSynField1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'UpdateSynField"#) -}
+e68ed218d367117e6a678c46be39895e
+  $tc'UpdateTeamField :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8912665795760633061L##
+                   5142991025360033084L##
+                   Model.$trModule
+                   Model.$tc'UpdateTeamField1) -}
+7e0e0434429ab7abd935926fc6965343
+  $tc'UpdateTeamField1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'UpdateTeamField"#) -}
+853ff600861a448842cff2677019f7de
+  $tc'UpdateTimerField :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14191591197702816175L##
+                   17644097543172436883L##
+                   Model.$trModule
+                   Model.$tc'UpdateTimerField1) -}
+b7659f5315547eee312f9344a8db6735
+  $tc'UpdateTimerField1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'UpdateTimerField"#) -}
+9712c252c793ecc42fffc45cadb913d6
+  $tcAction :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17769828639293012202L##
+                   10751391895005935279L##
+                   Model.$trModule
+                   Model.$tcAction1) -}
+249334c61ce71aebbb23c5f1b37be463
+  $tcAction1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Action"#) -}
+f85d3fcb67df911a87c89028bd8b57a8
+  $tcGenerator :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13462512605788785438L##
+                   2462869886213301612L##
+                   Model.$trModule
+                   Model.$tcGenerator1) -}
+49c745009b2ca0dc3ce5ccc6a9b793f0
+  $tcGenerator1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Generator"#) -}
+e64d7c547e0ad11a24ddd408fb61b64e
+  $tcModel :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10111773297652709914L##
+                   10478500045295180661L##
+                   Model.$trModule
+                   Model.$trModule1) -}
+56355197e72c636916e69c0b2bc10068
+  $tcStates :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3356377763001302473L##
+                   3335988786073190982L##
+                   Model.$trModule
+                   Model.$tcStates1) -}
+30513d4286cbf6784ddef6907b89607a
+  $tcStates1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "States"#) -}
+1af939d107d5810bcc18b178c7ac8b75
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Model.$trModule2 Model.$trModule1) -}
+c73a9da58f1865860428efd85a010b3b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Model"#) -}
+197a04508acc42cec048b9b35aa9663a
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+c53b15d5e33db9b7697583a5ae8dfa2b
   $w$c== ::
     Model.States
     -> Miso.String.MisoString
@@ -449,6 +1315,7 @@ ab8832c8719be04d6534408996bd0202
     -> GHC.Types.Bool
     -> GHC.Types.Bool
     -> GHC.Types.Bool
+    -> Model.Generator
     -> [GHC.Base.String]
     -> [GHC.Base.String]
     -> [(GHC.Base.String, GHC.Types.Int)]
@@ -463,6 +1330,7 @@ ab8832c8719be04d6534408996bd0202
     -> GHC.Types.Bool
     -> GHC.Types.Bool
     -> GHC.Types.Bool
+    -> Model.Generator
     -> [GHC.Base.String]
     -> [GHC.Base.String]
     -> [(GHC.Base.String, GHC.Types.Int)]
@@ -471,11 +1339,23 @@ ab8832c8719be04d6534408996bd0202
     -> GHC.Types.Int
     -> GHC.Types.Int
     -> GHC.Types.Bool
-  {- Arity: 28, HasNoCafRefs,
-     Strictness: <S,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><S,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)>,
+  {- Arity: 30, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><S,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)>,
      Inline: [0] -}
-e64a37b5184e15918cfafdfaf3baabcc
+ccbb9aac717062030c9d72de4e3d3252
   $w$cshowsPrec ::
+    Model.Generator -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Model.Generator) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Model.Idle
+                   -> GHC.Base.++ @ GHC.Types.Char Model.$fShowGenerator3 w1
+                   Model.Generating
+                   -> GHC.Base.++ @ GHC.Types.Char Model.$fShowGenerator2 w1
+                   Model.Done
+                   -> GHC.Base.++ @ GHC.Types.Char Model.$fShowGenerator1 w1 }) -}
+0402990354bbebd0cfecf22ad7dd06e4
+  $w$cshowsPrec1 ::
     GHC.Prim.Int#
     -> Model.States
     -> Miso.String.MisoString
@@ -484,6 +1364,7 @@ e64a37b5184e15918cfafdfaf3baabcc
     -> GHC.Types.Bool
     -> GHC.Types.Bool
     -> GHC.Types.Bool
+    -> Model.Generator
     -> [GHC.Base.String]
     -> [GHC.Base.String]
     -> [(GHC.Base.String, GHC.Types.Int)]
@@ -493,14 +1374,14 @@ e64a37b5184e15918cfafdfaf3baabcc
     -> GHC.Types.Int
     -> GHC.Base.String
     -> GHC.Base.String
-  {- Arity: 16,
-     Strictness: <L,U><L,1*U><L,U(U)><L,U(U)><L,U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,U>,
+  {- Arity: 17,
+     Strictness: <S,U><L,1*U><L,U(U)><L,U(U)><L,U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,U>,
      Inline: [0] -}
-015c0ea1a31b67a28b8dcfeb86d6d392
-  $w$cshowsPrec1 ::
+6e3c17d2cb642b3a5f71b3774a8cd426
+  $w$cshowsPrec2 ::
     Model.States -> GHC.Base.String -> GHC.Base.String
   {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
-     Unfolding: (\ w :: Model.States w1 :: GHC.Base.String ->
+     Unfolding: (\ (w :: Model.States) (w1 :: GHC.Base.String) ->
                  case w of wild {
                    Model.MainMenu
                    -> GHC.Base.++ @ GHC.Types.Char Model.$fShowStates12 w1
@@ -526,7 +1407,7 @@ e64a37b5184e15918cfafdfaf3baabcc
                    -> GHC.Base.++ @ GHC.Types.Char Model.$fShowStates2 w1
                    Model.GameOver
                    -> GHC.Base.++ @ GHC.Types.Char Model.$fShowStates1 w1 }) -}
-4657afaa88952862887f45fbdec2f519
+2d9c700670fb0c1060da9d79efe80b1e
   data Action
     = ToRules
     | ToBasicRules
@@ -541,6 +1422,7 @@ e64a37b5184e15918cfafdfaf3baabcc
     | ToGameOver
     | ToMainMenu
     | BackToMainMenu
+    | SettingsToMainMenu
     | UpdateTeamField Miso.String.MisoString
     | UpdateSynField Miso.String.MisoString
     | UpdateNumberField Miso.String.MisoString
@@ -556,7 +1438,9 @@ e64a37b5184e15918cfafdfaf3baabcc
     | StartCounter
     | Tick
     | NoOp
-1a58e08aadfc10734b929fd46c20f12a
+ccbb9aac717062030c9d72de4e3d3252
+  data Generator = Idle | Generating | Done
+bd1b8032814385ecc91741b99200476f
   data Model
     = Model {state :: Model.States,
              inputField :: Miso.String.MisoString,
@@ -565,6 +1449,7 @@ e64a37b5184e15918cfafdfaf3baabcc
              invalidTeamName :: GHC.Types.Bool,
              invalidSyntagma :: GHC.Types.Bool,
              buttonEnabled :: GHC.Types.Bool,
+             generator :: Model.Generator,
              syntagmas :: [GHC.Base.String],
              guessed :: [GHC.Base.String],
              teams :: [(GHC.Base.String, GHC.Types.Int)],
@@ -572,7 +1457,7 @@ e64a37b5184e15918cfafdfaf3baabcc
              timer :: GHC.Types.Int,
              time :: GHC.Types.Int,
              runda :: GHC.Types.Int}
-015c0ea1a31b67a28b8dcfeb86d6d392
+6e3c17d2cb642b3a5f71b3774a8cd426
   data States
     = MainMenu
     | BasicRules
@@ -586,35 +1471,43 @@ e64a37b5184e15918cfafdfaf3baabcc
     | Gameplay
     | TimeOut
     | GameOver
-    Promotable
-9a351b5b17464d7090e7fc5541006966
+9591f050eb31ea03a4c0d253312e0b5f
   buttonEnabled :: Model.Model -> GHC.Types.Bool
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLSLLLLLLL),1*U(A,A,A,A,A,A,1*U,A,A,A,A,A,A,A)>,
+     Strictness: <S(LLLLLLSLLLLLLLL),1*U(A,A,A,A,A,A,1*U,A,A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
                  ds7 }) -}
-16c86afb05036d8909728ae125aeda7a
+9cdd14bf4d72cfcbd3ca48c57e130e68
   currentTeam :: Model.Model -> GHC.Types.Int
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLLLLSLLL),1*U(A,A,A,A,A,A,A,A,A,A,1*U(U),A,A,A)>,
+     Strictness: <S(LLLLLLLLLLLSLLL),1*U(A,A,A,A,A,A,A,A,A,A,A,1*U(U),A,A,A)>m,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
-                 ds11 }) -}
-efbf74ef15ea0c5e3ff537a0f35c6f99
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
+                 ds12 }) -}
+b51ca37f973e003354e110994622e9bf
+  generator :: Model.Model -> Model.Generator
+  RecSel Left Model.Model
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLSLLLLLLL),1*U(A,A,A,A,A,A,A,1*U,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
+                 ds8 }) -}
+5ed4108edbfef35d39694d062ff54a11
   guessed :: Model.Model -> [GHC.Base.String]
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLLSLLLLL),1*U(A,A,A,A,A,A,A,A,1*U,A,A,A,A,A)>,
+     Strictness: <S(LLLLLLLLLSLLLLL),1*U(A,A,A,A,A,A,A,A,A,1*U,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
-                 ds9 }) -}
-b4cc5ca0d573cfd3ea2d48237f649d4f
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
+                 ds10 }) -}
+1ec35f8665424e7f40f3d61fb4933415
   initialModel :: Model.Model
   {- Unfolding: (Model.Model
                    Model.MainMenu
@@ -624,6 +1517,7 @@ b4cc5ca0d573cfd3ea2d48237f649d4f
                    GHC.Types.False
                    GHC.Types.False
                    GHC.Types.False
+                   Model.Idle
                    (GHC.Types.[] @ GHC.Base.String)
                    (GHC.Types.[] @ GHC.Base.String)
                    (GHC.Types.[] @ (GHC.Base.String, GHC.Types.Int))
@@ -631,129 +1525,131 @@ b4cc5ca0d573cfd3ea2d48237f649d4f
                    Model.initialModel3
                    Model.initialModel2
                    Model.initialModel1) -}
-4622ca5133f624603b7f6185b7ad4265
+7fafdc455e96707a75ded6053ca99ebe
   initialModel1 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1) -}
-8a72ab38a94ff08fb368597b93e744b4
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+91ec8c4e7b22a520f8dde96ffbc9a514
   initialModel2 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# (-1)) -}
-94289d4ccab17f32c80879d681452c63
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# -1#) -}
+7f05cc3304b6b84fd3b014df78d10993
   initialModel3 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 60) -}
-71c00e7ff859ba4f503467154d29b0d3
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 60#) -}
+57fc337b5897e75e891cf88272e12dba
   initialModel4 :: Miso.String.MisoString
   {- Unfolding: (Data.JSString.unpackCString# "60"#) -}
-62d69c9f1cf77ee2af96e1a75057094e
+e71c324d092f60e59c7639ddadf9fe62
   initialModel5 :: Miso.String.MisoString
   {- Unfolding: (Data.JSString.unpackCString# "25"#) -}
-22fe75f88f63ef2ac3c960b9797b9ccf
+a3d1c9bd0f1486d987df4bb52eb7067a
   inputField :: Model.Model -> Miso.String.MisoString
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LSLLLLLLLLLLLL),1*U(A,1*U(U),A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Strictness: <S(LSLLLLLLLLLLLLL),1*U(A,1*U(U),A,A,A,A,A,A,A,A,A,A,A,A,A)>m,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
                  ds2 }) -}
-859881c79f3fe81341dd6bf9ec273e8d
+a6cdbd19e4aa582b8027d07c38159d36
   invalidSyntagma :: Model.Model -> GHC.Types.Bool
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLSLLLLLLLL),1*U(A,A,A,A,A,1*U,A,A,A,A,A,A,A,A)>,
+     Strictness: <S(LLLLLSLLLLLLLLL),1*U(A,A,A,A,A,1*U,A,A,A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
                  ds6 }) -}
-dbcf0f12b880178acafea809a0a29ca4
+c4b33846af55ec9d96a126fe5fc7d793
   invalidTeamName :: Model.Model -> GHC.Types.Bool
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLSLLLLLLLLL),1*U(A,A,A,A,1*U,A,A,A,A,A,A,A,A,A)>,
+     Strictness: <S(LLLLSLLLLLLLLLL),1*U(A,A,A,A,1*U,A,A,A,A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
                  ds5 }) -}
-95e86f4dbc2edc752212e46d22f2d471
+6b1ada05d970038ec56ae1f703bb82f9
   numberField :: Model.Model -> Miso.String.MisoString
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLSLLLLLLLLLLL),1*U(A,A,1*U(U),A,A,A,A,A,A,A,A,A,A,A)>,
+     Strictness: <S(LLSLLLLLLLLLLLL),1*U(A,A,1*U(U),A,A,A,A,A,A,A,A,A,A,A,A)>m,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
                  ds3 }) -}
-ecbefce8ef485d8dc82483204e904514
+2c77e8f0ddcccbf9ec2cf2db5a5ec1f9
   runda :: Model.Model -> GHC.Types.Int
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLLLLLLLS),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,1*U(U))>,
+     Strictness: <S(LLLLLLLLLLLLLLS),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,A,1*U(U))>m,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
-                 ds14 }) -}
-b417a67a686a19946eb3ffb24ffeff2f
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
+                 ds15 }) -}
+c688abc2d329605353b4da8390ce5490
   state :: Model.Model -> Model.States
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(SLLLLLLLLLLLLL),1*U(1*U,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Strictness: <S(SLLLLLLLLLLLLLL),1*U(1*U,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
                  ds1 }) -}
-54bd287f8fa717f2fbf84bfc6658a632
+f0f39c17eb8d721af776f9f7452a0dff
   syntagmas :: Model.Model -> [GHC.Base.String]
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLSLLLLLL),1*U(A,A,A,A,A,A,A,1*U,A,A,A,A,A,A)>,
+     Strictness: <S(LLLLLLLLSLLLLLL),1*U(A,A,A,A,A,A,A,A,1*U,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
-                 ds8 }) -}
-7e8e53a510c6bedf276beb07bfb4a8cc
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
+                 ds9 }) -}
+109b06c7db777973b45613309876b5fa
   teams :: Model.Model -> [(GHC.Base.String, GHC.Types.Int)]
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLLLSLLLL),1*U(A,A,A,A,A,A,A,A,A,1*U,A,A,A,A)>,
+     Strictness: <S(LLLLLLLLLLSLLLL),1*U(A,A,A,A,A,A,A,A,A,A,1*U,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
-                 ds10 }) -}
-920dc222fe7374115a830f7010cf43e5
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
+                 ds11 }) -}
+dbaa09ae7aa38bf0710d95c28ad094c0
   time :: Model.Model -> GHC.Types.Int
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLLLLLLSL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,1*U(U),A)>,
+     Strictness: <S(LLLLLLLLLLLLLSL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,1*U(U),A)>m,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
-                 ds13 }) -}
-c49a76a64bf13b900e3be55f1fac7953
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
+                 ds14 }) -}
+0c3e6abce217eed2175813c1c136228a
   timer :: Model.Model -> GHC.Types.Int
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLLLLLLLLLSLL),1*U(A,A,A,A,A,A,A,A,A,A,A,1*U(U),A,A)>,
+     Strictness: <S(LLLLLLLLLLLLSLL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,1*U(U),A,A)>m,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
-                 ds12 }) -}
-424fe4276840d6282b7ed1920e43a436
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
+                 ds13 }) -}
+78da0c3ca57bdbf62ee2832ab13a9aad
   timerField :: Model.Model -> Miso.String.MisoString
-  RecSel Model.Model
+  RecSel Left Model.Model
   {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(LLLSLLLLLLLLLL),1*U(A,A,A,1*U(U),A,A,A,A,A,A,A,A,A,A)>,
+     Strictness: <S(LLLSLLLLLLLLLLL),1*U(A,A,A,1*U(U),A,A,A,A,A,A,A,A,A,A,A)>m,
      Unfolding: InlineRule (1, True, False)
-                (\ ds :: Model.Model ->
-                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
+                (\ (ds :: Model.Model) ->
+                 case ds of wild { Model.Model ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ->
                  ds4 }) -}
 instance GHC.Classes.Eq [Model.Action] = Model.$fEqAction
+instance GHC.Classes.Eq [Model.Generator] = Model.$fEqGenerator
 instance GHC.Classes.Eq [Model.Model] = Model.$fEqModel
 instance GHC.Classes.Eq [Model.States] = Model.$fEqStates
 instance GHC.Show.Show [Model.Action] = Model.$fShowAction
+instance GHC.Show.Show [Model.Generator] = Model.$fShowGenerator
 instance GHC.Show.Show [Model.Model] = Model.$fShowModel
 instance GHC.Show.Show [Model.States] = Model.$fShowStates
-"SPEC/Model $fEq(,) @ [Char] @ Int" [ALWAYS] forall $dEq :: GHC.Classes.Eq
-                                                              [GHC.Types.Char]
-                                                    $dEq1 :: GHC.Classes.Eq GHC.Types.Int
+"SPEC/Model $fEq(,) @ [Char] @ Int" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                               [GHC.Types.Char])
+                                                    ($dEq1 :: GHC.Classes.Eq GHC.Types.Int)
   GHC.Classes.$fEq(,) @ [GHC.Types.Char] @ GHC.Types.Int $dEq $dEq1
   = Model.$fEqAction_$s$fEq(,)
 vectorised variables:

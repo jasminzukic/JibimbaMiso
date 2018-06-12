@@ -1,0 +1,26 @@
+Configuring vault-0.3.0.6...
+Building vault-0.3.0.6...
+Preprocessing library vault-0.3.0.6...
+[1 of 5] Compiling Data.Unique.Really ( src/Data/Unique/Really.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Unique/Really.js_o )
+
+src/Data/Unique/Really.hs:6:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[2 of 5] Compiling Data.Vault.ST.Strict ( src/Data/Vault/ST/Strict.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Vault/ST/Strict.js_o )
+
+src/Data/Vault/ST/ST.hs:17:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[3 of 5] Compiling Data.Vault.Strict ( src/Data/Vault/Strict.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Vault/Strict.js_o )
+[4 of 5] Compiling Data.Vault.ST.Lazy ( src/Data/Vault/ST/Lazy.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Vault/ST/Lazy.js_o )
+
+src/Data/Vault/ST/ST.hs:17:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[5 of 5] Compiling Data.Vault.Lazy  ( src/Data/Vault/Lazy.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Vault/Lazy.js_o )
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/vault-0.3.0.6-LDHcmg66VfA50GVnhXK0s8
+Registering vault-0.3.0.6...

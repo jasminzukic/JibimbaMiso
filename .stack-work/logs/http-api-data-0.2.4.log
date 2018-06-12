@@ -1,0 +1,21 @@
+[1 of 2] Compiling Main             ( /tmp/stack6144/http-api-data-0.2.4/Setup.lhs, /tmp/stack6144/http-api-data-0.2.4/.stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/setup/Main.js_o )
+
+/tmp/stack6144/http-api-data-0.2.4/Setup.lhs:44:69: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘InstalledPackageId’
+    (imported from Distribution.Package):
+    Deprecated: "Use UnitId instead"
+[2 of 2] Compiling StackSetupShim   ( /home/saaffa/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs, /tmp/stack6144/http-api-data-0.2.4/.stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/setup/StackSetupShim.js_o )
+Linking /tmp/stack6144/http-api-data-0.2.4/.stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/setup/setup.jsexe (Main,StackSetupShim)
+Configuring http-api-data-0.2.4...
+Building http-api-data-0.2.4...
+Preprocessing library http-api-data-0.2.4...
+[1 of 2] Compiling Web.HttpApiData.Internal ( src/Web/HttpApiData/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Web/HttpApiData/Internal.js_o )
+
+src/Web/HttpApiData/Internal.hs:523:30: warning: [-Wdeprecations]
+    In the use of ‘parseTime’
+    (imported from Data.Time, but defined in time-1.6.0.1:Data.Time.Format.Parse):
+    Deprecated: "use "parseTimeM True" instead"
+[2 of 2] Compiling Web.HttpApiData  ( src/Web/HttpApiData.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Web/HttpApiData.js_o )
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/http-api-data-0.2.4-8DFU9ZX7fiPBAiJ8MfdNJA
+Registering http-api-data-0.2.4...

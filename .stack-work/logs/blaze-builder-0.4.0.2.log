@@ -1,0 +1,16 @@
+Configuring blaze-builder-0.4.0.2...
+Building blaze-builder-0.4.0.2...
+Preprocessing library blaze-builder-0.4.0.2...
+[ 1 of 10] Compiling Blaze.ByteString.Builder.Internal.Write ( Blaze/ByteString/Builder/Internal/Write.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Blaze/ByteString/Builder/Internal/Write.js_o )
+[ 2 of 10] Compiling Blaze.ByteString.Builder.Compat.Write ( Blaze/ByteString/Builder/Compat/Write.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Blaze/ByteString/Builder/Compat/Write.js_o )
+[ 3 of 10] Compiling Blaze.ByteString.Builder.Char.Utf8 ( Blaze/ByteString/Builder/Char/Utf8.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Blaze/ByteString/Builder/Char/Utf8.js_o )
+[ 4 of 10] Compiling Blaze.ByteString.Builder.Char8 ( Blaze/ByteString/Builder/Char8.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Blaze/ByteString/Builder/Char8.js_o )
+[ 5 of 10] Compiling Blaze.ByteString.Builder.Html.Utf8 ( Blaze/ByteString/Builder/Html/Utf8.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Blaze/ByteString/Builder/Html/Utf8.js_o )
+[ 6 of 10] Compiling Blaze.ByteString.Builder.ByteString ( Blaze/ByteString/Builder/ByteString.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Blaze/ByteString/Builder/ByteString.js_o )
+[ 7 of 10] Compiling Blaze.ByteString.Builder.HTTP ( Blaze/ByteString/Builder/HTTP.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Blaze/ByteString/Builder/HTTP.js_o )
+[ 8 of 10] Compiling Blaze.ByteString.Builder.Word ( Blaze/ByteString/Builder/Word.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Blaze/ByteString/Builder/Word.js_o )
+[ 9 of 10] Compiling Blaze.ByteString.Builder.Int ( Blaze/ByteString/Builder/Int.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Blaze/ByteString/Builder/Int.js_o )
+[10 of 10] Compiling Blaze.ByteString.Builder ( Blaze/ByteString/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Blaze/ByteString/Builder.js_o )
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/blaze-builder-0.4.0.2-Hv0MHZLWWdPIpLvDzcly4N
+Registering blaze-builder-0.4.0.2...

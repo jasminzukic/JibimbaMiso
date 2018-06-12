@@ -1,0 +1,27 @@
+Configuring servant-0.8.1...
+Building servant-0.8.1...
+Preprocessing library servant-0.8.1...
+[ 1 of 21] Compiling Servant.API.Experimental.Auth ( src/Servant/API/Experimental/Auth.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/Experimental/Auth.js_o )
+[ 2 of 21] Compiling Servant.API.Raw  ( src/Servant/API/Raw.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/Raw.js_o )
+[ 3 of 21] Compiling Servant.API.ContentTypes ( src/Servant/API/ContentTypes.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/ContentTypes.js_o )
+[ 4 of 21] Compiling Servant.API.BasicAuth ( src/Servant/API/BasicAuth.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/BasicAuth.js_o )
+[ 5 of 21] Compiling Servant.API.Verbs ( src/Servant/API/Verbs.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/Verbs.js_o )
+[ 6 of 21] Compiling Servant.API.WithNamedContext ( src/Servant/API/WithNamedContext.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/WithNamedContext.js_o )
+[ 7 of 21] Compiling Servant.API.Vault ( src/Servant/API/Vault.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/Vault.js_o )
+[ 8 of 21] Compiling Servant.API.IsSecure ( src/Servant/API/IsSecure.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/IsSecure.js_o )
+[ 9 of 21] Compiling Servant.API.RemoteHost ( src/Servant/API/RemoteHost.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/RemoteHost.js_o )
+[10 of 21] Compiling Servant.API.ReqBody ( src/Servant/API/ReqBody.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/ReqBody.js_o )
+[11 of 21] Compiling Servant.API.QueryParam ( src/Servant/API/QueryParam.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/QueryParam.js_o )
+[12 of 21] Compiling Servant.API.HttpVersion ( src/Servant/API/HttpVersion.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/HttpVersion.js_o )
+[13 of 21] Compiling Servant.API.Header ( src/Servant/API/Header.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/Header.js_o )
+[14 of 21] Compiling Servant.API.ResponseHeaders ( src/Servant/API/ResponseHeaders.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/ResponseHeaders.js_o )
+[15 of 21] Compiling Servant.API.Capture ( src/Servant/API/Capture.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/Capture.js_o )
+[16 of 21] Compiling Servant.API.Alternative ( src/Servant/API/Alternative.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/Alternative.js_o )
+[17 of 21] Compiling Servant.API.Sub  ( src/Servant/API/Sub.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/Sub.js_o )
+[18 of 21] Compiling Servant.Utils.Links ( src/Servant/Utils/Links.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/Utils/Links.js_o )
+[19 of 21] Compiling Servant.API      ( src/Servant/API.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API.js_o )
+[20 of 21] Compiling Servant.API.Internal.Test.ComprehensiveAPI ( src/Servant/API/Internal/Test/ComprehensiveAPI.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/API/Internal/Test/ComprehensiveAPI.js_o )
+[21 of 21] Compiling Servant.Utils.Enter ( src/Servant/Utils/Enter.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Servant/Utils/Enter.js_o )
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/servant-0.8.1-9rxb3gf6XmoLvxKloqcMI7
+Registering servant-0.8.1...

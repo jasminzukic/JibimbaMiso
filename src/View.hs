@@ -94,8 +94,10 @@ viewBasicRules =
           , text "2. Pantomima", br_ []
           , text "3. Jedna riječ", br_ []
           ]
-  , p_ [] [ text "Sintagme se ponavljaju u svakom krugu." ]
-  , p_ [] [ text "" ]
+  , p_ [] [ text "Sintagme se ponavljaju u svakom krugu."
+          , br_ []
+          , text "SINTAGMA = PRIDJEV + IMENICA"
+          ]
   ]
 
 viewAliasRules :: View Action
@@ -111,7 +113,7 @@ viewCharadesRules =
   div_ [] [
     p_ [] [ text "Sintagmu opisujete kretnjom." ]
   , p_ [] [ text "Ne smijete proizvoditi zvukove." ]
-  , p_ [] [ text "Za veću težinu igre probajte ne pokazivati prstom na stvari oko sebe." ]
+  , p_ [] [ text "Za veću težinu igre probajte ne pokazivati na stvari oko sebe." ]
   ]
 
 viewOneWordRules :: View Action
@@ -137,13 +139,12 @@ viewSettings g@Model{..} num =
       , step_ "10"
       , name_ "timeSettings"
       , onInput UpdateTimerField
-      , onEnter SetTime
       ]
     , text " sekundi (10-120)"
     ]
   , div_ [ class_ "bottomButtons" ] [
       button_ [ class_ "regularButton"
-              , onClick BackToMainMenu ]
+              , onClick SettingsToMainMenu ]
               [ text "POČETAK" ]
       ]
   ]
@@ -222,6 +223,12 @@ viewSynInput g@Model{..} syn num =
       , onEnter GenerateSyntagmas
       ]
     , button_ [ class_ "regularButton", onClick GenerateSyntagmas ] [ text "GENERIRAJ" ]
+    ]
+  , span_ [ style_ (M.fromList [ ("visibility", bool "visible" "hidden" (generator == Idle))
+                               , ("color", bool "#2C3E50" "#18BC9C" (generator == Done))]) ]
+
+    [
+      bool "Generira se..." "Generirano!" (generator == Done)
     ]
   , div_ [ class_ "bottomButtons" ] [
       button_ [ class_ "backButton", onClick ToTeamInput ] [ text "NATRAG" ]

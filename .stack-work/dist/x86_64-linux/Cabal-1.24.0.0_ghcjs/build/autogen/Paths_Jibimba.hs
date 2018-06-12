@@ -18,11 +18,11 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-6.30/ghcjs-0.2.0.9006030_ghc-7.10.3/bin"
-libdir     = "/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-6.30/ghcjs-0.2.0.9006030_ghc-7.10.3/lib/x86_64-linux-ghcjs-0.2.0.9006030-ghc7_10_3/Jibimba-0.1.0.0"
-datadir    = "/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-6.30/ghcjs-0.2.0.9006030_ghc-7.10.3/share/x86_64-linux-ghcjs-0.2.0.9006030-ghc7_10_3/Jibimba-0.1.0.0"
-libexecdir = "/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-6.30/ghcjs-0.2.0.9006030_ghc-7.10.3/libexec"
-sysconfdir = "/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-6.30/ghcjs-0.2.0.9006030_ghc-7.10.3/etc"
+bindir     = "/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/bin"
+libdir     = "/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/Jibimba-0.1.0.0"
+datadir    = "/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/share/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/Jibimba-0.1.0.0"
+libexecdir = "/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/libexec"
+sysconfdir = "/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/etc"
 
 getBinDir, getLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "Jibimba_bindir") (\_ -> return bindir)

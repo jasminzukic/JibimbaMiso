@@ -1,6 +1,6 @@
-resolver: lts-6.30
-compiler: ghcjs-0.2.0.9006030_ghc-7.10.3
-# compiler.check: match-exact
+resolver: lts-7.1
+compiler: ghcjs-0.2.1.9007001_ghc-8.0.1
+compiler-check: match-exact
 
 packages:
   - '.'
@@ -8,9 +8,10 @@ packages:
 extra-deps:
   - miso-0.18.0.0
 
+
 setup-info:
   ghcjs:
     source:
-      ghcjs-0.2.0.9006030_ghc-7.10.3:
-        url: http://ghcjs.tolysz.org/lts-6.30-9006030.tar.gz
-        sha1: 2371e2ffe9e8781808b7a04313e6a0065b64ee51
+      ghcjs-0.2.1.9007001_ghc-8.0.1:
+          url: http://tolysz.org/ghcjs/ghc-8.0-2016-09-26-lts-7.1-9007001-mem.tar.gz
+          sha1: e640724883238593e2d2f7f03991cb413ec0347b

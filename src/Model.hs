@@ -13,6 +13,7 @@ data Model = Model
   , invalidTeamName :: Bool
   , invalidSyntagma :: Bool
   , buttonEnabled :: Bool
+  , generator :: Generator
   , syntagmas :: [String]
   , guessed :: [String]
   , teams :: [(String, Int)]
@@ -22,6 +23,7 @@ data Model = Model
   , runda :: Int
   } deriving (Eq, Show)
 
+data Generator = Idle | Generating | Done deriving (Eq, Show)
 
 data States = MainMenu
             | BasicRules
@@ -52,6 +54,7 @@ data Action
   | ToGameOver
   | ToMainMenu
   | BackToMainMenu
+  | SettingsToMainMenu
 
   | UpdateTeamField   MisoString
   | UpdateSynField    MisoString
@@ -82,6 +85,7 @@ initialModel = Model
   , invalidTeamName = False
   , invalidSyntagma = False
   , buttonEnabled = False
+  , generator = Idle
   , syntagmas = []
   , guessed = []
   , teams = []
