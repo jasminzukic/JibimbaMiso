@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 15:44:37.539583 UTC
+2018-06-13 09:59:08.727871 UTC
 
 interface main@main:View 8001
-  interface hash: 23fa4c78833a4b02db472bad172d8b56
-  ABI hash: abd6042a50d26eb9bcaada4df756acd3
+  interface hash: c5c8f158af33eaea3e8aaedc1bd61089
+  ABI hash: 7a60cf222206aad0459a160afc647218
   export-list hash: 04c0139db0a607cd9270ddd6142d0fd6
   orphan hash: 1537a862b7074d51237c31ad7bd75a8a
   flag hash: ef91c6845de263ec23c567b06d493b92
@@ -133,62 +133,63 @@ import  -/  base-4.9.0.0:Prelude d12376192cc2b7eb811b9b12d0e03e24
 import  -/  containers-0.5.7.1@containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:Data.Map 8c4e08a9eac114bc002b44417e5efade
 import  -/  containers-0.5.7.1@containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:Data.Map.Base 19bcf64812d24b629b587f7f64178d71
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 6d1806e3abfaa79b6a7243b0a9630c33
-import  -/  Model 73a21e0d0bf318429f798b5c50371a84
-  exports: 8859018b6a9534d7708837492ad17f1d
-  Action 2d9c700670fb0c1060da9d79efe80b1e
-  AddSyn 877a9f8e7725809ee0aa7caa740289d0
-  AddTeam e3d4bd5b168690b548b5697eff158ff6
+import  -/  Model cc3eb2df4761b6e8d37c97b78313ef42
+  exports: 06d15568ffa8769637ff451f096d4c94
+  Action 92578f5995503cead6c1be2954ae8135
+  AddSyn 0bb395788de6d203ff26e888f3e9e9a2
+  AddTeam db6a90c82cf6cdacc97e2baa5536b5da
   AliasRules 021c659f03b7ca6570ac69051a4ce408
-  BackToMainMenu 4203bc34021a1202f8b115bd9ef58224
+  BackToMainMenu 6c339c1dcd940f2b8c6766128a1836ec
   BasicRules fdee42f2db8a15f7c2bd10f92d4c9d49
   CharadesRules ad530523a54a66044d543f53ad26e12e
   Done 9ec37abf3c87b427202ecd37b1eaac5e
   GameOver b57602af8a0ea23fe7b5064e2b6b44da
   Gameplay b346fb5c37c3742f9671bf9d2160ac83
-  GenerateSyntagmas ebbb2632f6f74c2fe30cf84e6cbc93ef
+  GenerateSyntagmas d9aa9fd6045142cc90e5e4728109c7cc
   Idle 6eb9d0f98ec7adc68529576efdb298c6
   MainMenu 2b14ed350b8220507cd576d5a2566fd0
-  Model bf959868ca42c654065555f320a99a2e
-  Model bd1b8032814385ecc91741b99200476f
-  NextWord 5dde5828773d73a04a9f017111b74f99
-  NoOp 466afc59dc2154f6496fcf63b6454890
+  Model 335b550e986469be23e65ae2a67c2762
+  Model eae55244e45903f349d6d60a05e8ee3f
+  NextWord f218d06b9544ce6253b2782b87b892e3
+  NoOp 95bf84b62daaa80f0970f09efaba70c4
   OneWordRules a92d4678f614f65a4f9d6cd08ae5ad4e
+  PostSyntagmas 82809ba485e02b84e9ba97992bb63ccd
   RoundPrep eda2d5f51ec81c04b8876c10efccdb48
   Settings 0b20cc1a1a92e71fd033f372d4f9a70c
-  SettingsToMainMenu 824c803e19556d7515f9c7024326aa61
-  SkipWord bdc299aa276da8dfd4dc981e4f5a49f4
+  SettingsToMainMenu 553d6b10b0534815866a472fe309e9b5
+  SkipWord 03b31483ab8c2f2e16ae62db7391ca09
   SynInput 9a8929c0b11c346e6d68ff4107cfbe04
   TeamInput 9bcbedb86ef1030fc4da37e6dbdb65ea
   TimeOut 7a8a1ded145f49caef30e4d5baf70cc3
-  ToAliasRules 1cad8830079e8b60d983d3ebb6c8393b
-  ToBasicRules c9be4671921553071246f6101f1faf82
-  ToCharadesRules e77e9dd00ee333a9551db43a706240e2
-  ToGameplay 42cce86094cd1f91079dbd4a556ecf53
-  ToMainMenu 3424ca1252a9aae1d31d4a35f42c9fea
-  ToOneWordRules b584588451c3c2a359526f1471bc69c3
-  ToRoundPrep 2218e38497abd0f834cd0aad504d4f5b
-  ToSettings 61a024bf5da73a58ddd12d9f0e14582e
-  ToSynInput d5d004cb6593e92863389763c471b688
-  ToTeamInput 054926d6275af2b1b1a751e6d94443a5
-  UpdateNumberField 8e3a847c44f48c0ac0fe26a7d582ae64
-  UpdateSynField 6728f3c6b644ee567c968159a0f0d947
-  UpdateTeamField 9523a459277d1d7a29f0c88d69c2d23a
-  UpdateTimerField 12961b4d4e80a5fcaa88474922b38dfb
-  buttonEnabled 9591f050eb31ea03a4c0d253312e0b5f
-  currentTeam 9cdd14bf4d72cfcbd3ca48c57e130e68
-  generator b51ca37f973e003354e110994622e9bf
-  guessed 5ed4108edbfef35d39694d062ff54a11
-  inputField a3d1c9bd0f1486d987df4bb52eb7067a
-  invalidSyntagma a6cdbd19e4aa582b8027d07c38159d36
-  invalidTeamName c4b33846af55ec9d96a126fe5fc7d793
-  numberField 6b1ada05d970038ec56ae1f703bb82f9
-  runda 2c77e8f0ddcccbf9ec2cf2db5a5ec1f9
-  state c688abc2d329605353b4da8390ce5490
-  syntagmas f0f39c17eb8d721af776f9f7452a0dff
-  teams 109b06c7db777973b45613309876b5fa
-  time dbaa09ae7aa38bf0710d95c28ad094c0
-  timer 0c3e6abce217eed2175813c1c136228a
-  timerField 78da0c3ca57bdbf62ee2832ab13a9aad
+  ToAliasRules 8205e594c40c8bed878bc0aa2394a7aa
+  ToBasicRules 7c775d60203aeee642b84a6482c0388a
+  ToCharadesRules 79e1b74df9c6f0ffc8afa5d546de8509
+  ToGameplay 17325214768165b606d96a8485fd65e4
+  ToOneWordRules 86881627f8154519cff679e4639b2781
+  ToRoundPrep 18901013538a57d028db9e1f3afc209a
+  ToSettings 2c42a6153d446ee80e4e692645ebd0f2
+  ToSynInput 249fa6c1a31fa6be2fff097b821a4a1e
+  ToTeamInput 8c3d9a426714ae0e6d4270e3dce73e50
+  UpdateNumberField 7c830f4dcf8c9870e4e2cca3595e49f7
+  UpdateSynField 396b49043f811378afe7cc2fadbf59e8
+  UpdateTeamField 0812c3e0a53086eab4edeb9e18da91df
+  UpdateTimerField 2a2b6074cb970ee9a695af207db94ed5
+  buttonEnabled 19f4c37fbda601d8574cb509e76f3afa
+  currentTeam f387e18a91f2cbc65a33134d6fdcbda8
+  generator 8ead31e94eefcc4432d620e50ec1f86c
+  guessed ac02899e7861e15187366296902a3772
+  inputField c23621b9e8a6a7057b4de4b8a1a1a7ba
+  invalidSyntagma 2981f921a52feea3a609afe2871b80ee
+  invalidTeamName d440494afd2ae70407830a09c34ed224
+  numberField d3733e99a8011a72639d9609bff4594b
+  runda 3ba2d19fe91e7bb80fe743adbaa91427
+  state 3e48fd6a5b41738932a20dfbc85857e4
+  syntagmas 53f75193cea3641dc3c61e18805433c0
+  teams 9d5c42f92b7f3bd92874f32e124c204a
+  time f5b76d81330cd2eb3aeae061366784b4
+  timeElapsed 43cacca650d8599428adf9f70f32e9ff
+  timer d3e737d916535cac319e4043f91731f1
+  timerField 520fb19ea7d7256be006893e116439e1
 import  -/  miso-0.18.0.0@miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq:Miso 39949964b51b7a91ed6b4e26dde65f94
 import  -/  miso-0.18.0.0@miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq:Miso.Event.Types 92e3b9c21fd24763145de0f4030b1edf
 import  -/  miso-0.18.0.0@miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq:Miso.Html.Element 59f4492c62bc792fb66bd8eba893485e
@@ -297,7 +298,7 @@ d7bacb1b3b26c7ce764dc08cb7ff6bd1
     -> [(Miso.String.MisoString, a)]
     -> Data.Map.Base.Map Miso.String.MisoString a
   {- Arity: 3, Strictness: <L,U><L,1*U><S,1*U>, Inline: [0] -}
-49c7eabb03d83080e0331abe8c6aa453
+72ec5a132cb8294392b4f991b01ee1ac
   $wviewModel ::
     Model.States
     -> Miso.String.MisoString
@@ -307,7 +308,7 @@ d7bacb1b3b26c7ce764dc08cb7ff6bd1
     -> GHC.Types.Bool
     -> GHC.Types.Bool
     -> Model.Generator
-    -> [GHC.Base.String]
+    -> [(GHC.Base.String, GHC.Types.Int)]
     -> [(GHC.Base.String, GHC.Types.Int)]
     -> GHC.Types.Int
     -> GHC.Types.Int
@@ -319,14 +320,14 @@ d7bacb1b3b26c7ce764dc08cb7ff6bd1
           Miso.Html.Internal.VTree #)
   {- Arity: 14,
      Strictness: <L,1*U><L,U><L,U><L,U><L,1*U><L,1*U><L,U><L,U><L,U><L,U><L,1*U(U)><L,U(U)><L,1*U(U)><L,U(U)> -}
-5d1a90e1b746e1f553e1bbcbdea3f5bb
+b747db4384ec55973a3e07e72c05d884
   viewModel :: Model.Model -> Miso.Html.Internal.View Model.Action
   {- Arity: 1,
-     Strictness: <S,1*U(1*U,U,U,U,1*U,1*U,U,U,U,A,U,1*U(U),U(U),1*U(U),U(U))>,
+     Strictness: <S,1*U(1*U,U,U,U,1*U,1*U,U,U,U,A,U,1*U(U),U(U),1*U(U),A,U(U))>,
      Inline: INLINE[0],
      Unfolding: InlineRule (1, True, False)
                 (\ (w :: Model.Model) ->
-                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ->
+                 case w of ww { Model.Model ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ->
                  (View.$wviewModel
                     ww1
                     ww2
@@ -341,7 +342,7 @@ d7bacb1b3b26c7ce764dc08cb7ff6bd1
                     ww12
                     ww13
                     ww14
-                    ww15)
+                    ww16)
                    `cast`
                  (Trans
                       (<Miso.Effect.Sink Model.Action>_R

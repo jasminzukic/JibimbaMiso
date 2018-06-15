@@ -43,6 +43,13 @@ viewModel g@Model{..} = div_ [ class_ "mainDiv sredina" ] [
     _         -> viewRules g
 
     ]
+  -- , div_ [] [
+  --     text "----------------------------------", br_ []
+  --   , ul_ [] $ flip map (syntagmas) $ \t ->
+  --       li_ [] [ text (ms (fst t ++ " " ++ show (snd t))) ]
+  --   , ul_ [] $ flip map (guessed) $ \t ->
+  --       li_ [] [ text (ms (fst t ++ " " ++ show (snd t))) ]
+  --   ]
   ]
 
 
@@ -208,9 +215,7 @@ viewSynInput g@Model{..} syn num =
   , br_ [], br_ []
   , div_ [] [
       text "... ili broj koliko ih želite generirati."
-      -- text "Ili unesite broj sintagmi koliko želite imati pa će se one automatski generirati i nadodati."
     , br_ []
-    -- , text "Za vaše psihičko zdravlje, ograničit ćemo ukupan broj na maksimalno 50." , br_ []
     , input_ [
         type_ "number"
       , defaultValue_ "30"
@@ -249,7 +254,7 @@ viewRoundPrep g@Model{..} =
       , div_ [ style_ (M.singleton "color" "#18BC9C") ]
              [ displayRoundDescription runda ]
       , viewTeamScores teams
-      , text (ms ("Tim " ++ map toUpper (fst (teams !! currentTeam)) ++ ", jeste spremni? Imate " ++ (show timer) ++ " sekundi")), br_ []
+      , text (ms ("Tim " ++ map toUpper (fst (teams !! currentTeam)) ++ ", jeste spremni? Imate " ++ (show timer) ++ " sekundi!")), br_ []
     ]
   , div_ [ class_ "bottomButtons" ] [
       button_ [ class_ "backButton", onClick ToSynInput ] [ text "NATRAG" ]
@@ -267,8 +272,8 @@ viewGameplay :: Model -> View Action
 viewGameplay g@Model{..} =
   div_ [] [
       div_ [ class_ "syntagma sredina" ] [
-          text (ms (head (words (head (syntagmas))))), br_ []
-        , text (ms (last (words (head (syntagmas))))), br_ []
+          text (ms (head (words (fst (head (syntagmas)))))), br_ []
+        , text (ms (last (words (fst (head (syntagmas)))))), br_ []
         , text (ms (show time))
       ]
     , div_ [ class_ "bottomButtons" ] [
@@ -288,9 +293,9 @@ viewTimeOut :: Model -> View Action
 viewTimeOut g@Model{..} =
   div_ [] [
     div_ [] [
-        text "Vrijeme je isteklo", br_ []
+        text "Vrijeme je isteklo!", br_ []
       , viewTeamScores teams
-      , text (ms ("Tim " ++ map toUpper (fst (teams !! currentTeam)) ++ ", jeste spremni? Imate 60 sekundi")), br_ []
+      , text (ms ("Tim " ++ map toUpper (fst (teams !! currentTeam)) ++ ", jeste spremni? Imate 60 sekundi!")), br_ []
     ]
   , div_ [ class_ "bottomButtons" ] [
       button_ [ autofocus_ True, class_ "regularButton", onClick ToGameplay ] [ text "SPREMNI!" ]
@@ -305,7 +310,7 @@ viewGameOver g@Model{..} =
       , viewTeamScores teams
     ]
   , div_ [ class_ "bottomButtons" ] [
-      button_ [ autofocus_ True, class_ "regularButton", onClick ToMainMenu ] [ text "POČETAK"]
+      button_ [ autofocus_ True, class_ "regularButton", onClick PostSyntagmas ] [ text "POČETAK"]
     ]
   ]
 

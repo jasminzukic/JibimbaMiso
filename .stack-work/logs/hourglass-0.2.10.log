@@ -1,0 +1,62 @@
+Configuring hourglass-0.2.10...
+Building hourglass-0.2.10...
+Preprocessing library hourglass-0.2.10...
+[ 1 of 17] Compiling Data.Hourglass.Zone ( Data/Hourglass/Zone.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Zone.js_o )
+[ 2 of 17] Compiling Data.Hourglass.Utils ( Data/Hourglass/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Utils.js_o )
+
+Data/Hourglass/Utils.hs:13:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Ord a, Num a)
+    • In the type signature for:
+           pad2 :: (Show a, Ord a, Num a, Integral a) => a -> String
+
+Data/Hourglass/Utils.hs:19:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Ord a, Num a)
+    • In the type signature for:
+           pad4 :: (Show a, Ord a, Num a, Integral a) => a -> String
+
+Data/Hourglass/Utils.hs:28:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Ord a, Num a, Integral a)
+    • In the type signature for:
+           padN :: (Show a, Ord a, Num a, Integral a) => Int -> a -> String
+[ 3 of 17] Compiling Time.Types       ( Time/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Time/Types.js_o )
+[ 4 of 17] Compiling Data.Hourglass.Types ( Data/Hourglass/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Types.js_o )
+[ 5 of 17] Compiling Data.Hourglass.Internal.Unix ( Data/Hourglass/Internal/Unix.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Internal/Unix.js_o )
+
+Data/Hourglass/Internal/Unix.hs:24:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 6 of 17] Compiling Data.Hourglass.Internal ( Data/Hourglass/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Internal.js_o )
+[ 7 of 17] Compiling Data.Hourglass.Calendar ( Data/Hourglass/Calendar.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Calendar.js_o )
+[ 8 of 17] Compiling Data.Hourglass.Diff ( Data/Hourglass/Diff.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Diff.js_o )
+
+Data/Hourglass/Diff.hs:22:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[ 9 of 17] Compiling Data.Hourglass.Time ( Data/Hourglass/Time.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Time.js_o )
+[10 of 17] Compiling Data.Hourglass.Epoch ( Data/Hourglass/Epoch.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Epoch.js_o )
+[11 of 17] Compiling Data.Hourglass.Local ( Data/Hourglass/Local.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Local.js_o )
+
+Data/Hourglass/Local.hs:62:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Time t
+    • In the type signature for:
+           localTime :: Time t => TimezoneOffset -> t -> LocalTime t
+[12 of 17] Compiling Time.System      ( Time/System.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Time/System.js_o )
+
+Time/System.hs:23:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[13 of 17] Compiling System.Hourglass ( System/Hourglass.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/System/Hourglass.js_o )
+[14 of 17] Compiling Data.Hourglass.Format ( Data/Hourglass/Format.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Format.js_o )
+[15 of 17] Compiling Data.Hourglass   ( Data/Hourglass.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass.js_o )
+
+Data/Hourglass.hs:40:1: warning: [-Wunused-imports]
+    The import of ‘daysInMonth’
+    from module ‘Data.Hourglass.Calendar’ is redundant
+[16 of 17] Compiling Time.Compat      ( Time/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Time/Compat.js_o )
+[17 of 17] Compiling Data.Hourglass.Compat ( Data/Hourglass/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Hourglass/Compat.js_o )
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/hourglass-0.2.10-AMj6nNbga3S5Eug9GjSQby
+Registering hourglass-0.2.10...

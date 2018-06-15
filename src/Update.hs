@@ -22,6 +22,7 @@ import System.Random.Shuffle (shuffleM)
 import JavaScript.Web.XMLHttpRequest
 
 
+
 -- | Updates model, optionally introduces side effects
 updateModel :: Action -> Model -> Effect Action Model
 
@@ -60,9 +61,15 @@ updateModel ToGameplay g@Model{..} =
   g {
     state = Gameplay
   , time = timer
+  , timeElapsed = 0
   } <# do
     shuff <- shuffleM syntagmas
     return $ ShuffleSyns shuff
+
+updateModel PostSyntagmas g@Model{..} =
+  g <# do
+    postSyntagmas syntagmas
+    return ToMainMenu
 
 updateModel ToMainMenu  g = -- noEff initialModel umjesto ovoga dolje.
   noEff g {                 -- ne treba ako ću dodati settingse
@@ -75,7 +82,7 @@ updateModel ToMainMenu  g = -- noEff initialModel umjesto ovoga dolje.
   , invalidSyntagma = False
   , invalidTeamName = False
   , inputField = mempty
-  , numberField = ms $ show 1
+  , numberField = ms $ show 25
   }
 
 updateModel BackToMainMenu g = noEff g { state = MainMenu }
@@ -92,14 +99,6 @@ updateModel SettingsToMainMenu g@Model{..} =
             then 120
             else t'
 
--- updateModel SetTime g@Model{..} = noEff g { timer = t }
---   where
---     t' = fromMisoString timerField
---     t = if t' < 0
---       then 10
---       else if t' > 120
---         then 120
---         else t'
 
 -- UPDATE nonstate variables
 
@@ -111,8 +110,8 @@ updateModel (ShuffleSyns  s) g@Model{..} =
   }
 
 updateModel NextWord g@Model{..} =
-  if length syntagmas == 1
-    then noEff g { syntagmas = guessed ++ syntagmas
+  if length syntagmas <= 1
+    then noEff g { syntagmas = newGuessed
                  , guessed = []
                  , teams = updatedTeams
                  , currentTeam = (currentTeam + 1) `mod` (length teams)
@@ -123,11 +122,13 @@ updateModel NextWord g@Model{..} =
     else noEff g { syntagmas = newSyns
                  , guessed = newGuessed
                  , teams = updatedTeams
+                 , timeElapsed = 0
                  , buttonEnabled = True
                  }
   where
     newSyns = tail $ syntagmas
-    newGuessed = (head (syntagmas)) : guessed
+    newGuessed = (fst syn, snd syn + timeElapsed ) : guessed
+    syn = head syntagmas
     updatedTeams = updateTeams teams currentTeam 1
 
 updateModel SkipWord g@Model{..} =
@@ -147,7 +148,7 @@ updateModel AddTeam g@Model{..} =
 
 updateModel AddSyn g@Model{..} =
   noEff g {
-    syntagmas = if isValidSyntagma syn then syn:syntagmas else syntagmas
+    syntagmas = if isValidSyntagma syn then (syn,0):syntagmas else syntagmas
   , inputField = if isValidSyntagma syn then mempty else inputField
   , invalidSyntagma = not $ isValidSyntagma syn
   }
@@ -158,7 +159,7 @@ updateModel GenerateSyntagmas g@Model{..} =
     generator = Generating
   } <# do
     syns <- fetchSyntagmas realNumber
-    pure $ ShuffleSyns (syntagmas ++ syns)
+    pure $ ShuffleSyns (syntagmas ++ map (\x -> (x,0)) syns)
     where
       number = (read (fromMisoString numberField) :: Int)
       realNumber = if (number + length syntagmas) > 50
@@ -184,6 +185,7 @@ updateModel Tick g@Model{..} =
     then noEff g {
       time = time - 1
     , buttonEnabled = False
+    , timeElapsed = timeElapsed + 1
     }
     else if time == 1
       then g {
@@ -191,10 +193,15 @@ updateModel Tick g@Model{..} =
         , time = 0
         , currentTeam = (currentTeam + 1) `mod` (length teams)
         , buttonEnabled = False
+        , timeElapsed = timeElapsed + 1
         } <# do
           shuff <- shuffleM syntagmas
           return $ ShuffleSyns shuff
-      else noEff g { buttonEnabled = False }
+      else
+        noEff g {
+            buttonEnabled = False
+          , timeElapsed = timeElapsed + 1
+        }
 
 updateModel NoOp m = noEff m
 
@@ -212,6 +219,24 @@ fetchSyntagmas n = do
                   , reqWithCredentials = False
                   , reqData = NoData
                   }
+
+postSyntagmas :: [(String, Int)] -> IO ()
+postSyntagmas syntagmas = do
+  _ <- contents <$> xhrByteString req
+  return ()
+  where
+    req = Request { reqMethod = POST
+                  , reqURI = ms ("postSyns/" ++ tuplesToQuery syntagmas)
+                  , reqLogin = Nothing
+                  , reqHeaders = []
+                  , reqWithCredentials = False
+                  , reqData = NoData
+                  }
+
+tuplesToQuery :: [(String, Int)] -> String
+tuplesToQuery [] = ""
+tuplesToQuery [(s, n)]  = s ++ " " ++ show n
+tuplesToQuery ((s, n):xs) = (s ++ " " ++ show n ++ " ") ++ tuplesToQuery xs
 
 isValidSyntagma :: String -> Bool
 isValidSyntagma syn = (length s == 2) && (and $ map (all isLetter) s)

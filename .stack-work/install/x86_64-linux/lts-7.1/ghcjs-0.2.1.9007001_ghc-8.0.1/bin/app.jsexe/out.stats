@@ -2,19 +2,19 @@ code size summary per package:
 
 MonadRandom-0.4.2.3-61so8ZcPbK2BTwc8ri0uIA:1655
 aeson-0.11.2.1-I1KatMa4W9ixd2YOOZBlo:161259
-attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:65559
-base:                    399903
+attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:65560
+base:                    399143
 bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU:8160
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:54878
 deepseq-1.4.2.0-47yvsc92PQF1rYmebWoAXZ:513
-ghc-prim:                9977
+ghc-prim:                9434
 ghcjs-base-0.2.0.0-9RAUV0fc0ApBW3Hd7VHXty:28789
-ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA:4062
+ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA:4054
 integer-gmp:             64618
-main:                    164323
-miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq:101255
-random-1.1-4yODkowlqmVH67qh6sFaKw:20761
-random-shuffle-0.0.4-DsGAbUwp8o2J31i6FRv4DJ:12389
+main:                    168412
+miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq:101254
+random-1.1-4yODkowlqmVH67qh6sFaKw:20764
+random-shuffle-0.0.4-DsGAbUwp8o2J31i6FRv4DJ:12391
 scientific-0.3.4.9-3BpR9ETsBN0En6PwfRuei7:8594
 text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:19443
 time-1.6.0.1-Lja9T8bqIudL0xdsRMOCyg:3316
@@ -36,7 +36,7 @@ aeson-0.11.2.1-I1KatMa4W9ixd2YOOZBlo
 
 attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr
     Data.Attoparsec.ByteString.Buffer:  5087
-    Data.Attoparsec.ByteString.Char8:   42696
+    Data.Attoparsec.ByteString.Char8:   42697
     Data.Attoparsec.ByteString.Internal:11649
     Data.Attoparsec.Internal:           5956
     Data.Attoparsec.Internal.Types:     1
@@ -51,6 +51,7 @@ base
     Data.OldList:                       8671
     Data.Proxy:                         1
     Data.Traversable:                   1162
+    Data.Tuple:                         1
     Data.Typeable:                      864
     Data.Typeable.Internal:             1526
     Foreign.C.Error:                    8406
@@ -59,15 +60,15 @@ base
     Foreign.Marshal.Array:              1906
     Foreign.Storable:                   5161
     GHC.Arr:                            2731
-    GHC.Base:                           2860
+    GHC.Base:                           2655
     GHC.Char:                           445
     GHC.Conc.Sync:                      5801
-    GHC.Enum:                           16190
+    GHC.Enum:                           16191
     GHC.Err:                            137
     GHC.Exception:                      8145
     GHC.Fingerprint:                    1234
     GHC.Fingerprint.Type:               227
-    GHC.Float:                          51889
+    GHC.Float:                          51635
     GHC.Float.ConversionUtils:          2383
     GHC.Foreign:                        10560
     GHC.ForeignPtr:                     135
@@ -86,24 +87,24 @@ base
     GHC.IO.Handle.Internals:            23180
     GHC.IO.Handle.Types:                1726
     GHC.Int:                            2206
-    GHC.List:                           6893
+    GHC.List:                           6689
     GHC.MVar:                           1
     GHC.Num:                            1200
     GHC.Ptr:                            212
     GHC.Read:                           4395
-    GHC.Real:                           18105
+    GHC.Real:                           18106
     GHC.STRef:                          1
     GHC.Show:                           16781
-    GHC.Stack.CCS:                      3549
+    GHC.Stack.CCS:                      3767
     GHC.Stack.Types:                    467
     GHC.Storable:                       450
-    GHC.TopHandler:                     8735
+    GHC.TopHandler:                     8602
     GHC.Unicode:                        2340
     GHC.Word:                           7974
     Numeric:                            3668
     System.CPUTime:                     1
     System.Posix.Internals:             12728
-    Text.ParserCombinators.ReadP:       12994
+    Text.ParserCombinators.ReadP:       12809
     Text.ParserCombinators.ReadPrec:    1
     Text.Read:                          688
     Text.Read.Lex:                      38362
@@ -120,8 +121,8 @@ deepseq-1.4.2.0-47yvsc92PQF1rYmebWoAXZ
     Control.DeepSeq:                    513
 
 ghc-prim
-    GHC.CString:                        3794
-    GHC.Classes:                        5759
+    GHC.CString:                        3799
+    GHC.Classes:                        5211
     GHC.IntWord64:                      298
     GHC.Tuple:                          1
     GHC.Types:                          125
@@ -139,24 +140,24 @@ ghcjs-base-0.2.0.0-9RAUV0fc0ApBW3Hd7VHXty
     JavaScript.Web.XMLHttpRequest:      18913
 
 ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA
-    GHCJS.Prim:                         1608
-    GHCJS.Prim.Internal:                2454
+    GHCJS.Prim:                         1607
+    GHCJS.Prim.Internal:                2447
 
 integer-gmp
     GHC.Integer.Type:                   64618
 
 main
     Main:                               1700
-    Model:                              55572
-    Update:                             35726
-    View:                               71325
+    Model:                              55837
+    Update:                             39423
+    View:                               71452
 
 miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq
     Miso:                               12039
     Miso.Delegate:                      930
     Miso.Diff:                          2716
     Miso.Effect:                        1
-    Miso.Event.Decoder:                 15210
+    Miso.Event.Decoder:                 15209
     Miso.Event.Types:                   20387
     Miso.FFI:                           16185
     Miso.Html.Element:                  3529
@@ -166,10 +167,10 @@ miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq
     Miso.String:                        121
 
 random-1.1-4yODkowlqmVH67qh6sFaKw
-    System.Random:                      20761
+    System.Random:                      20764
 
 random-shuffle-0.0.4-DsGAbUwp8o2J31i6FRv4DJ
-    System.Random.Shuffle:              12389
+    System.Random.Shuffle:              12391
 
 scientific-0.3.4.9-3BpR9ETsBN0En6PwfRuei7
     Data.Scientific:                    4748
@@ -196,5 +197,5 @@ vector-0.11.0.0-KJzdD0x8rviArqGbBh5Ng0
 
 
 
-packed metadata: 438530
+packed metadata: 438425
 

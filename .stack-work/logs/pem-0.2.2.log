@@ -1,0 +1,14 @@
+Configuring pem-0.2.2...
+Building pem-0.2.2...
+Preprocessing library pem-0.2.2...
+[1 of 4] Compiling Data.PEM.Types   ( Data/PEM/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/PEM/Types.js_o )
+[2 of 4] Compiling Data.PEM.Writer  ( Data/PEM/Writer.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/PEM/Writer.js_o )
+[3 of 4] Compiling Data.PEM.Parser  ( Data/PEM/Parser.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/PEM/Parser.js_o )
+[4 of 4] Compiling Data.PEM         ( Data/PEM.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/PEM.js_o )
+
+Data/PEM.hs:11:1: warning: [-Wtabs]
+    Tab character found here, and in one further location.
+    Please use spaces instead.
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/pem-0.2.2-2afzYHZIAQ15QAHWl3MFf1
+Registering pem-0.2.2...

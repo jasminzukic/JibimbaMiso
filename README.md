@@ -1,3 +1,3 @@
-To play:
-
-Go to the Jibimba project (not JibimbaMiso) and check how to do it.
+Client side of the Jibimba project
+Check JibimbaScotty for the server side
+https://github.com/jasminzukic/JibimbaScotty

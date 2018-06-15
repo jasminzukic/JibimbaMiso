@@ -1,0 +1,36 @@
+Configuring socks-0.5.5...
+Building socks-0.5.5...
+Preprocessing library socks-0.5.5...
+[1 of 7] Compiling Network.Socks5.Parse ( Network/Socks5/Parse.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/Socks5/Parse.js_o )
+[2 of 7] Compiling Network.Socks5.Types ( Network/Socks5/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/Socks5/Types.js_o )
+[3 of 7] Compiling Network.Socks5.Wire ( Network/Socks5/Wire.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/Socks5/Wire.js_o )
+
+Network/Socks5/Wire.hs:15:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Network/Socks5/Wire.hs:23:1: warning: [-Wunused-imports]
+    The import of ‘Network.Socks5.Parse’ is redundant
+      except perhaps to import instances from ‘Network.Socks5.Parse’
+    To import instances alone, use: import Network.Socks5.Parse()
+[4 of 7] Compiling Network.Socks5.Command ( Network/Socks5/Command.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/Socks5/Command.js_o )
+
+Network/Socks5/Command.hs:25:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[5 of 7] Compiling Network.Socks5.Lowlevel ( Network/Socks5/Lowlevel.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/Socks5/Lowlevel.js_o )
+[6 of 7] Compiling Network.Socks5.Conf ( Network/Socks5/Conf.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/Socks5/Conf.js_o )
+[7 of 7] Compiling Network.Socks5   ( Network/Socks5.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/Socks5.js_o )
+
+Network/Socks5.hs:81:50: warning: [-Wdeprecations]
+    In the use of ‘sClose’ (imported from Network.Socket):
+    Deprecated: "use 'close'"
+
+Network/Socks5.hs:117:50: warning: [-Wdeprecations]
+    In the use of ‘sClose’ (imported from Network.Socket):
+    Deprecated: "use 'close'"
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/socks-0.5.5-5HBJBTRbEQh6mmNFPjwZkU
+Registering socks-0.5.5...

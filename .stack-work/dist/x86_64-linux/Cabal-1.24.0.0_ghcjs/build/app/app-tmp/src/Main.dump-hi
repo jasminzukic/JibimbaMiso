@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 12:32:32.598813 UTC
+2018-06-13 09:59:09.430453 UTC
 
 interface main@main:Main 8001
-  interface hash: fac8e06030a9d9edf459832cb62ff49a
-  ABI hash: a3849988c59d2e6d9f90eb54d0c149a6
+  interface hash: 1c01dc04d8d7cf1ad94855605169f256
+  ABI hash: 24aa92e1f752e60e86facdd3aa3a015a
   export-list hash: 4fbb6b20685432843e3fe7104508761c
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 0db9fe9e94e6125e63fadde768bbe034
@@ -124,16 +124,16 @@ family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-FMbTiXvue1s3ZYB
                          vector-0.11.0.0@vector-0.11.0.0-KJzdD0x8rviArqGbBh5Ng0:Data.Vector.Unboxed.Base
 import  -/  base-4.9.0.0:Prelude d12376192cc2b7eb811b9b12d0e03e24
 import  -/  ghc-prim-0.5.0.0:GHC.Types 01744bc20c1eebd74e75ad370a3c4290
-import  -/  Model 73a21e0d0bf318429f798b5c50371a84
-  exports: 8859018b6a9534d7708837492ad17f1d
-  StartCounter cedc8df545aae2280996f61a8a30aec9
-  initialModel 1ec35f8665424e7f40f3d61fb4933415
-import  -/  Update c932b03c7f9257454e94a057029e5341
+import  -/  Model cc3eb2df4761b6e8d37c97b78313ef42
+  exports: 06d15568ffa8769637ff451f096d4c94
+  StartCounter c8b88042141c6bfcf080d772e55b11e5
+  initialModel fa4fc956027c6539500a971afa871c9a
+import  -/  Update 93da6390ffdbe35de3c9c48982a488a2
   exports: fb66ac8f4d84f38667f366f274093771
-  updateModel 6d1158dc3af9ac61d237f3d25562bbbf
-import  -/  View abd6042a50d26eb9bcaada4df756acd3
+  updateModel ca7e41ab206043cdad5a7732d69968d6
+import  -/  View 7a60cf222206aad0459a160afc647218
   exports: 04c0139db0a607cd9270ddd6142d0fd6
-  viewModel 5d1a90e1b746e1f553e1bbcbdea3f5bb
+  viewModel b747db4384ec55973a3e07e72c05d884
 import  -/  miso-0.18.0.0@miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq:Miso 39949964b51b7a91ed6b4e26dde65f94
 import  -/  miso-0.18.0.0@miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq:Miso.Event.Types 92e3b9c21fd24763145de0f4030b1edf
 import  -/  miso-0.18.0.0@miso-0.18.0.0-3dMRlFzvzpKJPz6ykhajZq:Miso.Types a01567c522c3f1515fc62122d6f82451
@@ -149,12 +149,12 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-877611853485c6eae3cf5ce3246cc8fe
+97e7c455ed34c812b5b807f20e9a5a7b
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-c5c1c473dad0d034ea5751c88e6eb7f9
+eb63a2a38f02f07d8107f382c3d14619
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -179,7 +179,7 @@ c5c1c473dad0d034ea5751c88e6eb7f9
                     ->_R Sym (GHC.Types.N:IO[0]
                                   <GHC.IORef.IORef Miso.Html.Internal.VTree>_R))
                    w2) -}
-f919204481262c326b758afd95254ef0
+a044faa3d2e961bde3caf627173dabf3
   main2 ::
     Miso.Effect.Sink Model.Action
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -244,7 +244,7 @@ f919204481262c326b758afd95254ef0
                        ipv3)
                       `cast`
                     (Sym (GHC.IORef.N:IORef[0]) <Miso.Html.Internal.VTree>_N) #) } } } } } } }) -}
-04ab2fd5a90b07321f8c3eb2ba575bf1
+65fe71faf8a312d2a0805af1c2d518ea
   main3 ::
     Miso.Effect.Sink Model.Action
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -259,13 +259,13 @@ f919204481262c326b758afd95254ef0
                    GHC.Types.False
                    GHC.Types.False
                    Model.Idle
-                   (GHC.Types.[] @ GHC.Base.String)
+                   (GHC.Types.[] @ (GHC.Base.String, GHC.Types.Int))
                    (GHC.Types.[] @ (GHC.Base.String, GHC.Types.Int))
                    Model.$fShowAction2
                    Model.initialModel3
                    Model.initialModel2
                    Model.initialModel1) -}
-f5664b357bb6614103f13158eb132235
+f368884279d586ddbffc4f255cb24466
   main4 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -278,12 +278,12 @@ f5664b357bb6614103f13158eb132235
                    Main.main5 `cast` (GHC.Types.N:IO[0] <()>_R)
                    (GHC.TopHandler.runIO2 @ ())
                    eta) -}
-19f68e83ea863c18454d0cc92ee7506c
+284f043da253c965fc05be51d7e131a1
   main5 :: GHC.Types.IO ()
   {- Unfolding: (GHC.Magic.lazy
                    @ (GHC.Types.IO ())
                    Main.main6 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-0576919ba8deb26c82e2e559202bbc6c
+ee833f92e08a3eb8f8b6eabbc4cb4df9
   main6 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

@@ -1,0 +1,7 @@
+[1 of 2] Compiling Main             ( /tmp/stack14654/entropy-0.3.7/Setup.hs, /tmp/stack14654/entropy-0.3.7/.stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/setup/Main.js_o )
+[2 of 2] Compiling StackSetupShim   ( /home/saaffa/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs, /tmp/stack14654/entropy-0.3.7/.stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/setup/StackSetupShim.js_o )
+Linking /tmp/stack14654/entropy-0.3.7/.stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/setup/setup.jsexe (Main,StackSetupShim)
+Configuring entropy-0.3.7...
+Could not determine C compiler
+CallStack (from HasCallStack):
+error, called at /tmp/stack14654/entropy-0.3.7/Setup.hs:22:54 in main:Main

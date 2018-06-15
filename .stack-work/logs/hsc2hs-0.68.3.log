@@ -1,0 +1,16 @@
+Configuring hsc2hs-0.68.3...
+Building hsc2hs-0.68.3...
+Preprocessing executable 'hsc2hs' for hsc2hs-0.68.3...
+[1 of 9] Compiling HSCParser        ( HSCParser.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs-tmp/HSCParser.js_o )
+[2 of 9] Compiling Flags            ( Flags.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs-tmp/Flags.js_o )
+[3 of 9] Compiling C                ( C.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs-tmp/C.js_o )
+[4 of 9] Compiling Common           ( Common.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs-tmp/Common.js_o )
+[5 of 9] Compiling CrossCodegen     ( CrossCodegen.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs-tmp/CrossCodegen.js_o )
+[6 of 9] Compiling UtilsCodegen     ( UtilsCodegen.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs-tmp/UtilsCodegen.js_o )
+[7 of 9] Compiling DirectCodegen    ( DirectCodegen.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs-tmp/DirectCodegen.js_o )
+[8 of 9] Compiling Paths_hsc2hs     ( .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/autogen/Paths_hsc2hs.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs-tmp/Paths_hsc2hs.js_o )
+[9 of 9] Compiling Main             ( Main.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs-tmp/Main.js_o )
+Linking .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs.jsexe (C,Common,CrossCodegen,DirectCodegen,Flags,HSCParser,Main,Paths_hsc2hs,UtilsCodegen)
+Installing executable(s) in
+/home/saaffa/Haskell/JibimbaMiso/.stack-work/install/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/bin
+Warning: the following files would be used as linker inputs, but linking is not being done: .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/hsc2hs/hsc2hs

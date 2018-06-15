@@ -1,0 +1,80 @@
+Configuring memory-0.13...
+Building memory-0.13...
+Preprocessing library memory-0.13...
+[ 1 of 28] Compiling Data.Memory.MemMap.Posix ( .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/MemMap/Posix.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/MemMap/Posix.js_o )
+[ 2 of 28] Compiling Data.Memory.Internal.DeepSeq ( Data/Memory/Internal/DeepSeq.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Internal/DeepSeq.js_o )
+[ 3 of 28] Compiling Data.Memory.Internal.CompatPrim64 ( Data/Memory/Internal/CompatPrim64.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Internal/CompatPrim64.js_o )
+[ 4 of 28] Compiling Data.Memory.Internal.CompatPrim ( Data/Memory/Internal/CompatPrim.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Internal/CompatPrim.js_o )
+[ 5 of 28] Compiling Data.Memory.Internal.Scrubber ( Data/Memory/Internal/Scrubber.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Internal/Scrubber.js_o )
+[ 6 of 28] Compiling Data.Memory.ExtendedWords ( Data/Memory/ExtendedWords.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/ExtendedWords.js_o )
+[ 7 of 28] Compiling Data.Memory.Internal.Imports ( Data/Memory/Internal/Imports.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Internal/Imports.js_o )
+[ 8 of 28] Compiling Data.Memory.PtrMethods ( Data/Memory/PtrMethods.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/PtrMethods.js_o )
+[ 9 of 28] Compiling Data.Memory.Internal.Compat ( Data/Memory/Internal/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Internal/Compat.js_o )
+[10 of 28] Compiling Data.Memory.Encoding.Base16 ( Data/Memory/Encoding/Base16.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Encoding/Base16.js_o )
+[11 of 28] Compiling Data.Memory.Encoding.Base32 ( Data/Memory/Encoding/Base32.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Encoding/Base32.js_o )
+[12 of 28] Compiling Data.Memory.Encoding.Base64 ( Data/Memory/Encoding/Base64.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Encoding/Base64.js_o )
+[13 of 28] Compiling Data.Memory.Endian ( Data/Memory/Endian.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Endian.js_o )
+
+Data/Memory/Endian.hs:90:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: ByteSwap a
+    • In the type signature for:
+           toLE :: ByteSwap a => a -> LE a
+
+Data/Memory/Endian.hs:101:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: ByteSwap a
+    • In the type signature for:
+           fromLE :: ByteSwap a => LE a -> a
+[14 of 28] Compiling Data.Memory.Hash.SipHash ( Data/Memory/Hash/SipHash.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Hash/SipHash.js_o )
+[15 of 28] Compiling Data.Memory.Hash.FNV ( Data/Memory/Hash/FNV.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Memory/Hash/FNV.js_o )
+[16 of 28] Compiling Data.ByteArray.Types ( Data/ByteArray/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/Types.js_o )
+
+Data/ByteArray/Types.hs:15:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[17 of 28] Compiling Data.ByteArray.Bytes ( Data/ByteArray/Bytes.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/Bytes.js_o )
+
+Data/ByteArray/Bytes.hs:20:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[18 of 28] Compiling Data.ByteArray.ScrubbedBytes ( Data/ByteArray/ScrubbedBytes.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/ScrubbedBytes.js_o )
+
+Data/ByteArray/ScrubbedBytes.hs:19:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[19 of 28] Compiling Data.ByteArray.MemView ( Data/ByteArray/MemView.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/MemView.js_o )
+[20 of 28] Compiling Data.ByteArray.Pack.Internal ( Data/ByteArray/Pack/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/Pack/Internal.js_o )
+
+Data/ByteArray/Pack/Internal.hs:20:1: warning: [-Wunused-imports]
+    The import of ‘Data.Memory.Internal.Imports’ is redundant
+      except perhaps to import instances from ‘Data.Memory.Internal.Imports’
+    To import instances alone, use: import Data.Memory.Internal.Imports()
+[21 of 28] Compiling Data.ByteArray.Methods ( Data/ByteArray/Methods.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/Methods.js_o )
+[22 of 28] Compiling Data.ByteArray.View ( Data/ByteArray/View.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/View.js_o )
+[23 of 28] Compiling Data.ByteArray.Encoding ( Data/ByteArray/Encoding.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/Encoding.js_o )
+[24 of 28] Compiling Data.ByteArray.Mapping ( Data/ByteArray/Mapping.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/Mapping.js_o )
+
+Data/ByteArray/Mapping.hs:16:1: warning: [-Wunused-imports]
+    The import of ‘Data.Bits’ is redundant
+      except perhaps to import instances from ‘Data.Bits’
+    To import instances alone, use: import Data.Bits()
+[25 of 28] Compiling Data.ByteArray.Parse ( Data/ByteArray/Parse.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/Parse.js_o )
+
+Data/ByteArray/Parse.hs:114:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: ByteArrayAccess byteArray
+    • In the type signature for:
+           parse :: ByteArrayAccess byteArray =>
+                    Parser byteArray a -> byteArray -> Result byteArray a
+
+Data/ByteArray/Parse.hs:183:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Eq ba
+    • In the type signature for:
+           bytes :: (Show ba, Eq ba, ByteArray ba) => ba -> Parser ba ()
+[26 of 28] Compiling Data.ByteArray.Hash ( Data/ByteArray/Hash.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/Hash.js_o )
+[27 of 28] Compiling Data.ByteArray   ( Data/ByteArray.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray.js_o )
+[28 of 28] Compiling Data.ByteArray.Pack ( Data/ByteArray/Pack.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/ByteArray/Pack.js_o )
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/memory-0.13-7vQ67T5vyzP9XpK9qfR4fT
+Registering memory-0.13...

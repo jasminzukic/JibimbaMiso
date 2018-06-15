@@ -1,0 +1,122 @@
+code size summary per package:
+
+base:                    641649
+containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:82698
+directory-1.2.6.2-ESyuy90ZxXV58Vf54xt2T7:4547
+filepath-1.4.1.0-9QfRUxCgJUi8wMmIwQzqhD:52953
+ghc-prim:                12093
+ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA:11496
+integer-gmp:             57649
+main:                    646067
+process-1.4.2.0-EijgfMPjIeD9X9tzD80iey:40827
+
+
+code size per module:
+
+base
+    Control.Exception.Base:             11208
+    Data.Either:                        369
+    Data.Maybe:                         708
+    Data.OldList:                       6274
+    Data.Typeable:                      878
+    Data.Typeable.Internal:             2335
+    Data.Version:                       1985
+    Foreign.C.Error:                    9569
+    Foreign.C.String:                   1533
+    Foreign.Marshal.Alloc:              301
+    Foreign.Marshal.Array:              1987
+    Foreign.Storable:                   11744
+    GHC.Base:                           6847
+    GHC.Char:                           705
+    GHC.Conc.Sync:                      4428
+    GHC.Enum:                           1946
+    GHC.Err:                            442
+    GHC.Exception:                      12448
+    GHC.Fingerprint:                    1459
+    GHC.Fingerprint.Type:               724
+    GHC.Foreign:                        12172
+    GHC.ForeignPtr:                     1459
+    GHC.IO:                             3745
+    GHC.IO.Buffer:                      1241
+    GHC.IO.BufferedIO:                  1052
+    GHC.IO.Device:                      1437
+    GHC.IO.Encoding:                    958
+    GHC.IO.Encoding.Failure:            617
+    GHC.IO.Encoding.Latin1:             3695
+    GHC.IO.Encoding.Types:              983
+    GHC.IO.Encoding.UTF8:               60752
+    GHC.IO.Exception:                   26904
+    GHC.IO.FD:                          49490
+    GHC.IO.Handle:                      3730
+    GHC.IO.Handle.FD:                   17752
+    GHC.IO.Handle.Internals:            75539
+    GHC.IO.Handle.Text:                 30576
+    GHC.IO.Handle.Types:                4832
+    GHC.IO.IOMode:                      147
+    GHC.IO.Unsafe:                      370
+    GHC.Int:                            755
+    GHC.List:                           13518
+    GHC.MVar:                           174
+    GHC.Ptr:                            610
+    GHC.Read:                           7304
+    GHC.STRef:                          180
+    GHC.Show:                           25451
+    GHC.Stack.CCS:                      3971
+    GHC.Stack.Types:                    1491
+    GHC.Storable:                       2341
+    GHC.TopHandler:                     12934
+    GHC.Unicode:                        3433
+    GHC.Word:                           923
+    System.Console.GetOpt:              72338
+    System.Environment:                 6138
+    System.Exit:                        1038
+    System.IO.Error:                    1825
+    System.Posix.Internals:             15344
+    Text.ParserCombinators.ReadP:       23521
+    Text.ParserCombinators.ReadPrec:    103
+    Text.Read:                          1409
+    Text.Read.Lex:                      71507
+
+containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz
+    Data.Sequence:                      82698
+
+directory-1.2.6.2-ESyuy90ZxXV58Vf54xt2T7
+    System.Directory:                   4547
+
+filepath-1.4.1.0-9QfRUxCgJUi8wMmIwQzqhD
+    System.FilePath.Current:            52953
+
+ghc-prim
+    GHC.CString:                        4494
+    GHC.Classes:                        5067
+    GHC.IntWord64:                      449
+    GHC.Tuple:                          753
+    GHC.Types:                          1330
+
+ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA
+    GHCJS.Prim:                         7199
+    GHCJS.Prim.Internal:                4297
+
+integer-gmp
+    GHC.Integer.Type:                   57649
+
+main
+    C:                                  107826
+    Common:                             14348
+    CrossCodegen:                       215399
+    DirectCodegen:                      28239
+    Flags:                              34265
+    HSCParser:                          207547
+    Main:                               26348
+    Paths_hsc2hs:                       5468
+    UtilsCodegen:                       6627
+
+process-1.4.2.0-EijgfMPjIeD9X9tzD80iey
+    System.Process:                     11293
+    System.Process.Common:              12669
+    System.Process.Internals:           16865
+
+
+
+packed metadata: 278656
+

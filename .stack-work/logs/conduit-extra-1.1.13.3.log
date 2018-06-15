@@ -1,0 +1,46 @@
+Configuring conduit-extra-1.1.13.3...
+Building conduit-extra-1.1.13.3...
+Preprocessing library conduit-extra-1.1.13.3...
+[ 1 of 12] Compiling Data.Conduit.Zlib ( Data/Conduit/Zlib.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Zlib.js_o )
+
+Data/Conduit/Zlib.hs:36:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: MonadThrow m
+    • In the type signature for:
+           unsafeLiftIO :: (MonadBase base m, PrimMonad base, MonadThrow m) =>
+                           IO a -> m a
+[ 2 of 12] Compiling Data.Conduit.Text ( Data/Conduit/Text.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Text.js_o )
+[ 3 of 12] Compiling Data.Conduit.Network.UDP ( Data/Conduit/Network/UDP.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Network/UDP.js_o )
+[ 4 of 12] Compiling Data.Conduit.Network ( Data/Conduit/Network.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Network.js_o )
+[ 5 of 12] Compiling Data.Conduit.Network.Unix ( Data/Conduit/Network/Unix.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Network/Unix.js_o )
+[ 6 of 12] Compiling Data.Conduit.Lazy ( Data/Conduit/Lazy.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Lazy.js_o )
+[ 7 of 12] Compiling Data.Conduit.Filesystem ( Data/Conduit/Filesystem.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Filesystem.js_o )
+[ 8 of 12] Compiling Data.Conduit.ByteString.Builder ( Data/Conduit/ByteString/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/ByteString/Builder.js_o )
+[ 9 of 12] Compiling Data.Conduit.Blaze ( Data/Conduit/Blaze.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Blaze.js_o )
+[10 of 12] Compiling Data.Conduit.Binary ( Data/Conduit/Binary.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Binary.js_o )
+
+Data/Conduit/Binary.hs:440:28: warning: [-Wdeprecations]
+    In the use of ‘inlinePerformIO’
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."
+
+Data/Conduit/Binary.hs:442:20: warning: [-Wdeprecations]
+    In the use of ‘inlinePerformIO’
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."
+
+Data/Conduit/Binary.hs:493:33: warning: [-Wname-shadowing]
+    This binding for ‘bs’ shadows the existing binding
+      bound at Data/Conduit/Binary.hs:485:18
+
+Data/Conduit/Binary.hs:507:36: warning: [-Wdeprecations]
+    In the use of ‘inlinePerformIO’
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."
+[11 of 12] Compiling Data.Conduit.Process ( Data/Conduit/Process.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Process.js_o )
+[12 of 12] Compiling Data.Conduit.Attoparsec ( Data/Conduit/Attoparsec.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/Conduit/Attoparsec.js_o )
+
+Data/Conduit/Attoparsec.hs:77:5: warning: [-Wunused-top-binds]
+    Defined but not used: ‘notEmpty’
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/conduit-extra-1.1.13.3-LmCClOfQJqG5H6AD9W55RX
+Registering conduit-extra-1.1.13.3...

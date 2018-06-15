@@ -1,0 +1,31 @@
+Configuring http-client-0.4.31.1...
+Building http-client-0.4.31.1...
+Preprocessing library http-client-0.4.31.1...
+[ 1 of 17] Compiling Network.PublicSuffixList.Types ( publicsuffixlist/Network/PublicSuffixList/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/PublicSuffixList/Types.js_o )
+[ 2 of 17] Compiling Network.PublicSuffixList.Serialize ( publicsuffixlist/Network/PublicSuffixList/Serialize.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/PublicSuffixList/Serialize.js_o )
+[ 3 of 17] Compiling Network.PublicSuffixList.DataStructure ( publicsuffixlist/Network/PublicSuffixList/DataStructure.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/PublicSuffixList/DataStructure.js_o )
+[ 4 of 17] Compiling Network.PublicSuffixList.Lookup ( publicsuffixlist/Network/PublicSuffixList/Lookup.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/PublicSuffixList/Lookup.js_o )
+[ 5 of 17] Compiling Network.HTTP.Client.Util ( Network/HTTP/Client/Util.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Util.js_o )
+[ 6 of 17] Compiling Network.HTTP.Client.Types ( Network/HTTP/Client/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Types.js_o )
+[ 7 of 17] Compiling Network.HTTP.Client.Connection ( Network/HTTP/Client/Connection.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Connection.js_o )
+
+Network/HTTP/Client/Connection.hs:128:6: warning: [-Wdeprecations]
+    In the use of ‘sClose’ (imported from Network.Socket):
+    Deprecated: "use 'close'"
+
+Network/HTTP/Client/Connection.hs:166:14: warning: [-Wdeprecations]
+    In the use of ‘sClose’ (imported from Network.Socket):
+    Deprecated: "use 'close'"
+[ 8 of 17] Compiling Network.HTTP.Client.Headers ( Network/HTTP/Client/Headers.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Headers.js_o )
+[ 9 of 17] Compiling Network.HTTP.Client.Request ( Network/HTTP/Client/Request.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Request.js_o )
+[10 of 17] Compiling Network.HTTP.Client.Manager ( Network/HTTP/Client/Manager.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Manager.js_o )
+[11 of 17] Compiling Network.HTTP.Client.Body ( Network/HTTP/Client/Body.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Body.js_o )
+[12 of 17] Compiling Network.HTTP.Client.Response ( Network/HTTP/Client/Response.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Response.js_o )
+[13 of 17] Compiling Network.HTTP.Client.Cookies ( Network/HTTP/Client/Cookies.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Cookies.js_o )
+[14 of 17] Compiling Network.HTTP.Client.Core ( Network/HTTP/Client/Core.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Core.js_o )
+[15 of 17] Compiling Network.HTTP.Client.Internal ( Network/HTTP/Client/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Internal.js_o )
+[16 of 17] Compiling Network.HTTP.Client ( Network/HTTP/Client.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client.js_o )
+[17 of 17] Compiling Network.HTTP.Client.MultipartFormData ( Network/HTTP/Client/MultipartFormData.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/MultipartFormData.js_o )
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/http-client-0.4.31.1-CDzTgRciWUq5z3yI67hudr
+Registering http-client-0.4.31.1...

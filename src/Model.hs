@@ -14,12 +14,13 @@ data Model = Model
   , invalidSyntagma :: Bool
   , buttonEnabled :: Bool
   , generator :: Generator
-  , syntagmas :: [String]
-  , guessed :: [String]
+  , syntagmas :: [(String, Int)] -- Syntagmas and how much time it took for them to be guessed
+  , guessed :: [(String, Int)]
   , teams :: [(String, Int)]
   , currentTeam :: Int
   , timer :: Int
   , time :: Int
+  , timeElapsed :: Int
   , runda :: Int
   } deriving (Eq, Show)
 
@@ -67,8 +68,9 @@ data Action
   | AddTeam
   | AddSyn
   | GenerateSyntagmas
+  | PostSyntagmas
   | ShuffleTeams [(String, Int)]
-  | ShuffleSyns [String]
+  | ShuffleSyns [(String, Int)]
   | SetTime
   | StartCounter
   | Tick
@@ -92,4 +94,5 @@ initialModel = Model
   , currentTeam = 0
   , timer = 60
   , time = -1
+  , timeElapsed = 0
   , runda = 1 }

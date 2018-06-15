@@ -1,0 +1,54 @@
+Configuring x509-1.6.4...
+Building x509-1.6.4...
+Preprocessing library x509-1.6.4...
+[ 1 of 13] Compiling Data.X509.OID    ( Data/X509/OID.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/OID.js_o )
+
+Data/X509/OID.hs:15:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 2 of 13] Compiling Data.X509.Internal ( Data/X509/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/Internal.js_o )
+[ 3 of 13] Compiling Data.X509.DistinguishedName ( Data/X509/DistinguishedName.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/DistinguishedName.js_o )
+
+Data/X509/DistinguishedName.hs:18:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Data/X509/DistinguishedName.hs:19:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[ 4 of 13] Compiling Data.X509.ExtensionRaw ( Data/X509/ExtensionRaw.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/ExtensionRaw.js_o )
+
+Data/X509/ExtensionRaw.hs:15:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 5 of 13] Compiling Data.X509.Ext    ( Data/X509/Ext.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/Ext.js_o )
+
+Data/X509/Ext.hs:42:1: warning: [-Wunused-imports]
+    The import of ‘Data.X509.Internal’ is redundant
+      except perhaps to import instances from ‘Data.X509.Internal’
+    To import instances alone, use: import Data.X509.Internal()
+
+Data/X509/Ext.hs:43:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 6 of 13] Compiling Data.X509.AlgorithmIdentifier ( Data/X509/AlgorithmIdentifier.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/AlgorithmIdentifier.js_o )
+[ 7 of 13] Compiling Data.X509.CRL    ( Data/X509/CRL.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/CRL.js_o )
+
+Data/X509/CRL.hs:19:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 8 of 13] Compiling Data.X509.Signed ( Data/X509/Signed.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/Signed.js_o )
+[ 9 of 13] Compiling Data.X509.PublicKey ( Data/X509/PublicKey.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/PublicKey.js_o )
+[10 of 13] Compiling Data.X509.Cert   ( Data/X509/Cert.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/Cert.js_o )
+[11 of 13] Compiling Data.X509.CertificateChain ( Data/X509/CertificateChain.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/CertificateChain.js_o )
+[12 of 13] Compiling Data.X509.PrivateKey ( Data/X509/PrivateKey.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509/PrivateKey.js_o )
+[13 of 13] Compiling Data.X509        ( Data/X509.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Data/X509.js_o )
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/x509-1.6.4-L3atnKqWDOZ42Jl4uXpoe1
+Registering x509-1.6.4...

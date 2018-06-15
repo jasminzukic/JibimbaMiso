@@ -1,0 +1,19 @@
+Configuring http-conduit-2.1.11...
+Building http-conduit-2.1.11...
+Preprocessing library http-conduit-2.1.11...
+[1 of 3] Compiling Network.HTTP.Client.Conduit ( Network/HTTP/Client/Conduit.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Client/Conduit.js_o )
+[2 of 3] Compiling Network.HTTP.Simple ( Network/HTTP/Simple.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Simple.js_o )
+
+Network/HTTP/Simple.hs:89:1: warning: [-Wunused-imports]
+    The import of ‘Data.Default.Class’ is redundant
+      except perhaps to import instances from ‘Data.Default.Class’
+    To import instances alone, use: import Data.Default.Class()
+[3 of 3] Compiling Network.HTTP.Conduit ( Network/HTTP/Conduit.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/Network/HTTP/Conduit.js_o )
+
+Network/HTTP/Conduit.hs:238:1: warning: [-Wunused-imports]
+    The import of ‘Control.Exception.Lifted’ is redundant
+      except perhaps to import instances from ‘Control.Exception.Lifted’
+    To import instances alone, use: import Control.Exception.Lifted()
+Installing library in
+/home/saaffa/.stack/snapshots/x86_64-linux/lts-7.1/ghcjs-0.2.1.9007001_ghc-8.0.1/lib/x86_64-linux-ghcjs-0.2.1.9007001-ghc8_0_1/http-conduit-2.1.11-7hE94Euzd9e9B8qti6ycqG
+Registering http-conduit-2.1.11...

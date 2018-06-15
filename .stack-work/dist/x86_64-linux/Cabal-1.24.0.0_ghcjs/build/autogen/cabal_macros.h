@@ -91,6 +91,13 @@
   (major1) == 2 && (major2) <  17 || \
   (major1) == 2 && (major2) == 17 && (minor) <= 3)
 
+/* tool hsc2hs-0.68 */
+#define TOOL_VERSION_hsc2hs "0.68"
+#define MIN_TOOL_VERSION_hsc2hs(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  68 || \
+  (major1) == 0 && (major2) == 68 && (minor) <= 0)
+
 /* tool pkg-config-0.26 */
 #define TOOL_VERSION_pkg_config "0.26"
 #define MIN_TOOL_VERSION_pkg_config(major1,major2,minor) (\
